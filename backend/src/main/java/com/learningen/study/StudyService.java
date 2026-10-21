@@ -37,7 +37,8 @@ public class StudyService {
         // Safe replay after a lost response, without changing time or version twice.
         if(saved.version()==input.version()+1 && saved.activeSeconds()==input.activeSeconds() && saved.status().equals(input.completed()?"COMPLETED":"ACTIVE")) return saved;
         if(saved.version()!=input.version() || !saved.status().equals("ACTIVE")) throw new ResponseStatusException(HttpStatus.CONFLICT,"Study session changed; reload it");
-        Instant last=((java.time.OffsetDateTime)row.get("updated_at")).toInstant();
+        Object timestamp=row.get("updated_at");
+        Instant last=timestamp instanceof OffsetDateTime offset?offset.toInstant():((java.sql.Timestamp)timestamp).toInstant();
         long elapsed=Math.max(0,Duration.between(last,clock.instant()).getSeconds());
         if(input.activeSeconds()<saved.activeSeconds() || input.activeSeconds()-saved.activeSeconds()>elapsed+5) throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"Active time must be monotonic and cannot exceed elapsed time");
         String state=input.completed()?"COMPLETED":"ACTIVE";
