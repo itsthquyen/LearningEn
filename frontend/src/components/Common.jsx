@@ -1,5 +1,6 @@
 import { AlertCircle, ArrowRight, LoaderCircle, Sprout, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
 
 export function Brand() {
   return <Link className="brand" to="/" aria-label="LearningEN - Trang chủ"><span className="brand-mark"><Sprout size={25} /></span><span>Learning<span className="brand-accent">EN</span><small>MỖI NGÀY, MỘT CHÚT TIẾN BỘ</small></span></Link>;
@@ -23,5 +24,16 @@ export function PageHeading({ eyebrow, title, children, action }) {
 }
 
 export function Modal({ title, onClose, children }) {
-  return <div className="modal-backdrop" onClick={(event) => { if (event.target === event.currentTarget) onClose(); }}><section className="modal" role="dialog" aria-modal="true" aria-label={title} onKeyDown={(event) => { if (event.key === 'Escape') onClose(); }}><header><h2>{title}</h2><button autoFocus className="icon-button" onClick={onClose} aria-label="Đóng"><X size={21} /></button></header>{children}</section></div>;
+  const ref = useRef(null);
+  useEffect(() => { const previous = document.activeElement;const overflow = document.body.style.overflow;document.body.style.overflow = 'hidden';ref.current?.querySelector('button, input, textarea')?.focus();return () => { document.body.style.overflow = overflow;previous?.focus(); }; }, []);
+  function keyboard(event) {
+    if (event.key === 'Escape') onClose?.();
+    if (event.key === 'Tab') {
+      const elements = [...ref.current.querySelectorAll('button:not(:disabled), input:not(:disabled), textarea:not(:disabled), select:not(:disabled), a[href]')];
+      const first = elements[0], last = elements.at(-1);
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault();last?.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault();first?.focus(); }
+    }
+  }
+  return <div className="modal-backdrop" onClick={(event) => { if (event.target === event.currentTarget) onClose?.(); }}><section ref={ref} className="modal" role="dialog" aria-modal="true" aria-label={title} onKeyDown={keyboard}><header><h2>{title}</h2><button type="button" disabled={!onClose} className="icon-button" onClick={onClose} aria-label="Đóng"><X size={21} /></button></header>{children}</section></div>;
 }

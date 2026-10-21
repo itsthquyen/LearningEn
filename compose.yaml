@@ -1,0 +1,58 @@
+name: learningen
+services:
+  database:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-learningen}
+      POSTGRES_USER: ${POSTGRES_USER:-learningen}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U "$${POSTGRES_USER}" -d "$${POSTGRES_DB}"']
+      interval: 5s
+      timeout: 5s
+      retries: 12
+    restart: unless-stopped
+  backend:
+    build: ./backend
+    environment:
+      BACKEND_PORT: 8080
+      DATABASE_URL: jdbc:postgresql://database:5432/${POSTGRES_DB:-learningen}
+      DATABASE_USER: ${POSTGRES_USER:-learningen}
+      DATABASE_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+      BOOTSTRAP_EMAIL: ${BOOTSTRAP_EMAIL:?Set BOOTSTRAP_EMAIL in .env}
+      BOOTSTRAP_PASSWORD: ${BOOTSTRAP_PASSWORD:?Set BOOTSTRAP_PASSWORD in .env (12-72 characters)}
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173}
+      AI_BASE_URL: ${AI_BASE_URL:-}
+      AI_API_KEY: ${AI_API_KEY:-}
+      AI_MODEL: ${AI_MODEL:-}
+      AI_DAILY_REQUESTS: ${AI_DAILY_REQUESTS:-30}
+      AI_DAILY_TOKENS: ${AI_DAILY_TOKENS:-50000}
+      AI_GLOBAL_DAILY_TOKENS: ${AI_GLOBAL_DAILY_TOKENS:-100000}
+      AI_MAX_INPUT_TOKENS: ${AI_MAX_INPUT_TOKENS:-12000}
+      AI_MAX_OUTPUT_TOKENS: ${AI_MAX_OUTPUT_TOKENS:-1000}
+      AI_TIMEOUT_SECONDS: ${AI_TIMEOUT_SECONDS:-45}
+      AI_COST_TRACKING_ENABLED: ${AI_COST_TRACKING_ENABLED:-false}
+      AI_INPUT_COST_PER_MILLION: ${AI_INPUT_COST_PER_MILLION:-0}
+      AI_OUTPUT_COST_PER_MILLION: ${AI_OUTPUT_COST_PER_MILLION:-0}
+      AI_DAILY_COST_LIMIT: ${AI_DAILY_COST_LIMIT:-1}
+      AI_GLOBAL_DAILY_COST_LIMIT: ${AI_GLOBAL_DAILY_COST_LIMIT:-5}
+      LEARNING_PASS_SCORE: ${LEARNING_PASS_SCORE:-80}
+    depends_on:
+      database:
+        condition: service_healthy
+    restart: unless-stopped
+  frontend:
+    build: ./frontend
+    environment:
+      BACKEND_UPSTREAM: http://backend:8080
+    ports:
+      - '127.0.0.1:${FRONTEND_PORT:-5173}:80'
+    depends_on:
+      backend:
+        condition: service_started
+    restart: unless-stopped
+volumes:
+  postgres-data:

@@ -41,6 +41,16 @@ public class StudyService {
         long elapsed=Math.max(0,Duration.between(last,clock.instant()).getSeconds());
         if(input.activeSeconds()<saved.activeSeconds() || input.activeSeconds()-saved.activeSeconds()>elapsed+5) throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"Active time must be monotonic and cannot exceed elapsed time");
         String state=input.completed()?"COMPLETED":"ACTIVE";
+        ZoneId zone=ZoneId.of(db.queryForObject("select time_zone from accounts where id=?",String.class,owner));
+        Instant end=clock.instant();int remaining=input.activeSeconds()-saved.activeSeconds();
+        while(remaining>0) {
+            LocalDate date=end.minusNanos(1).atZone(zone).toLocalDate();
+            Instant dayStart=date.atStartOfDay(zone).toInstant();
+            int seconds=(int)Math.min(remaining,Math.max(1,Duration.between(dayStart,end).getSeconds()));
+            if(db.update("update study_activity set active_seconds=active_seconds+? where session_id=? and activity_date=?",seconds,id,date)==0)
+                db.update("insert into study_activity(session_id,activity_date,active_seconds) values(?,?,?)",id,date,seconds);
+            remaining-=seconds;end=end.minusSeconds(seconds);
+        }
         db.update("update study_sessions set active_seconds=?,status=?,version=version+1,updated_at=? where id=? and owner_id=?",input.activeSeconds(),state,OffsetDateTime.now(clock),id,owner);
         return new Session(id,saved.plannedMinutes(),input.activeSeconds(),state,saved.version()+1);
     }

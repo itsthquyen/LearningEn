@@ -17,7 +17,11 @@ public class ConversationController {
     public record Title(@NotBlank @Size(max=200) String title) {}
     static Map<String,Object> conversation(java.sql.ResultSet r, int n) throws java.sql.SQLException { return Map.of("id",r.getObject("id",UUID.class),"title",r.getString("title"),"createdAt",r.getTimestamp("created_at").toInstant()); }
     static Map<String,Object> message(java.sql.ResultSet r, int n) throws java.sql.SQLException { return Map.of("id",r.getObject("id",UUID.class),"role",r.getString("role"),"content",r.getString("content"),"createdAt",r.getTimestamp("created_at").toInstant()); }
-    @GetMapping public List<Map<String,Object>> list(Authentication auth) { return db.query("select * from conversations where owner_id=? order by created_at desc",ConversationController::conversation,accounts.owner(auth)); }
+    @GetMapping public List<Map<String,Object>> list(Authentication auth,@RequestParam(defaultValue="") String q) {
+        if(q.length()>500) throw new org.springframework.web.server.ResponseStatusException(HttpStatus.BAD_REQUEST,"Search is too long");
+        String query=q.toLowerCase(Locale.ROOT);
+        return db.query("select c.* from conversations c where c.owner_id=? and (position(? in lower(c.title))>0 or exists(select 1 from messages m where m.conversation_id=c.id and position(? in lower(m.content))>0)) order by c.created_at desc",ConversationController::conversation,accounts.owner(auth),query,query);
+    }
     @PostMapping @ResponseStatus(HttpStatus.CREATED) public Map<String,Object> create(Authentication auth,@Valid @RequestBody Title title) {
         UUID id=UUID.randomUUID(),owner=accounts.owner(auth);
         db.update("insert into conversations(id,owner_id,title,created_at) values(?,?,?,?)",id,owner,title.title().trim(),OffsetDateTime.now(ZoneOffset.UTC));
