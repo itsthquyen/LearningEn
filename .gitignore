@@ -8,3 +8,6 @@
 .vscode/
 *.log
 data/
+work/
+**/test-results/
+**/playwright-report/
