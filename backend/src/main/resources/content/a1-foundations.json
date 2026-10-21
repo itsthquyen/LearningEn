@@ -1,0 +1,702 @@
+{
+  "code": "a1-foundations-v1",
+  "title": "Nền tảng tiếng Anh trong đời sống",
+  "level": "A1",
+  "description": "12 bài ngắn, 3 kiểm tra mốc và 1 nhiệm vụ vận dụng. Nội dung tự biên soạn bản nháp, cần người có chuyên môn duyệt trước phát hành.",
+  "contentStatus": "DRAFT",
+  "version": 1,
+  "lessons": [
+    {
+      "code": "greetings",
+      "title": "Chào hỏi và giới thiệu",
+      "objective": "Giới thiệu tên và hỏi tên người khác.",
+      "kind": "LESSON",
+      "body": "Dùng “I am …” hoặc “My name is …” để giới thiệu. “What is your name?” hỏi tên. “Nice to meet you” dùng khi gặp lần đầu.\nVí dụ: Hello, I am Linh. — Xin chào, tôi là Linh.\nMy name is Nam. — Tên tôi là Nam.",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Điền: My name ___ Mai.",
+          "options": [
+            "is",
+            "are",
+            "am"
+          ],
+          "answer": "is",
+          "explanation": "My name là chủ ngữ số ít, đi với is.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q2",
+          "prompt": "Câu nào hỏi tên?",
+          "options": [
+            "What is your name?",
+            "How old are you?",
+            "Where are you from?"
+          ],
+          "answer": "What is your name?",
+          "explanation": "What is your name? nghĩa là Bạn tên gì?",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q3",
+          "prompt": "Chọn câu giới thiệu đúng.",
+          "options": [
+            "I am An.",
+            "I is An.",
+            "I are An."
+          ],
+          "answer": "I am An.",
+          "explanation": "I đi với am.",
+          "type": "MULTIPLE_CHOICE"
+        }
+      ]
+    },
+    {
+      "code": "be",
+      "title": "Động từ be: am, is, are",
+      "objective": "Dùng be với các đại từ nhân xưng.",
+      "kind": "LESSON",
+      "body": "I → am; he/she/it → is; you/we/they → are. Phủ định thêm not sau be. Câu hỏi đưa be lên trước chủ ngữ.\nShe is a teacher. — Cô ấy là giáo viên.\nAre you ready? — Bạn sẵn sàng chưa?",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "They ___ students.",
+          "options": [
+            "am",
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "explanation": "They là số nhiều, dùng are.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q2",
+          "prompt": "Chọn câu phủ định đúng.",
+          "options": [
+            "He is not tired.",
+            "He not is tired.",
+            "He does not is tired."
+          ],
+          "answer": "He is not tired.",
+          "explanation": "Thêm not ngay sau is.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q3",
+          "prompt": "Chọn câu hỏi đúng.",
+          "options": [
+            "Are you a student?",
+            "You are a student?",
+            "Is you a student?"
+          ],
+          "answer": "Are you a student?",
+          "explanation": "Đảo are lên trước you để hỏi.",
+          "type": "MULTIPLE_CHOICE"
+        }
+      ]
+    },
+    {
+      "code": "articles",
+      "title": "Danh từ và a/an",
+      "objective": "Dùng mạo từ với danh từ đếm được số ít.",
+      "kind": "LESSON",
+      "body": "Danh từ đếm được số ít thường cần a/an hoặc từ hạn định. Chọn a/an theo ÂM đầu: a book, an apple, an hour, a university. Không chỉ nhìn chữ cái.\nThis is an apple. — Đây là một quả táo.",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Chọn: ___ apple.",
+          "options": [
+            "a",
+            "an",
+            "two"
+          ],
+          "answer": "an",
+          "explanation": "Apple bắt đầu bằng nguyên âm /æ/.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q2",
+          "prompt": "Chọn: ___ university.",
+          "options": [
+            "an",
+            "a",
+            "three"
+          ],
+          "answer": "a",
+          "explanation": "University bắt đầu bằng phụ âm /j/.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q3",
+          "prompt": "Số nhiều của book là gì?",
+          "options": [
+            "books",
+            "bookes",
+            "bookies"
+          ],
+          "answer": "books",
+          "explanation": "Thông thường thêm -s: books.",
+          "type": "MULTIPLE_CHOICE"
+        }
+      ]
+    },
+    {
+      "code": "present",
+      "title": "Thói quen mỗi ngày",
+      "objective": "Dùng hiện tại đơn để nói về thói quen.",
+      "kind": "LESSON",
+      "body": "I/you/we/they dùng động từ nguyên mẫu. He/she/it thường thêm -s hoặc -es. Dùng do/does để hỏi; don’t/doesn’t để phủ định, sau đó dùng động từ nguyên mẫu.\nShe works every day. — Cô ấy làm việc mỗi ngày.\nHe does not work on Sunday. — Anh ấy không làm việc vào Chủ nhật.",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "She ___ English every day.",
+          "options": [
+            "study",
+            "studies",
+            "studying"
+          ],
+          "answer": "studies",
+          "explanation": "She + studies; phụ âm + y chuyển thành -ies.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q2",
+          "prompt": "He does not ___ coffee.",
+          "options": [
+            "drinks",
+            "drink",
+            "drinking"
+          ],
+          "answer": "drink",
+          "explanation": "Sau does not dùng nguyên mẫu.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q3",
+          "prompt": "___ you work here?",
+          "options": [
+            "Do",
+            "Does",
+            "Are"
+          ],
+          "answer": "Do",
+          "explanation": "You đi với trợ động từ do.",
+          "type": "MULTIPLE_CHOICE"
+        }
+      ]
+    },
+    {
+      "code": "checkpoint-1",
+      "title": "Kiểm tra mốc 1",
+      "objective": "Tự trả lời câu hỏi mới, không dùng gợi ý; đây là đánh giá nội bộ, không phải chứng chỉ CEFR.",
+      "kind": "CHECKPOINT",
+      "body": "Hãy trả lời trước khi xem lại bài. Nếu có dùng gợi ý, đánh dấu ô hỗ trợ. Kết quả có hỗ trợ không được tính là đã đạt độc lập.",
+      "questions": [
+        {
+          "id": "c1",
+          "prompt": "My brother ___ a doctor.",
+          "options": [
+            "am",
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "explanation": "My brother là số ít.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "c2",
+          "prompt": "An là mạo từ phù hợp trước từ nào?",
+          "options": [
+            "hour",
+            "book",
+            "university"
+          ],
+          "answer": "hour",
+          "explanation": "Hour có âm đầu là nguyên âm, h không phát âm.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "c3",
+          "prompt": "Does she ___ here?",
+          "options": [
+            "works",
+            "work",
+            "working"
+          ],
+          "answer": "work",
+          "explanation": "Sau does dùng nguyên mẫu.",
+          "type": "MULTIPLE_CHOICE"
+        }
+      ]
+    },
+    {
+      "code": "questions",
+      "title": "Hỏi thông tin cơ bản",
+      "objective": "Phân biệt what, where, when và who.",
+      "kind": "LESSON",
+      "body": "What hỏi sự vật/hoạt động. Where hỏi nơi chốn. When hỏi thời điểm. Who hỏi người.\nWhere do you live? — Bạn sống ở đâu?\nWhen does the meeting start? — Cuộc họp bắt đầu khi nào?",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "___ do you live? — In Hanoi.",
+          "options": [
+            "Where",
+            "Who",
+            "When"
+          ],
+          "answer": "Where",
+          "explanation": "In Hanoi là địa điểm.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q2",
+          "prompt": "___ is your teacher? — Ms Lan.",
+          "options": [
+            "When",
+            "Who",
+            "Where"
+          ],
+          "answer": "Who",
+          "explanation": "Ms Lan là người.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q3",
+          "prompt": "___ does class start? — At nine.",
+          "options": [
+            "When",
+            "Where",
+            "Who"
+          ],
+          "answer": "When",
+          "explanation": "At nine là thời gian.",
+          "type": "MULTIPLE_CHOICE"
+        }
+      ]
+    },
+    {
+      "code": "time",
+      "title": "Giờ và lịch hẹn",
+      "objective": "Dùng giới từ thời gian at, on, in.",
+      "kind": "LESSON",
+      "body": "Dùng at với giờ: at 9 am. Dùng on với ngày/thứ: on Monday. Dùng in với tháng/năm: in May, in 2026.\nThe meeting is on Tuesday at ten. — Cuộc họp vào thứ Ba lúc mười giờ.",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "The lesson starts ___ 8 am.",
+          "options": [
+            "at",
+            "on",
+            "in"
+          ],
+          "answer": "at",
+          "explanation": "Giờ cụ thể dùng at.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q2",
+          "prompt": "We meet ___ Monday.",
+          "options": [
+            "in",
+            "at",
+            "on"
+          ],
+          "answer": "on",
+          "explanation": "Thứ trong tuần dùng on.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q3",
+          "prompt": "My birthday is ___ May.",
+          "options": [
+            "at",
+            "in",
+            "on"
+          ],
+          "answer": "in",
+          "explanation": "Tháng dùng in.",
+          "type": "MULTIPLE_CHOICE"
+        }
+      ]
+    },
+    {
+      "code": "can",
+      "title": "Khả năng và lời nhờ",
+      "objective": "Dùng can + động từ nguyên mẫu.",
+      "kind": "LESSON",
+      "body": "Can diễn tả khả năng hoặc lời nhờ. Sau can dùng nguyên mẫu không to. Không thêm -s sau he/she. Can you help me? — Bạn có thể giúp tôi không?\nShe can swim. — Cô ấy biết bơi.",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "She can ___ English.",
+          "options": [
+            "speaks",
+            "speak",
+            "to speak"
+          ],
+          "answer": "speak",
+          "explanation": "Can + nguyên mẫu không to.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q2",
+          "prompt": "Chọn lời nhờ lịch sự.",
+          "options": [
+            "Can you help me, please?",
+            "You helps me.",
+            "Can you to help?"
+          ],
+          "answer": "Can you help me, please?",
+          "explanation": "Can you …, please? là mẫu lời nhờ.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q3",
+          "prompt": "Phủ định của can là gì?",
+          "options": [
+            "cannot",
+            "does not can",
+            "can no"
+          ],
+          "answer": "cannot",
+          "explanation": "Cannot hoặc dạng rút gọn can’t.",
+          "type": "MULTIPLE_CHOICE"
+        }
+      ]
+    },
+    {
+      "code": "there",
+      "title": "Mô tả nơi chốn",
+      "objective": "Dùng there is/there are và giới từ vị trí.",
+      "kind": "LESSON",
+      "body": "There is + danh từ số ít. There are + danh từ số nhiều. On = trên bề mặt, in = bên trong, under = bên dưới.\nThere is a book on the table. — Có một quyển sách trên bàn.",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "There ___ two chairs.",
+          "options": [
+            "is",
+            "are",
+            "am"
+          ],
+          "answer": "are",
+          "explanation": "Two chairs là số nhiều.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q2",
+          "prompt": "There ___ a cafe here.",
+          "options": [
+            "is",
+            "are",
+            "be"
+          ],
+          "answer": "is",
+          "explanation": "A cafe là số ít.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q3",
+          "prompt": "The cat is under the table. Con mèo ở đâu?",
+          "options": [
+            "Dưới bàn",
+            "Trên bàn",
+            "Trong bàn"
+          ],
+          "answer": "Dưới bàn",
+          "explanation": "Under nghĩa là bên dưới.",
+          "type": "MULTIPLE_CHOICE"
+        }
+      ]
+    },
+    {
+      "code": "checkpoint-2",
+      "title": "Kiểm tra mốc 2",
+      "objective": "Tự trả lời câu hỏi mới, không dùng gợi ý; đây là đánh giá nội bộ, không phải chứng chỉ CEFR.",
+      "kind": "CHECKPOINT",
+      "body": "Hãy trả lời trước khi xem lại bài. Nếu có dùng gợi ý, đánh dấu ô hỗ trợ. Kết quả có hỗ trợ không được tính là đã đạt độc lập.",
+      "questions": [
+        {
+          "id": "c1",
+          "prompt": "The train leaves ___ Friday ___ 7 am.",
+          "options": [
+            "on / at",
+            "in / on",
+            "at / in"
+          ],
+          "answer": "on / at",
+          "explanation": "On + ngày, at + giờ.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "c2",
+          "prompt": "___ can I find a pharmacy?",
+          "options": [
+            "Where",
+            "Who",
+            "When"
+          ],
+          "answer": "Where",
+          "explanation": "Hỏi địa điểm dùng where.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "c3",
+          "prompt": "There ___ three people in the room.",
+          "options": [
+            "is",
+            "are",
+            "am"
+          ],
+          "answer": "are",
+          "explanation": "Three people là số nhiều.",
+          "type": "MULTIPLE_CHOICE"
+        }
+      ]
+    },
+    {
+      "code": "continuous",
+      "title": "Việc đang xảy ra",
+      "objective": "Dùng be + V-ing cho hành động lúc nói.",
+      "kind": "LESSON",
+      "body": "Hiện tại tiếp diễn: am/is/are + động từ -ing. Dùng cho hành động đang diễn ra. Phân biệt với thói quen ở hiện tại đơn.\nI am reading now. — Tôi đang đọc.\nI read every day. — Tôi đọc mỗi ngày.",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Look! She ___ a book.",
+          "options": [
+            "is reading",
+            "reads every day",
+            "read"
+          ],
+          "answer": "is reading",
+          "explanation": "Look! báo hiệu hành động đang diễn ra.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q2",
+          "prompt": "They ___ working now.",
+          "options": [
+            "is",
+            "am",
+            "are"
+          ],
+          "answer": "are",
+          "explanation": "They + are + V-ing.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q3",
+          "prompt": "Câu nào nói về thói quen?",
+          "options": [
+            "I walk to work every day.",
+            "I am walking now.",
+            "Look, I am walking!"
+          ],
+          "answer": "I walk to work every day.",
+          "explanation": "Every day thể hiện thói quen.",
+          "type": "MULTIPLE_CHOICE"
+        }
+      ]
+    },
+    {
+      "code": "past",
+      "title": "Kể chuyện đã qua",
+      "objective": "Nhận biết quá khứ đơn với mốc thời gian.",
+      "kind": "LESSON",
+      "body": "Dùng quá khứ đơn cho sự việc đã kết thúc. Động từ thường thêm -ed, một số bất quy tắc: go → went. Phủ định dùng did not + nguyên mẫu. Be có was/were.\nI worked yesterday. — Hôm qua tôi đã làm việc.\nWe went home. — Chúng tôi đã về nhà.",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Yesterday, I ___ to school.",
+          "options": [
+            "go",
+            "went",
+            "going"
+          ],
+          "answer": "went",
+          "explanation": "Quá khứ của go là went.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q2",
+          "prompt": "She did not ___ yesterday.",
+          "options": [
+            "worked",
+            "work",
+            "works"
+          ],
+          "answer": "work",
+          "explanation": "Sau did not dùng nguyên mẫu.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q3",
+          "prompt": "They ___ at home last night.",
+          "options": [
+            "was",
+            "were",
+            "is"
+          ],
+          "answer": "were",
+          "explanation": "They dùng were trong quá khứ.",
+          "type": "MULTIPLE_CHOICE"
+        }
+      ]
+    },
+    {
+      "code": "plans",
+      "title": "Nói về kế hoạch",
+      "objective": "Dùng be going to + nguyên mẫu.",
+      "kind": "LESSON",
+      "body": "Be going to + động từ nguyên mẫu diễn tả dự định. Chọn am/is/are theo chủ ngữ.\nI am going to study tonight. — Tôi định học tối nay.\nWhat are you going to do? — Bạn định làm gì?",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "I ___ going to study tonight.",
+          "options": [
+            "am",
+            "is",
+            "are"
+          ],
+          "answer": "am",
+          "explanation": "I dùng am.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q2",
+          "prompt": "She is going to ___ a book.",
+          "options": [
+            "reads",
+            "reading",
+            "read"
+          ],
+          "answer": "read",
+          "explanation": "Going to + nguyên mẫu.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q3",
+          "prompt": "Chọn câu hỏi đúng.",
+          "options": [
+            "Are you going to travel?",
+            "Do you going to travel?",
+            "You is going travel?"
+          ],
+          "answer": "Are you going to travel?",
+          "explanation": "Đảo are lên trước you.",
+          "type": "MULTIPLE_CHOICE"
+        }
+      ]
+    },
+    {
+      "code": "work-email",
+      "title": "Tin nhắn trong công việc",
+      "objective": "Hiểu lời nhờ và lời cảm ơn ngắn.",
+      "kind": "LESSON",
+      "body": "Could you send me the report, please? — Bạn có thể gửi cho tôi báo cáo không?\nThank you for your help. — Cảm ơn sự giúp đỡ của bạn.\nI look forward to hearing from you. — Tôi mong nhận được phản hồi từ bạn.\nSau look forward to dùng danh từ hoặc V-ing; to ở đây là giới từ.",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "I look forward to ___ from you.",
+          "options": [
+            "hear",
+            "hearing",
+            "heard"
+          ],
+          "answer": "hearing",
+          "explanation": "Look forward to + V-ing.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q2",
+          "prompt": "Chọn lời nhờ phù hợp email.",
+          "options": [
+            "Could you send me the report, please?",
+            "Report me now!",
+            "You sends report?"
+          ],
+          "answer": "Could you send me the report, please?",
+          "explanation": "Could you …, please? diễn đạt lời nhờ.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "q3",
+          "prompt": "Thank you ___ your help.",
+          "options": [
+            "for",
+            "to",
+            "at"
+          ],
+          "answer": "for",
+          "explanation": "Thank you for + danh từ hoặc V-ing.",
+          "type": "MULTIPLE_CHOICE"
+        }
+      ]
+    },
+    {
+      "code": "checkpoint-3",
+      "title": "Kiểm tra mốc 3",
+      "objective": "Tự trả lời câu hỏi mới, không dùng gợi ý; đây là đánh giá nội bộ, không phải chứng chỉ CEFR.",
+      "kind": "CHECKPOINT",
+      "body": "Hãy trả lời trước khi xem lại bài. Nếu có dùng gợi ý, đánh dấu ô hỗ trợ. Kết quả có hỗ trợ không được tính là đã đạt độc lập.",
+      "questions": [
+        {
+          "id": "c1",
+          "prompt": "Last week we ___ a new project.",
+          "options": [
+            "start",
+            "started",
+            "starting"
+          ],
+          "answer": "started",
+          "explanation": "Last week là thời gian đã kết thúc.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "c2",
+          "prompt": "Listen! Someone ___ at the door.",
+          "options": [
+            "is knocking",
+            "knocks yesterday",
+            "knock"
+          ],
+          "answer": "is knocking",
+          "explanation": "Hành động đang xảy ra: is knocking.",
+          "type": "MULTIPLE_CHOICE"
+        },
+        {
+          "id": "c3",
+          "prompt": "We are going to ___ tomorrow.",
+          "options": [
+            "meeting",
+            "meets",
+            "meet"
+          ],
+          "answer": "meet",
+          "explanation": "Going to + nguyên mẫu.",
+          "type": "MULTIPLE_CHOICE"
+        }
+      ]
+    },
+    {
+      "code": "application",
+      "title": "Vận dụng: giới thiệu và hẹn gặp",
+      "objective": "Viết 4–6 câu giới thiệu bản thân, thói quen và một lời hẹn.",
+      "kind": "APPLICATION",
+      "body": "Viết một email ngắn cho đồng nghiệp mới. Giới thiệu tên/công việc, một thói quen học và một lịch hẹn cụ thể.\nTự kiểm tra: có chủ ngữ và động từ; be đúng; giới từ ngày/giờ đúng; lời nhờ lịch sự. Bài viết được lưu làm bằng chứng thực hành; cần người duyệt để xác nhận năng lực.",
+      "questions": [
+        {
+          "id": "writing",
+          "prompt": "Viết email của bạn bằng tiếng Anh (4–6 câu).",
+          "type": "WRITING",
+          "options": [],
+          "answer": "Hi, I am Linh. I work in Hanoi. I study English every evening. Can we meet on Monday at 9 am? Thank you for your help.",
+          "explanation": "Đây chỉ là ví dụ tham khảo. Bài viết không tự chấm đạt; cần kiểm tra theo rubric: đúng ý, rõ nghĩa, cấu trúc cơ bản và cách dùng thời gian."
+        }
+      ]
+    }
+  ]
+}

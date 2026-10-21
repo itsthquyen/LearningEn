@@ -1,0 +1,21 @@
+# LearningEN API v1
+
+Base `/api/v1`. JSON camelCase, UUID identifiers, ISO-8601 timestamps in UTC. Cookie session (`HttpOnly`, SameSite=Lax), CSRF cookie `XSRF-TOKEN` mirrored in `X-XSRF-TOKEN` for mutations. Fetch `/auth/csrf` before login. Errors use RFC 9457 ProblemDetail (`status`, `detail`). No public registration. Lists return arrays; no invented client counts. Empty lists mean no data.
+
+- GET `/auth/csrf` → `{token,headerName}`; POST `/auth/login` `{email,password}` → profile; GET `/auth/me` → profile; POST `/auth/logout` → 204.
+- PATCH `/profile` `{displayName,dailyMinutes,timeZone,retainHistory}` → profile `{id,email,displayName,dailyMinutes,timeZone,retainHistory}`.
+- GET `/learning-items?q=` → `Item[]`; GET `/learning-items/{id}` → Item; POST `/learning-items` → 201 Item; PUT `/learning-items/{id}` → Item; DELETE → 204. Input `{expression,meaning,context,example,notes,tags,reviewEnabled}`; Item adds `{id,createdAt}`. Exact expression+meaning duplicates return 409 (different meanings allowed).
+- GET `/review-cards?due=true` → `{id,learningItemId,expression,meaning,context,example,dueAt,version}[]`. POST `/review-cards/{id}/reviews` `{requestId,rating:AGAIN|HARD|GOOD|EASY,version}` → updated card. Replay identical requestId returns same response; stale versions or mismatched reuse return 409.
+- POST `/assistant-requests` `{content,mode:AUTO|TRANSLATE|EXPLAIN|CORRECT,context,requestId,conversationId?}` → `{id,role,content,createdAt,conversationId}`. Same UUID+same payload replays retained response; no duplicate AI calls. Missing provider → 503, upstream failure → 502, budget exhausted → 429. AI is never mocked in normal runtime.
+- GET `/conversations?q=` → `{id,title,createdAt}[]`; POST `{title}` → 201; GET `/conversations/{id}/messages` → `{id,role,content,createdAt}[]`; POST messages takes assistant input; DELETE conversation → 204.
+- GET `/courses` → `{id,title,level,description,contentStatus,lessonCount,completedCount}[]`.
+- GET `/courses/{id}/lessons` → `{id,courseId,title,objective,position,kind,contentStatus,status,bestScore}[]`. status `NOT_STARTED|IN_PROGRESS|PRACTICED|PASSED`; kind `LESSON|CHECKPOINT|APPLICATION`; unreviewed content visibly labeled `DRAFT`.
+- GET `/lessons/{id}` → above + `{body,questions:[{id,prompt,options:[string],type:MULTIPLE_CHOICE|WRITING}],draftAnswers:object}`. Correct answers are server-only.
+- PUT `/lessons/{id}/draft` `{answers:{questionId:string}}` → lesson; no score/progress credit for opening/saving.
+- POST `/lessons/{id}/attempts` `{requestId,answers:{questionId:string},assisted:boolean}` → `{id,lessonId,score,passed,assisted,feedback:[{questionId,correct,expected,explanation}],createdAt}`. Server grading; writing gets feedback/reference, never automatic mastery. Repeat requestId must match payload.
+- POST `/study-sessions` `{requestId,plannedMinutes:5|20|30}` → `{id,plannedMinutes,activeSeconds,status,version}`. PUT `/study-sessions/{id}` `{activeSeconds,version,completed}` → session. Seconds are cumulative, bounded by wall time and 8h; frontend increments only while visible and active. GET `/study-sessions/current` → session or 204.
+- GET `/dashboard` → `{notebookCount,dueCount,reviewCount,retentionRate,dailyMinutes,weeklyActivity:[{date,reviews}],aiUsage:{requests,inputTokens,outputTokens,estimatedCost},completedLessons,activeMinutesToday,weeklyLearning:[{date,activeMinutes,attempts}],nextLesson}`. No listening/speaking score when unassessed.
+- GET `/data-export` → versioned backup with profile, learningItems, reviewCards, reviews, conversations, messages, lessonDrafts, lessonAttempts, studySessions and usage (no passwords/keys). POST `/data-import` accepts exported backup to restore into an empty personal workspace, transactionally, using current signed-in owner; 409 if workspace nonempty. Budgets are not reset by erase/import.
+- DELETE `/personal-data` → 204: clear learning, chat and study data, keep account and budget counters.
+
+Runtime configuration comes from environment. Default private mode uses PostgreSQL; dev profile uses persistent H2. AI provider is a configurable Chat Completions compatible endpoint, server credentials only. Course content is versioned JSON imported into DB, never arrays embedded in React. Content review and live AI qualification are separate acceptance tasks.
