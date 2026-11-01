@@ -541,6 +541,27 @@ Các nguồn được dùng để tham khảo nguyên tắc sản phẩm và t�
 
 Chỉ tick sau khi đã có mã nguồn và bằng chứng kiểm tra. Các công việc cần người dùng, provider, kiểm duyệt hoặc thời gian dùng thật giữ trạng thái chưa hoàn tất.
 
+### Luồng ảnh đề bài và trợ giảng chi tiết (Kilo, 21/10/2026)
+
+Phạm vi mới theo yêu cầu: tải nhiều ảnh câu hỏi tiếng Anh, đọc đề/đáp án, trả lời theo chế độ. AI phải nêu phần không đọc được/thiếu ngữ cảnh thay vì đoán chắc; kết quả AI không phải đáp án chuẩn đã kiểm duyệt. Kilo nhận các file assistant/backend AI và UI ảnh trong lượt này; AI song song giữ phần CI/PostgreSQL, tránh sửa chồng các file assistant. Không push/deploy trong lượt Kilo.
+
+- [x] IMG01: Hợp đồng multipart `/api/v1/assistant-requests`, cấu hình vision/capabilities, giới hạn ảnh và kế hoạch kiểm thử.
+- [x] IMG02: Backend xác thực session/CSRF, kiểm tra nội dung PNG/JPEG, dung lượng/kích thước, loại metadata; gửi ảnh thực tới provider có vision, không dùng model text-only âm thầm. Kiểm chứng bằng HTTP fixture; provider thật cần nghiệm thu riêng.
+- [x] IMG03: Các chế độ đáp án nhanh, phân tích từng lựa chọn, gợi ý không lộ đáp án, dịch, chép chữ và tạo bài luyện; kết quả có cấu trúc, thiếu dữ kiện phải nêu rõ, không khẳng định chính xác tuyệt đối. Bộ lọc gợi ý chặn lộ đáp án tường minh thường gặp, không cam kết phát hiện mọi cách ám chỉ ngữ nghĩa.
+- [x] IMG04: Giữ idempotency, hạn mức riêng ảnh/output chi tiết, lịch sử kết quả và hỏi tiếp; không lưu ảnh gốc trên server/backup, không log ảnh hay bí mật.
+- [x] IMG05: React chọn/kéo thả/dán ảnh clipboard, nhiều ảnh theo thứ tự, xem trước/phóng to/xóa; chọn chế độ, nhập câu hỏi/số câu cần giải/đáp án của mình, hiển thị kết quả từng câu và lưu từ vào sổ tay.
+- [x] IMG06: Unit/integration ảnh thật với HTTP provider test, ảnh giả/hỏng/quá lớn, quyền/CSRF, prompt/đáp án cấu trúc, retry/hạn mức/lịch sử/backup; frontend và E2E upload/preview/kết quả/lỗi.
+- [x] IMG07: Ghi lệnh/kết quả kiểm chứng, env mẫu, hướng dẫn vision, giới hạn độ chính xác và bước xác minh với provider thật.
+- [ ] IMG08 (nghiệm thu thực tế): Cấu hình credential/model vision thật, thử ảnh đề của người dùng ở nhiều mức rõ/mờ/xoay/nhiều câu; đối chiếu đáp án chuẩn và đo chi phí/độ trễ. Không đánh đồng HTTP fixture với độ chính xác AI thật.
+
+Nhật ký ảnh:
+- 21/10/2026 12:59 UTC: Bắt đầu khảo sát mã assistant và provider. Giữ nguyên API văn bản và các luồng cũ; thêm multipart cùng tài nguyên. Ảnh chỉ gửi trong yêu cầu hiện tại, không tự giữ ảnh gốc để tránh lưu dữ liệu nhạy cảm; lịch sử giữ phần nhận dạng và phân tích nếu người dùng bật lưu. Provider vision cần cấu hình rõ từ môi trường, chưa coi việc model của phiên chat không đọc ảnh là giới hạn của ứng dụng.
+- 21/10/2026 13:07 UTC: Đã thêm endpoint capabilities, multipart metadata+images, kiểm tra signature/decoder/pixel/bytes và mã hóa lại loại metadata trong RAM. AiService gửi multimodal image_url theo đúng thứ tự, vision model riêng, chế độ JSON và output budget riêng; fingerprint gồm ảnh chuẩn hóa + task + metadata; ảnh gốc/base64 không vào DB/backup. Prompt có 6 chế độ và quy tắc chống đoán khi thiếu đề. Kết quả bị cắt hoặc JSON sai bị từ chối 502. Backend regression cũ vẫn chạy thành công sau lần tích hợp đầu; đang bổ sung bộ test ảnh riêng và UI song song ở phạm vi tách biệt.
+- 21/10/2026 13:12 UTC: Frontend 60/60 tests đạt (22 test ảnh), production build đạt. E2E ảnh qua trình duyệt Edge + Vite + backend JAR thật + HTTP vision fixture đạt 1/1: upload PNG, zoom, multipart chỉ ảnh, ABCD 4 lựa chọn, tải lại lịch sử, lưu kiến thức vào sổ tay, gợi ý không hiện đáp án, 360/1440px không tràn ngang, export không có data:image. E2E cũ không provider cũng đạt 1/1. Đây là kiểm chứng giao thức/luồng, chưa chứng minh provider thật đọc/giải đúng. Đang chốt thêm test decoder/security/budget/JSON để tick IMG02-04/06.
+- 21/10/2026 13:17 UTC: Thêm 98 test ảnh backend (42 integration + 56 validation). Lần test đầu phát hiện HINT lộ đáp án trong text và trạng thái thiếu dữ kiện không có cảnh báo; đã bổ sung kiểm tra và regression. `rtk mvn test -q` toàn bộ thành công trên Java17: báo cáo Surefire có 124 test đạt (98 ảnh + 26 cũ), 1 PostgreSQL skipped vì local chưa có TEST_POSTGRES_URL. `rtk npm test` 60/60 và build đạt. Request ảnh lỗi upstream/JSON/timeout giữ khoản dự trù theo cơ chế cũ để không retry vượt chi phí; UI giữ ảnh và nội dung khi lỗi mạng. Không có provider credential thật nên chưa chấm độ đúng ABCD/OCR ngoài fixture.
+- 21/10/2026 13:21 UTC: Review độc lập phát hiện 4 rủi ro trước khi chốt: retry request FAILED dùng mã cũ bị 409; tắt lịch sử trong hội thoại cũ làm mất kết quả tạm trên UI; ảnh điện thoại mất chiều EXIF; fingerprint encoded bytes không tương ứng pixel. Đã sửa backend áp dụng 8 kiểu xoay/lật JPEG EXIF trước loại metadata, hash kích thước+ARGB thay vì encoded bytes. Thêm 12 regression (8 transform, 2 endian EXIF integration, 1 palette/RGB cùng pixel, 1 EXIF hỏng), `rtk mvn test -q` toàn bộ đạt; frontend đang bổ sung cách chủ động tạo request mới và merge kết quả tạm với lịch sử. Không coi review đã xong trước khi kiểm thử lại 2 lỗi frontend.
+- 21/10/2026 13:25 UTC (chốt luồng ảnh): Sau sửa review, backend **136 tests đạt**, 1 PostgreSQL test skipped local; frontend **64/64 đạt** (26 regression ảnh), production build đạt. E2E ảnh JAR cuối **1/1 đạt** trong 23.2s, thêm kiểm tra thực tế tắt history giữa hội thoại giữ lời giải không lưu DB và provider lỗi502 -> chủ động gửi yêu cầu mới giữ ảnh/nội dung thành công. E2E luồng cũ thiếu provider **1/1 đạt** trong 27.2s. `rtk git diff --check` đạt. Hướng dẫn, env và hợp đồng cập nhật trong README/docs/API/docs/TEST_REPORT. IMG01-07 hoàn tất kỹ thuật, IMG08 chưa nghiệm thu vì chưa có provider thật/ảnh đề đáp án chuẩn. Không cài provider giả trong runtime, không commit/push/deploy.
+
 - [x] P01 — Khảo sát mã hiện có và HR-V5; chốt Spring Boot + React JS, API tài nguyên /api/v1; hợp đồng tại docs/API.md.
 - [x] P02 — Chuẩn hóa cấu hình môi trường, migration và lớp controller/service/repository theo nghiệp vụ.
 - [x] P03 — Đăng nhập riêng, session/CSRF, profile và phân quyền hai tài khoản.
@@ -603,3 +624,375 @@ Nhật ký Kilo:
 - 21/10/2026 19:54 (Codex): Lượt chốt kiểm thử: 25 backend tests đã pass (có thêm 405/415/404), 1 PostgreSQL test skip local và được cấu hình chạy thật ở GitHub CI; 38 frontend tests pass (bao gồm verification độc lập), 2 E2E pass lần chạy cuối, build pass, npm audit 0 vulnerabilities. Các thay đổi bổ sung từ workspace chung đã được đọc và kiểm tra; không thay đổi D:/HR-V5. Chuẩn bị push main theo yêu cầu trực tiếp của chủ dự án.
 
 - 21/10/2026 20:00 (Codex): Đã push main commit 6725342 theo yêu cầu. CI Java17/PostgreSQL phát hiện StudyService ép kiểu OffsetDateTime trong khi driver PostgreSQL trả java.sql.Timestamp. Đã sửa tương thích cả hai driver, chuẩn bị push bản sửa và chạy lại CI. Lượt CI đầu có 26 test pass, 1 test PostgreSQL lỗi; không coi CI đạt trước khi lượt sửa hoàn tất.
+
+## 20. Roadmap chi tiết 31/10/2026 (đề xuất, chưa triển khai)
+
+**Trạng thái:** Kế hoạch đề xuất sau khi audit toàn bộ source, đọc ảnh E2E 360px/1440px và nghiên cứu 4 nhóm đối thủ. Chưa sửa code, chưa tạo migration, chưa cấu hình provider thật.
+**Mục tiêu 90 ngày:** từ MVP cá nhân → sản phẩm học hằng ngày cho người Việt đi làm, đủ điều kiện beta 10–20 người.
+**North Star Metric:** số người học hoàn thành trọn vòng **tra/ảnh → lưu → ôn → dùng lại (viết/nói)** mỗi tuần.
+**Liên kết checklist cũ:** P14 (AI thật) → P0-07; P15 (kiểm duyệt/dùng thật/beta) → P1A-06, P1B-04, P1B-05; P16 (PWA/offline/nhắc học/thương mại) → P2.
+
+### 20.1 Cơ sở nghiên cứu và kết luận
+
+- **Duolingo/Busuu/Babbel/Memrise:** giữ nhịp nhờ bài ngắn, “việc tiếp theo” rõ, phần thưởng tức thì; nhưng Energy/hearts, streak phạt, leaderboard và drill dịch bị người dùng phàn nàn. Không sao chép các cơ chế gây áp lực.
+- **Anki/Quizlet/LingQ/Readlang/Migaku/Language Reactor:** SRS và capture ngữ cảnh mạnh, nhưng tạo thẻ thủ công là điểm bỏ cuộc; hầu hết dừng ở nhận diện, chưa schedule production. Cơ hội: AI soạn thẻ từ ngữ cảnh + luyện dùng lại.
+- **ELSA/Speak/Praktika/Talkpal/Cambly/ChatGPT Voice:** nhu cầu nói là thật; real-time voice đã rẻ, nhưng chấm phát âm đến âm vị bằng transcript/LLM thường quá dễ tính và phản hồi nông. Làm hội thoại trước, read-aloud có caveat sau; không hứa “native-like”.
+- **Thị trường Việt:** EF EPI 2025 xếp Việt Nam 64/123, điểm nói 461 thấp hơn đọc 522; nhu cầu gắn với công việc/thi cử. eJOY mạnh video/extension, ELSA mạnh phát âm, Cake mạnh video ngắn, Monkey/Edupia hướng trẻ em, IOE thi trường. Chưa ai sở hữu trọn vòng “ảnh đề → giải thích tiếng Việt → sổ tay → ôn → nói lại”.
+- **Định vị đề xuất:** “Tiếng Anh cho người Việt đi làm, mất gốc A1–B1, học từ chính tài liệu/đề bài họ gặp”. Đào sâu A1 + gói công việc/IT, không trải A1–C2.
+- **Kết luận:** app hiện đủ dùng cho cá nhân ở tầng công cụ, chưa đủ cho người dùng phổ thông. Nút thắt là nội dung, sản xuất (nói/viết), onboarding, thói quen và mobile UX — không phải thiếu chatbot.
+
+### 20.2 Nguyên tắc triển khai
+
+1. API `/api/v1` chỉ thêm trường/endpoint, không phá hợp đồng cũ.
+2. Migration forward-only; thay đổi lớn có feature flag + rollback; backup trước deploy.
+3. Server là nguồn chấm điểm/quota/quyền sở hữu duy nhất; React không tự chấm, không tự cấp quyền.
+4. Không fixture/số liệu giả trong runtime; AI lỗi phải báo lỗi thật.
+5. Không gamification độc hại: không energy, không streak phạt, không leaderboard.
+6. Mỗi task chỉ tick khi có test + bằng chứng chạy thật; không tick theo suy đoán.
+7. Nội dung chỉ gắn `REVIEWED` khi có người duyệt; nếu chưa, giữ `DRAFT` và không quảng cáo.
+8. Không commit secret, không push/deploy nếu chưa được phép.
+
+### 20.3 Tổng quan phase
+
+| Phase | Thời lượng gợi ý | Mục tiêu | Gate |
+|---|---|---|---|
+| P0 — Nền tin cậy | 2 tuần, ~35–45h | Sửa UX chặn mobile, CTA thông minh, quota/lỗi AI, nghiệm thu provider thật | Gate 0: dùng được 7 ngày trên mobile; AI thật đã đo |
+| P1A — Cá nhân hóa & ôn tập | 3–4 tuần, ~80–110h | Placement, FSRS, ôn gõ đáp án/cloze, session composer, báo cáo tuần | Gate 1A: người mới biết bắt đầu; ôn tập có chiều sâu |
+| P1B — Sản xuất & nội dung | 4–5 tuần, ~90–120h | Photo-to-Mastery, lỗi Việt, production viết/nói, 2 gói nội dung có duyệt | Gate 1B: 5 người nội bộ hoàn thành vòng lặp đầy đủ |
+| P2 — Hào & vận hành | 8 tuần, ~120–160h | Reader, PWA/offline, nhắc học, beta invite, phát âm, role-play, thanh toán | Gate 2: retention + sẵn sàng thu tiền |
+
+Tổng: 17–21 tuần nếu làm 15–20h/tuần; 10–12 tuần nếu full-time 30–35h/tuần. Nội dung là đường găng, không phải code.
+
+### 20.4 PHASE 0 — Nền tin cậy (2 tuần)
+
+**Mục tiêu:** mobile dùng được thật, mở app biết làm gì, AI lỗi có cách xử lý, provider thật được đo. Không thêm tính năng học mới.
+
+#### P0-01 — Mobile shell & navigation — S (4–6h)
+- [ ] Thêm bottom navigation cho `<700px` với 5 mục: Hôm nay, Hỏi & Dịch, Sổ tay, Ôn tập, Tiến bộ; có `aria-current`, active state.
+- [ ] Đưa Cài đặt + Đăng xuất vào sheet/dialog ở header mobile; không phụ thuộc sidebar bottom đang bị ẩn.
+- [ ] StudyBar mobile thu gọn thành chip “Phiên học” trong header hoặc đặt dưới topbar, không chiếm first viewport.
+- [ ] Thêm `padding-bottom` cho content để bottom nav không che nội dung; kiểm tra 360/390/768/1440.
+- [ ] Sửa `aria-label` cho nút Cài đặt; thêm skip link nếu kịp.
+- **File:** `frontend/src/App.jsx`, `frontend/src/styles.css`, có thể tách `components/MobileNav.jsx`.
+- **API/DB:** Không.
+- **Test/acceptance:** Playwright 360px đủ 5 nav item, click từng route, mở settings, logout thành công; không `scrollWidth > clientWidth`; 1440px không đổi layout desktop; keyboard focus nhìn thấy; không nút icon thiếu tên.
+
+#### P0-02 — Hỏi & Dịch: composer lên trước, hủy được, lỗi tiếng Việt — M (6–8h)
+- [ ] Mobile: composer đứng trước, “Lịch sử” gập vào `<details>`/drawer; desktop giữ sidebar.
+- [ ] Thêm 3–4 chip ví dụ bấm được: “look forward to”, “I have been working…”, “Sửa email này giúp tôi”, “Giải thích thì hiện tại hoàn thành”.
+- [ ] Thêm `AbortController` + nút “Dừng chờ”; hiển thị số giây đã chờ; giữ request ID để retry cùng mã; không tự tạo request mới.
+- [ ] TTS: phát hiện tiếng Việt/Anh bằng heuristic dấu; `vi-VN` cho tiếng Việt, `en-US` cho tiếng Anh; vẫn ghi “Giọng tổng hợp”.
+- [ ] “Hội thoại mới” hỏi xác nhận nếu đang có draft; xóa draft sau khi xác nhận.
+- [ ] Lỗi 429/503/502 map sang tiếng Việt + hành động; chi tiết kỹ thuật trong expandable nhỏ.
+- **File:** `frontend/src/pages/Assistant.jsx`, `frontend/src/services/api.js`, `frontend/src/styles.css`, mới `services/errors.js`.
+- **API/DB:** Không bắt buộc; P0-06 thêm `code` cho lỗi.
+- **Test/acceptance:** 360×800 thấy textarea + nút gửi mà không cuộn qua lịch sử; chip điền nội dung và focus textarea; fixture delay + bấm hủy dừng trạng thái chờ, không tự gọi lại; không còn lỗi AI chỉ hiện tiếng Anh.
+
+#### P0-03 — Dashboard: một CTA đúng, next lesson, vòng mục tiêu — M (5–7h)
+- [ ] Tách hàm thuần `nextAction({dueCount,nextLesson,notebookCount})`:
+  - `dueCount > 0` → Ôn tập.
+  - `dueCount = 0 && nextLesson` → Học bài tiếp theo.
+  - `notebookCount = 0` → Hỏi & lưu điều đầu tiên.
+  - còn lại → Mở sổ tay/Đọc lại.
+- [ ] Render `nextLesson.title/objective` từ API (server đã tính trong `DashboardService`, UI đang bỏ qua).
+- [ ] Vòng mục tiêu ngày: `activeMinutesToday / profile.dailyMinutes`, cap 100%; text “12/15 phút hôm nay”.
+- [ ] “Tuần này: 3/5 ngày có học” từ `weeklyLearning`; không phạt, không “mất chuỗi”.
+- [ ] Giảm CTA trùng: hero 1 CTA chính; form hỏi là secondary; “Bước nhỏ tiếp theo” thành card phụ.
+- [ ] Lỗi dashboard có nút “Thử lại” dùng `reload` từ `useResource`.
+- **File:** `frontend/src/pages/Dashboard.jsx`, `frontend/src/styles.css`.
+- **API/DB:** Không; `nextLesson`, `activeMinutesToday`, `weeklyLearning` đã có.
+- **Test/acceptance:** unit test `nextAction` đủ 4 nhánh; E2E due=0 + nextLesson mở đúng bài; due>0 mở review; notebook trống mở assistant; vòng mục tiêu khớp số server, không hard-code.
+
+#### P0-04 — Ôn tập: phiên 20 thẻ, phím tắt, audio, empty state — M (6–8h)
+- [ ] Backend: `GET /api/v1/review-cards?due=true&limit=20`; `limit` mặc định 20, max 100; SQL `limit ?`.
+- [ ] Client: hiển thị “Thẻ 1/20”; hết phiên hiện recap “Đã ôn X thẻ, còn Y thẻ đến hạn”.
+- [ ] Phím tắt: Space xem đáp án; 1–4 chọn Quên/Khó/Nhớ/Dễ.
+- [ ] Nút nghe expression/example bằng SpeechSynthesis; nhãn “Giọng tổng hợp”.
+- [ ] Empty state: nếu không có thẻ due, CTA “Chọn bài tiếp theo” về `/progress`, không chỉ “Mở sổ tay”.
+- [ ] Giữ footnote “xem đáp án không tính là đã nhớ”; không undo rating ở P0 để tránh phá tính toàn vẹn SRS.
+- **File:** `frontend/src/pages/Reviews.jsx`, `backend/src/main/java/com/learningen/ReviewController.java`, `frontend/src/styles.css`.
+- **Test/acceptance:** integration test `limit` + owner; RTL keyboard; E2E 360px ôn 3 thẻ bằng phím, recap hiện; empty state không dead-end.
+
+#### P0-05 — Sổ tay: bật/tắt ôn một chạm, reset filter — S (3–4h)
+- [ ] Trên mỗi card, thêm toggle “Bật ôn”/“Tắt ôn”; gọi `PUT /learning-items/{id}` với đầy đủ field hiện có + `reviewEnabled`; optimistic update + rollback khi lỗi.
+- [ ] Empty state khi filter không có kết quả: nút “Đặt lại bộ lọc”.
+- [ ] Ghi chú nhỏ: “Bật ôn sẽ tạo thẻ đến hạn ngay”.
+- **File:** `frontend/src/pages/Notebook.jsx`, `frontend/src/features/notebook/ItemForm.jsx`.
+- **API/DB:** Không; dùng endpoint hiện có.
+- **Test/acceptance:** RTL toggle gọi API đúng payload; lỗi rollback; E2E toggle → sang Reviews thấy thẻ.
+
+#### P0-06 — Mã lỗi ổn định + quota AI hiển thị — M (6–8h)
+- [ ] Backend: thêm `code` vào ProblemDetail: `AI_BUDGET`, `AI_UPSTREAM`, `AI_NOT_CONFIGURED`, `AUTH_REQUIRED`, `CSRF`, `NOT_FOUND`, `CONFLICT`, `INVALID`, `TOO_LARGE`. Giữ `detail` cũ.
+- [ ] `DashboardService`: thêm object `aiQuota`:
+  `{date, requestsUsed, requestLimit, tokensUsed, tokenLimit, remainingRequests, remainingTokens, resetAt}`; đọc `ai_daily_budgets` ngày UTC + env limit.
+- [ ] Assistant hiển thị “Còn X lượt AI hôm nay”; nếu 0, disable gửi + giải thích reset UTC, vẫn dùng sổ tay/ôn.
+- [ ] `errors.js`: map code/status → tiếng Việt; `ErrorNotice` dùng `error.userMessage` nếu có.
+- [ ] Preferences hiển thị quota + link giải thích; sửa copy restore đang nói “thêm dữ liệu” trong khi backend chỉ nhận workspace trống.
+- **File:** `backend/src/main/java/com/learningen/ApiExceptionHandler.java`, `backend/src/main/java/com/learningen/data/DashboardService.java`, `frontend/src/services/api.js`, `frontend/src/components/Common.jsx`, `frontend/src/pages/Preferences.jsx`.
+- **API/DB:** Không migration; dashboard additive.
+- **Test/acceptance:** backend test `code`; dashboard quota đúng ngày UTC; frontend test mapping 429/503/502; E2E fixture 429 thấy thông báo tiếng Việt + hướng dẫn.
+
+#### P0-07 — Nghiệm thu provider AI thật (P14/IMG08) — M (4–6h + provider)
+- [ ] Chuẩn bị 60 case text (15 từ đa nghĩa, 15 câu dịch, 15 sửa câu, 15 ngữ pháp) + 20 ảnh đề thật (rõ/mờ/xoay/nhiều câu/thiếu dữ kiện).
+- [ ] Chạy với provider thật; ghi accuracy, latency, cost, lỗi; kiểm tra HINT/TRANSLATE không lộ đáp án, JSON cut-off, ảnh mờ → warning.
+- [ ] Đo token reservation thực tế; chỉnh `AI_DAILY_TOKENS`, `AI_VISION_MAX_OUTPUT_TOKENS`, `AI_VISION_TOKENS_PER_IMAGE`; nếu request 3 ảnh vẫn chiếm >50% trần ngày, đề xuất tách budget vision hoặc tăng trần.
+- [ ] Không commit credential; cập nhật README/docs/API/TEST_REPORT với số đo thật.
+- [ ] Nếu chưa có credential: giữ task `BLOCKED`, không đánh dấu P14 xong.
+- **File:** `README.md`, `docs/API.md`, `.env.example`, `backend/src/main/resources/application.properties`.
+- **Test/acceptance:** có bảng kết quả 60+20 case; ghi rõ case sai; cấu hình mẫu chạy được; không lộ key.
+
+#### P0-08 — Regression, E2E, ảnh chụp, nhật ký — S (4–5h)
+- [ ] Chạy `mvn verify`, `npm test`, `npm run build`, E2E 360/1440; `git diff --check`.
+- [ ] Chụp lại 5 màn mobile + desktop; lưu `work/e2e/`.
+- [ ] Cập nhật checklist/nhật ký trong file này sau khi có bằng chứng.
+- [ ] Không push/deploy nếu chưa được phép.
+- **Gate 0:** tất cả test xanh; mobile không tràn; AI thật đã đo; quota hiển thị; không còn lỗi P0.
+
+### 20.5 PHASE 1A — Cá nhân hóa & ôn tập (3–4 tuần)
+
+**Mục tiêu:** người mới biết bắt đầu ở đâu; ôn tập sâu hơn nhận diện; buổi học có cấu trúc.
+
+#### P1A-01 — Placement & onboarding — M–L (12–16h + 4h content)
+**Schema V5 — `V5__personalization_review.sql`:**
+- `accounts` thêm: `placement_level VARCHAR(20)`, `placement_score INTEGER`, `placement_completed_at TIMESTAMPTZ`, `onboarding_completed_at TIMESTAMPTZ`, `desired_retention DOUBLE PRECISION DEFAULT 0.9`, `weekly_goal_days INTEGER DEFAULT 5`.
+- Bảng `placement_attempts(id, owner_id, request_id, answers TEXT, score INT, level VARCHAR(20), response TEXT, created_at, UNIQUE(owner_id,request_id))`.
+
+**API:**
+- `GET /api/v1/placement` → 12–15 câu, không có đáp án.
+- `POST /api/v1/placement/attempts` `{requestId,answers}` → server chấm, idempotent, trả `{score, level, recommendation, completedAt}`.
+- `PATCH /profile` thêm `weeklyGoalDays` optional; giữ field cũ bắt buộc.
+
+**UX:** 3 bước sau login nếu chưa onboarding: mục tiêu (công việc/đọc/thi), thời gian (5/20/30), tự đánh giá → placement 10–15 câu → gợi ý bài bắt đầu. Luôn có “Bỏ qua, bắt đầu A1”; không khóa bài.
+**Content:** `placement.json` 15 câu được duyệt; không gọi là chứng chỉ CEFR.
+**Test:** scoring, idempotency, owner, không lộ đáp án, skip.
+**Acceptance:** hoàn thành/bỏ qua <3 phút; dashboard hiện bài gợi ý; không hard-gate.
+
+#### P1A-02 — FSRS (spike + migrate có rollback) — L (16–24h)
+- Spike 2 ngày chọn thư viện FSRS Java có license phù hợp; nếu không có, port FSRS-5 và đối chiếu **test vector chính thức** của fsrs4anki. Không tự viết công thức mới.
+- **Schema V5:** `review_cards` thêm `fsrs_stability`, `fsrs_difficulty`, `fsrs_state`, `fsrs_step`, `last_reviewed_at`, `lapses`; giữ cột SM-2 cũ để rollback/so sánh.
+- Interface `ReviewScheduler`; `Sm2Scheduler` và `FsrsScheduler` cùng implement.
+- Feature flag `app.review.scheduler=sm2|fsrs`; chạy shadow mode 1 tuần (tính FSRS nhưng vẫn dùng SM-2), so sánh interval; sau đó switch.
+- Migration dữ liệu cũ: map `repetitions/interval/ease` → stability/difficulty ban đầu; test H2 + PostgreSQL.
+- **Test:** test vector FSRS, monotonic interval, AGAIN→relearn, timezone, rollback flag.
+- **Acceptance:** không mất lịch sử; rollback được; retention stats hiển thị.
+
+#### P1A-03 — Ôn tập gõ đáp án/cloze + giới hạn thẻ mới — L (16–20h)
+- **Schema V5:** `reviews` thêm `mode VARCHAR(20) DEFAULT 'RECOGNITION'`, `answer_correct BOOLEAN`.
+- **API:**
+  - `GET /review-cards?due=true&limit=20&mode=...`.
+  - `POST /review-cards/{id}/reviews` thêm `{mode,answer?}`.
+  - Server chuẩn hóa answer (trim/lower/collapse spaces/bỏ punctuation), so với `expression` (TYPING) hoặc chỗ trống trong `context` (CLOZE). Sai → chỉ cho `AGAIN`; đúng → cho HARD/GOOD/EASY.
+  - Không trả đáp án trước khi nộp; sau khi nộp trả `expected`.
+- **UX:** chọn chế độ; ô nhập; cloze highlight; nghe audio; hiển thị “Đã đúng/Chưa đúng, thử lại”.
+- **Test:** normalization, wrong→AGAIN, idempotency, version conflict, không leak.
+- **Acceptance:** gõ/cloze hoạt động; sai không thể GOOD/EASY; giới hạn thẻ mới/ngày.
+
+#### P1A-04 — Session Composer + recap — L (14–18h)
+**Schema V6 — `V6__session_and_reports.sql`:**
+- `study_sessions` thêm `plan TEXT` (JSON các bước).
+- `reviews`, `lesson_attempts` thêm `study_session_id UUID NULL REFERENCES study_sessions(id) ON DELETE SET NULL`.
+
+**API:**
+- `POST /study-sessions` trả thêm `plan` (additive): 5 phút = ôn + 1 production; 20 phút = ôn 5’ + bài 7’ + production 5’ + recap 3’; 30 phút = ôn 8’ + bài 10’ + production 8’ + recap 4’.
+- `GET /study-sessions/{id}/summary` → thời gian, số review, bài làm, production, thẻ còn lại, next lesson.
+- Review/lesson attempt nhận `studySessionId` optional; server kiểm tra owner/active.
+**UX:** “Bắt đầu 20 phút” mở plan preview; stepper; pause; recap cuối phiên; dashboard hiển thị phiên đang dở.
+**Test:** plan 5/20/30, summary, owner, idempotency.
+**Acceptance:** một CTA tạo buổi có cấu trúc; recap có số thật; không còn đồng hồ rời.
+
+#### P1A-05 — Báo cáo tuần v1 — M (8–10h)
+- **API:** `GET /reports/weekly` → `{weekStart, reviews, retentionRate, lessons, activeMinutes, nextFocus, unassessed:[...]}`. Chưa có error tags.
+- **UX:** section trong `frontend/src/pages/Progress.jsx`; “Nghe/Nói: Chưa đánh giá” trung thực; CTA “Học 5 phút”.
+- **Test:** timezone, empty state, không bịa điểm.
+- **Acceptance:** số liệu DB-driven; kỹ năng chưa đo ghi rõ.
+
+#### P1A-06 — Content schema v2 + mở rộng A1 — L (10–14h dev + 20–30h content)
+- `CourseContentLoader` hỗ trợ nhiều file (`app.learning.content` comma-separated), metadata `author/reviewer/reviewedAt/source/license`.
+- Schema câu hỏi thêm `LISTENING`, `WRITING`, `SPEAKING_PROMPT`; listening dùng browser TTS ở P1 (ghi rõ “giọng tổng hợp”, không chống gian lận).
+- Mở A1 từ 16 → 30 bài; mỗi bài 3–5 MCQ + 1 listening + 1 writing/speaking prompt; 3 checkpoint + 2 application.
+- **Chỉ tick `REVIEWED` khi giáo viên duyệt**; nếu chưa, giữ `DRAFT` và không quảng cáo. Không đụng A2–C2.
+- **Test:** loader validation, answer key, unique IDs, không lộ đáp án trong detail, audio script không hiện trước khi trả lời.
+- **Acceptance:** 2 course load được; course reviewed không còn badge DRAFT; listening chạy.
+
+#### P1A-07 — Gate 1A
+- [ ] Chạy toàn bộ test + E2E placement → review → session → recap.
+- [ ] Đo activation: % tài khoản mới lưu trong phiên đầu; % quay lại review trong 48h.
+- [ ] Chỉ sang P1B khi content A1 đã có người duyệt và FSRS ổn định 1 tuần.
+
+### 20.6 PHASE 1B — Sản xuất & nội dung (4–5 tuần)
+
+**Mục tiêu:** đóng vòng lặp “hiểu → nhớ → dùng”; tạo lợi thế khó copy.
+
+#### P1B-01 — Photo-to-Mastery — L (24–32h)
+**Schema V7 — `V7__practice_errors_production.sql`:**
+- `practice_attempts(id, owner_id, source_message_id, request_id, answers TEXT, score INT, feedback TEXT, created_at, UNIQUE(owner_id,request_id))`.
+- `error_tags(code PRIMARY KEY, label_vi, category, description)` seed 30–50 tag.
+- `error_events(id, owner_id, source_type, source_id, tag_code, severity, context_excerpt, created_at)`.
+
+**API/prompt:**
+- Mở rộng JSON ảnh: mỗi question thêm `errorTags:[code]`; chỉ cho phép code trong taxonomy, validate ở `ImageTutor`.
+- `POST /assistant-requests/{id}/practice-attempts` chấm practice từ message đã lưu; nếu history off → UI self-check có nhãn rõ, không giả server grading.
+- `GET /error-tags` trả taxonomy.
+
+**UX:**
+- Hiện “AI đọc được gì” trước khi phân tích; hiển thị text OCR để người dùng kiểm tra.
+- Sau giải: “Luyện 5 câu tương tự” → từng câu → feedback → “Lưu 1–3 mục vào sổ tay”.
+- “Phiếu lỗi cuối phiên”: câu sai, tag, drill gợi ý.
+**Test:** fixture ảnh có practice/errorTags; grading; tag validation; history off; không lộ đáp án HINT/TRANSLATE.
+**Acceptance:** ảnh → luyện → lưu → thẻ due trong một luồng; tag lỗi hiện trong báo cáo.
+
+#### P1B-02 — Lỗi Việt + báo cáo tuần v2 — M (12–16h + 10h content)
+- Taxonomy 30–50 lỗi L1: phụ âm cuối /s,z,t,d,k,p/; cụm /str,skr/; /θ,ð/; v/w; -ed; plural -s; mạo từ; thì; giới từ; countability; “very like”, “I have 20 years old”, “discuss about”…
+- Mapping tag → drill ngắn (10–15 bài).
+- `GET /reports/weekly` thêm `topErrors:[{tag,count,trend,drillId}]`.
+- UI: “3 lỗi lặp lại tuần này” + CTA luyện 5 phút; tiến bộ theo tag.
+- Không gọi là chấm phát âm; chỉ là mẫu lỗi.
+
+#### P1B-03 — Production session (viết + nói Stage 1) — L (24–32h)
+**Schema V7:**
+- `production_tasks(id, owner_id, prompt_vi, target_item_ids TEXT, due_at, status, source, created_at)`.
+- `production_attempts(id, owner_id, task_id, request_id, text, transcript, feedback TEXT, audio_seconds, asr_model, created_at, UNIQUE(owner_id,request_id))`.
+- `production_attempts.study_session_id` nullable.
+
+**API:**
+- `GET /production-tasks?due=true`; `POST /production-tasks` chọn 4–6 thẻ due (server, không AI).
+- `POST /production-attempts` multipart `{taskId,requestId,text?,audio?}`:
+  - Text: kiểm tra độ dài; gọi AI rubric: dùng đúng target chưa, tự nhiên chưa, 1 lỗi quan trọng, 1 gợi ý; JSON validate.
+  - Audio: `SpeechService` (OpenAI-compatible `/audio/transcriptions`) → transcript; lưu transcript, **không lưu audio**; 60s/5MB; consent.
+  - Không cấu hình ASR → 503 cho audio, text vẫn chạy.
+- `GET /production-attempts/{id}`.
+
+**UX:** trang `/production`; chọn text hoặc ghi âm; nghe lại trước khi gửi (audio không upload nếu chưa đồng ý); hiện transcript, cho sửa và ghi rõ “đã sửa”; feedback + mẫu.
+**Test:** text, audio validation, ASR fixture, idempotency, budget, history off, không audio trong DB/export.
+**Acceptance:** 5 phút dùng 4–6 từ due; text chạy không cần ASR; nhãn trung thực “phản hồi độ rõ/ngữ pháp, không phải điểm accent”.
+
+#### P1B-04 — Gói nội dung công việc/IT + listening — L (12–16h dev + 30–40h content)
+- 20 bài A2/B1: email, Slack, standup, code review, meeting, phỏng vấn, CV, lương, small talk, tài liệu.
+- Mỗi bài: 3–5 MCQ + 1 listening + 1 writing + 1 speaking prompt + 3 review cards.
+- Listening dùng TTS trình duyệt, transcript ẩn sau khi trả lời; ghi rõ giọng tổng hợp.
+- Giáo viên duyệt trước khi `REVIEWED`.
+
+#### P1B-05 — Beta nội bộ
+- [ ] 5 người nội bộ dùng 2 tuần; tạo tài khoản thủ công (chưa mở đăng ký).
+- [ ] Theo dõi activation, core loop, lỗi, chi phí AI; phỏng vấn 20 phút/người.
+- **Gate 1B:** ≥3/5 người hoàn thành vòng lặp đầy đủ; không lỗi chặn; nội dung reviewed.
+
+### 20.7 PHASE 2 — Hào & vận hành (8 tuần)
+
+| Task | Nội dung | Acceptance |
+|---|---|---|
+| P2-01 Reader | Dán text/URL (ưu tiên text), tô màu chưa biết/đang học/đã biết, bấm từ → giải thích tiếng Việt, lưu câu + nguồn, i+1, TTS. Không host toàn văn; chỉ trích đoạn + link; bắt đầu public-domain/paste-only | Dán 300–1000 từ, lưu 3 mục; không fetch bừa; bản quyền an toàn |
+| P2-02 PWA/offline | Manifest, service worker, cache app shell + thẻ due; IndexedDB queue; sync idempotent; xóa local khi logout | Cài trên Android, ôn 10 thẻ offline, sync không mất dữ liệu |
+| P2-03 Nhắc học | Email/Zalo OA; opt-in, giờ/ngày, unsubscribe; scheduler timezone; không guilt | Tối đa 1 nhắc/ngày; tắt được; không trùng |
+| P2-04 Beta signup | Invite code + rate limit + email verification; quên mật khẩu; owner isolation | 10–20 người onboard không cần SQL tay; không abuse |
+| P2-05 Phát âm | Read-aloud + Azure Pronunciation Assessment; 2–3 âm, minimal pair; lưu score, không lưu audio; copy “ước lượng, không phải chứng chỉ” | Test-retest ổn; user xóa được; chi phí đo được |
+| P2-06 Role-play | 5–10 tình huống công việc/đời sống; text trước, voice sau; mục tiêu hội thoại; safety filter; cost cap | Hoàn thành scenario; feedback 2 lỗi; không lưu audio mặc định |
+| P2-07 Thanh toán | VietQR/MoMo/ZaloPay; plans 79k/tháng, 599k/năm (giả thuyết); free tier theo chi phí; trial 7 ngày; webhook ký/không replay | Sandbox pass; entitlement server-side; hủy 2 chạm |
+| P2-08 PDPL & tin cậy | Privacy notice tiếng Việt, consent AI/voice, export/delete, subprocessors, breach process; legal review | Trang privacy; xóa sạch dữ liệu mới; không secret trong export |
+
+**Gate 2:** D7 ≥ 25% (beta nhỏ, định hướng), core loop ≥ 40% weekly users, AI cost/active learner/ngày trong trần, 0 lỗi bảo mật nghiêm trọng. Chỉ mở bán khi có người quay lại tuần 2/4.
+
+### 20.8 Tổng hợp schema/API
+
+**Migrations đề xuất:**
+
+| Version | Nội dung | Phase |
+|---|---|---|
+| V5 | placement, FSRS fields, review mode, retention/weekly goal | P1A |
+| V6 | session plan + `study_session_id` links | P1A |
+| V7 | practice attempts, error tags/events, production tasks/attempts | P1B |
+| V8 | PWA/reminder/speech attempts | P2 |
+| V9 | invite codes, subscriptions, billing events, entitlements | P2 |
+
+**API mới (additive):**
+- P0: `GET /dashboard` + `aiQuota`; `GET /review-cards?limit=`; ProblemDetail `code`.
+- P1A: `GET/POST /placement`; `PATCH /profile` + `weeklyGoalDays`; `POST /review-cards/{id}/reviews` + `mode/answer`; `GET /study-sessions/{id}/summary`; `GET /reports/weekly`; `GET /features`.
+- P1B: `POST /assistant-requests/{id}/practice-attempts`; `GET /error-tags`; `GET/POST /production-tasks`; `POST /production-attempts`; `GET /assistant-capabilities` + `speechEnabled`.
+- P2: `/reader/lookups`, `/speech/assessments`, `/roleplay/sessions`, `/billing/*`, `/auth/register` hoặc `/auth/invite`.
+
+Không đổi endpoint hiện có theo cách phá vỡ; field mới optional.
+
+### 20.9 Kiểm thử & bằng chứng
+
+| Lớp | Nội dung | Bằng chứng |
+|---|---|---|
+| Unit | `nextAction`, error mapping, FSRS vectors, placement scoring, tag validation, session plan | Surefire/Vitest report |
+| Integration | Auth/CSRF, owner, idempotency, quota, limit, migrations H2 + PostgreSQL | `mvn verify`, CI Postgres |
+| Frontend | RTL cho nav/chips/review keyboard/toggle/quota | `npm test` |
+| E2E | 360/1440: login → dashboard → assistant → photo fixture → save → review → placement → session recap → production text | Playwright screenshots + JSON result |
+| AI provider | 60 text + 20 ảnh; accuracy/latency/cost; HINT leak; cut-off | `docs/TEST_REPORT.md` |
+| Accessibility | Keyboard, focus, aria, contrast, skip link | Checklist + axe nếu thêm |
+| Security | CSRF, owner, upload, rate limit, no secrets | Test + review |
+
+**Definition of Done mỗi task:** code + test + API docs + env mẫu + screenshot (UI) + owner isolation + không secret + cập nhật nhật ký. Không tick nếu chưa chạy.
+
+### 20.10 Timeline & nguồn lực
+
+| Tuần | Việc chính | Gate |
+|---|---|---|
+| 1 | P0-01, P0-02, P0-03 | — |
+| 2 | P0-04 → P0-08; đo AI thật | Gate 0 |
+| 3–5 | P1A-01 → P1A-05 | — |
+| 6–7 | P1A-06 content + review; Gate 1A | Gate 1A |
+| 8–11 | P1B-01 → P1B-03 | — |
+| 12–13 | P1B-04, P1B-05 | Gate 1B |
+| 14–21 | P2-01 → P2-08 | Gate 2 |
+
+**Effort:** P0 35–45h; P1A 80–110h + 25–35h content; P1B 90–120h + 40–50h content; P2 120–160h. Tổng ~325–435h dev + 65–85h content. Với 20h/tuần: 18–22 tuần. Với 35h/tuần: 11–14 tuần.
+**Đường găng:** giáo viên duyệt nội dung + provider AI thật. Code có thể song song, nhưng không thể thay hai việc này.
+
+### 20.11 Metrics cần đo
+
+- **Activation:** % tài khoản mới lưu ít nhất 1 mục trong phiên đầu; % review trong 48h.
+- **Core loop:** % weekly users có ≥1 lưu + ≥1 review (P1B thêm ≥1 production).
+- **Retention:** D1/D7/D30; số ngày có học/tuần; không dùng streak phạt.
+- **Learning:** retention tự đánh giá; lỗi lặp lại giảm; % production dùng đúng target.
+- **AI:** cost/active learner/ngày; p95 latency; 429 rate; % ảnh cần chụp lại.
+- **Content:** completion, pass rate, listening completion; tỷ lệ câu bị báo sai.
+- **Business (P2):** trial→paid, churn, ARPU, refund.
+
+Có thể query từ `learning_items`, `reviews`, `lesson_attempts`, `study_sessions`, `ai_requests`, `production_attempts`; chưa cần thêm tracking phức tạp.
+
+### 20.12 Rủi ro & rollback
+
+| Rủi ro | Giảm thiểu | Rollback |
+|---|---|---|
+| Nội dung mỏng/không duyệt kịp | Tuyển reviewer từ tuần 1; AI draft + người sửa; chỉ REVIEWED khi ký | Giữ DRAFT, không quảng cáo |
+| FSRS sai/migration lỗi | Spike + test vector + shadow mode 1 tuần | Flag `scheduler=sm2`; giữ cột cũ |
+| AI provider sai/đắt | Bộ 60+20 case; quota; cache; model rẻ cho tra nhanh | Tắt vision/ASR bằng env; text vẫn chạy |
+| Voice riêng tư/accuracy | Chỉ transcript; consent; Azure read-aloud; không claim phoneme | Tắt `features.voice` |
+| Bản quyền reader | Paste-only, trích đoạn + link, public domain | Tắt reader |
+| Public signup abuse | Invite code + rate limit + email verify | Đóng invite |
+| Scope creep | Gate + “không làm” list | Cắt P2 |
+| Mất dữ liệu | Migration additive + backup trước deploy + test restore | Restore backup, flag off |
+
+**Không làm trong 90 ngày:** leaderboard/energy/streak phạt; A1–C2 tổng quát; app native; social/marketplace; host PDF/phụ đề; chấm âm vị bằng LLM transcript; chứng chỉ CEFR; bán gói “không giới hạn”.
+
+### 20.13 Việc cần chốt trước khi triển khai
+
+1. **Niche nội dung:** đề xuất A1 nền tảng + gói “công việc/IT” (email, meeting, standup, phỏng vấn). Hay nhắm chung A1?
+2. **Người duyệt nội dung:** ai duyệt 50–70 bài? Có sẵn giáo viên chưa? Đây là đường găng.
+3. **Provider AI:** model text/vision nào? Có credential chưa? ASR/TTS dùng provider nào?
+4. **Voice:** đề xuất Stage 1 (ghi âm → transcript → feedback ngữ pháp/độ rõ) ở P1B; phát âm chuyên sâu ở P2. Đồng ý không?
+5. **Beta:** invite-only 10–20 người ở P2, hay mở đăng ký sớm hơn?
+6. **Thời gian:** làm được bao nhiêu giờ/tuần để chốt timeline thật?
+7. **Lưu plan:** roadmap này đã ghi trong file; có cần tách thành `docs/ROADMAP.md` riêng để dễ theo dõi không?
+
+### 20.14 Nhật ký roadmap
+
+- 31/10/2026: Audit toàn bộ source, đọc ảnh E2E 360px/1440px, đếm nội dung JSON (16 mục, 46 câu, 45 MCQ + 1 writing, toàn khóa DRAFT), nghiên cứu 4 nhóm đối thủ (Duolingo/Busuu/Babbel/Memrise; Anki/Quizlet/LingQ/Readlang/Migaku/Language Reactor; ELSA/Speak/Praktika/Talkpal/Cambly; eJOY/Cake/Monkey/Edupia/IOE + thanh toán/Zalo/PDPL). Lập roadmap P0/P1A/P1B/P2. Chưa sửa code, chưa migration, chưa cấu hình provider thật. Đề xuất bắt đầu P0 trong 2 tuần; P0-07 cần credential provider.
+- 31/10/2026: Chưa tick task nào; chờ chủ dự án duyệt P0 và chốt các mục 20.13.
+
+## 21. Bộ đề B1 từ PDF do người dùng cung cấp (01/11/2026)
+
+Theo yêu cầu mới, tạm gác roadmap mục 20; thực hiện màn bộ đề riêng, không giới hạn thời gian. Phần nghe để người học tự nghe ngoài và chọn, không cung cấp đáp án nghe. Nội dung scan bị thiếu hoặc che được đánh dấu thay vì suy đoán.
+
+- [x] B101 — Kiểm kê PDF 90 trang, tham khảo nhiều agent; người dùng xác nhận đánh dấu các câu thiếu thay vì tự tạo nội dung.
+- [x] B102 — Biên soạn câu đọc, viết và nói kèm đáp án hoặc bài mẫu, giải thích và bản dịch; ghi chú các câu nguồn thiếu/mơ hồ. Nội dung được đối chiếu một phần, chưa được giáo viên thẩm định toàn bộ.
+- [x] B103 — Trích hình phần nghe và hình thông báo; hoàn thiện màn làm đề riêng và API.
+- [x] B104 — Kiểm thử server, giao diện desktop/mobile và kiểm kê số mục; ghi rõ giới hạn chất lượng và các câu nguồn không đọc được.
+- [x] B105 — Theo xác nhận của người dùng, tự lưu bài làm theo tài khoản lên máy chủ; hỗ trợ xuất/khôi phục/xóa, kiểm thử cách ly tài khoản và tiếp tục sau tải lại.
+
+Nhật ký:
+- 01/11/2026: Đã render 90 trang PDF scan, nhận dạng OCR để hỗ trợ, chia việc biên soạn và đối chiếu độc lập. Người dùng chọn đánh dấu thiếu các câu không thấy hoặc bị che. Màn bộ đề gồm 614 mục, trong đó có 195 câu nghe, các câu thiếu được giữ trạng thái không khả dụng; có 72 ảnh. Các lời giải được đối chiếu một phần, chưa được giáo viên thẩm định toàn bộ; audio do người học tự cung cấp.
+- 01/11/2026: Theo xác nhận của người dùng, đã thêm migration V5 và tự lưu bài B1 theo tài khoản, kiểm tra version, hỗ trợ xuất/khôi phục/xóa. Backend 141 test thực thi đạt, 1 test PostgreSQL skipped; frontend 67/67 đạt, build đạt; E2E Edge 360px và 1440px xác nhận làm đề, xem đáp án, chọn nghe và tải lại giữ bài. PostgreSQL và đồng thời thực tế chưa kiểm chứng tại máy này.
