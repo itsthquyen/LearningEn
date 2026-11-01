@@ -3,12 +3,14 @@ import { defineConfig } from '@playwright/test';
 
 const backendPort = Number(process.env.VERIFY_BACKEND_PORT || 15180);
 const frontendPort = Number(process.env.VERIFY_FRONTEND_PORT || 15173);
+const imageRun = process.env.VERIFY_IMAGE_FLOW === 'true';
+const providerPort = Number(process.env.VERIFY_PROVIDER_PORT || 15181);
 process.env.VERIFY_EMAIL ||= `${randomUUID()}@example.com`;
 process.env.VERIFY_PASSWORD ||= randomUUID();
 
 export default defineConfig({
   testDir: './verification/e2e',
-  testMatch: '**/*.pw.js',
+  testMatch: imageRun ? '**/images.pw.js' : '**/runtime.pw.js',
   workers: 1,
   timeout: 60000,
   reporter: 'list',
@@ -21,6 +23,13 @@ export default defineConfig({
     trace: 'retain-on-failure',
   },
   webServer: [
+    ...(imageRun ? [{
+      command: 'rtk proxy node verification/image-provider.mjs',
+      url: `http://127.0.0.1:${providerPort}/health`,
+      timeout: 20000,
+      reuseExistingServer: false,
+      env: { VERIFY_PROVIDER_PORT: String(providerPort) },
+    }] : []),
     {
       command: 'rtk proxy java -jar target/learningen-backend-0.0.1-SNAPSHOT.jar',
       cwd: '../backend',
@@ -37,9 +46,11 @@ export default defineConfig({
         BOOTSTRAP_PASSWORD: process.env.VERIFY_PASSWORD,
         COOKIE_SECURE: 'false',
         CORS_ORIGINS: `http://127.0.0.1:${frontendPort}`,
-        AI_BASE_URL: '',
-        AI_API_KEY: '',
+        AI_BASE_URL: imageRun ? `http://127.0.0.1:${providerPort}/v1` : '',
+        AI_API_KEY: imageRun ? 'isolated-image-test-only' : '',
         AI_MODEL: '',
+        AI_VISION_ENABLED: String(imageRun),
+        AI_VISION_MODEL: imageRun ? 'isolated-vision-protocol-fixture' : '',
       },
     },
     {

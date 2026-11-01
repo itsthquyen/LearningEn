@@ -15,7 +15,8 @@ function csrfToken() {
 
 export async function api(path, { method = 'GET', body, signal } = {}) {
   const headers = { Accept: 'application/json' };
-  if (body !== undefined) headers['Content-Type'] = 'application/json';
+  const multipart = body instanceof FormData;
+  if (body !== undefined && !multipart) headers['Content-Type'] = 'application/json';
   if (!['GET', 'HEAD', 'OPTIONS'].includes(method)) {
     if (!csrfToken()) await api('/auth/csrf');
     headers['X-XSRF-TOKEN'] = csrfToken();
@@ -23,7 +24,7 @@ export async function api(path, { method = 'GET', body, signal } = {}) {
   let response;
   try {
     response = await fetch(`${baseUrl}${path}`, {
-      method, headers, credentials: 'include', body: body === undefined ? undefined : JSON.stringify(body), signal,
+      method, headers, credentials: 'include', body: body === undefined ? undefined : multipart ? body : JSON.stringify(body), signal,
     });
   } catch (error) {
     if (error.name === 'AbortError') throw error;

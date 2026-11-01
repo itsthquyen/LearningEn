@@ -15,6 +15,8 @@ public class ApiExceptionHandler {
     ProblemDetail invalid(Exception e) { return ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, "Invalid request fields or values"); }
     @ExceptionHandler(org.springframework.dao.DataIntegrityViolationException.class)
     ProblemDetail conflict(Exception e) { return ProblemDetail.forStatusAndDetail(HttpStatus.CONFLICT,"Conflicting resource or invalid backup relationships"); }
+    @ExceptionHandler(org.springframework.web.multipart.MaxUploadSizeExceededException.class)
+    ProblemDetail upload(Exception e) { return ProblemDetail.forStatusAndDetail(HttpStatus.PAYLOAD_TOO_LARGE,"Image upload exceeds the server request limit; resize images or send fewer images"); }
     @ExceptionHandler(Exception.class)
     ProblemDetail unexpected(Exception e, HttpServletRequest request) {
         if(e instanceof org.springframework.web.ErrorResponse response) return response.getBody();
