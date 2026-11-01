@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { NavLink, Navigate, Route, Routes, useNavigate } from 'react-router-dom';
+import { NavLink, Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { ArrowUpRight, BookOpen, ChartNoAxesCombined, CircleHelp, Home, LogOut, MessageSquareText, RotateCcw, Settings, ShieldCheck, Sprout } from 'lucide-react';
 import { api } from './services/api';
 import { Brand, ErrorNotice, Loading } from './components/Common';
@@ -10,6 +10,7 @@ import Reviews from './pages/Reviews';
 import Progress from './pages/Progress';
 import Preferences from './pages/Preferences';
 import Lesson from './pages/Lesson';
+import B1Exam from './pages/B1Exam';
 import StudyBar from './features/study/StudyBar';
 
 const navigation = [
@@ -18,6 +19,7 @@ const navigation = [
   { to: '/notebook', label: 'Sổ tay của tôi', icon: BookOpen },
   { to: '/reviews', label: 'Ôn tập', icon: RotateCcw },
   { to: '/progress', label: 'Lộ trình & Tiến bộ', icon: ChartNoAxesCombined },
+  { to: '/b1-exam', label: 'Bộ đề B1', icon: BookOpen },
 ];
 
 function Login({ onLogin }) {
@@ -41,6 +43,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [initialError, setInitialError] = useState(null);
   const navigate = useNavigate();
+  const location = useLocation();
   useEffect(() => {
     let active = true;
     api('/auth/me').then((data) => { if (active) setProfile(data); }).catch((error) => { if (active && error.status !== 401) setInitialError(error); }).finally(() => { if (active) setLoading(false); });
@@ -54,5 +57,5 @@ export default function App() {
   }
   if (loading) return <Loading text="Đang mở góc học của bạn…" />;
   if (!profile) return <><ErrorNotice error={initialError} /><Login onLogin={setProfile} /></>;
-  return <div className="app-layout"><aside className="sidebar"><Brand /><div className="nav-label">GÓC HỌC TẬP</div><nav aria-label="Điều hướng chính">{navigation.map(({ to, label, icon: Icon }) => <NavLink end={to === '/'} key={to} to={to} className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}><Icon size={20} /><span>{label}</span></NavLink>)}</nav><div className="sidebar-bottom"><div className="sidebar-note"><Sprout size={25} /><strong>Chậm mà chắc.</strong><p>Không cần hoàn hảo.<br />Chỉ cần tiếp tục.</p></div><NavLink className="nav-item" to="/settings"><Settings size={19} /><span>Cài đặt & Dữ liệu</span></NavLink><button className="nav-item logout" onClick={logout}><LogOut size={18} /><span>Đăng xuất</span></button></div></aside><div className="main-layout"><header className="topbar"><span className="topbar-label">Không gian học tập của bạn</span><div className="topbar-right"><span className="private-badge"><ShieldCheck size={15} />Riêng tư & cá nhân</span><NavLink to="/settings" className="profile-link"><span className="avatar">{(profile.displayName || profile.email || 'L').slice(0, 1).toUpperCase()}</span><span>{profile.displayName || profile.email}</span></NavLink></div></header><main className="content"><StudyBar /><Routes><Route path="/" element={<Dashboard profile={profile} />} /><Route path="/assistant" element={<Assistant />} /><Route path="/notebook" element={<Notebook />} /><Route path="/reviews" element={<Reviews />} /><Route path="/progress" element={<Progress />} /><Route path="/lessons/:id" element={<Lesson />} /><Route path="/settings" element={<Preferences profile={profile} onUpdate={setProfile} />} /><Route path="*" element={<Navigate to="/" replace />} /></Routes><footer className="page-footer"><span>LearningEN · Học theo nhịp của bạn</span><span><CircleHelp size={14} />Hiểu thật. Nhớ lâu. Dùng được.</span></footer></main></div></div>;
+  return <div className="app-layout"><aside className="sidebar"><Brand /><div className="nav-label">GÓC HỌC TẬP</div><nav aria-label="Điều hướng chính">{navigation.map(({ to, label, icon: Icon }) => <NavLink end={to === '/'} key={to} to={to} className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}><Icon size={20} /><span>{label}</span></NavLink>)}</nav><div className="sidebar-bottom"><div className="sidebar-note"><Sprout size={25} /><strong>Chậm mà chắc.</strong><p>Không cần hoàn hảo.<br />Chỉ cần tiếp tục.</p></div><NavLink className="nav-item" to="/settings"><Settings size={19} /><span>Cài đặt & Dữ liệu</span></NavLink><button className="nav-item logout" onClick={logout}><LogOut size={18} /><span>Đăng xuất</span></button></div></aside><div className="main-layout"><header className="topbar"><span className="topbar-label">Không gian học tập của bạn</span><div className="topbar-right"><span className="private-badge"><ShieldCheck size={15} />Riêng tư & cá nhân</span><NavLink to="/settings" className="profile-link"><span className="avatar">{(profile.displayName || profile.email || 'L').slice(0, 1).toUpperCase()}</span><span>{profile.displayName || profile.email}</span></NavLink></div></header><main className="content"><div hidden={location.pathname === '/b1-exam'}><StudyBar /></div><Routes><Route path="/" element={<Dashboard profile={profile} />} /><Route path="/assistant" element={<Assistant />} /><Route path="/notebook" element={<Notebook />} /><Route path="/reviews" element={<Reviews />} /><Route path="/progress" element={<Progress />} /><Route path="/lessons/:id" element={<Lesson />} /><Route path="/b1-exam" element={<B1Exam />} /><Route path="/settings" element={<Preferences profile={profile} onUpdate={setProfile} />} /><Route path="*" element={<Navigate to="/" replace />} /></Routes><footer className="page-footer"><span>LearningEN · Học theo nhịp của bạn</span><span><CircleHelp size={14} />Hiểu thật. Nhớ lâu. Dùng được.</span></footer></main></div></div>;
 }

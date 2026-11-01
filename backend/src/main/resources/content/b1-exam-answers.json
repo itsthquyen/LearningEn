@@ -1,0 +1,2456 @@
+{
+  "sample-reading-01": {
+    "answer": "C",
+    "explanation": "Was reading là quá khứ tiếp diễn, diễn tả việc đang đọc trong quá khứ; went out là quá khứ đơn, diễn tả sự việc bất ngờ xảy ra xen vào. Go out dùng cho đèn nghĩa là tắt. Các phương án dùng were going không phù hợp với sự cố đột ngột; A không thể hiện rõ hành động đang diễn ra.",
+    "translation": "Cô ấy đang đọc sách yên lặng trong phòng thì đột nhiên đèn tắt. Đáp án C: was reading/went = đang đọc/đã tắt.",
+    "kind": "answer"
+  },
+  "sample-reading-02": {
+    "answer": "A",
+    "explanation": "Will lend là cách tự nhiên nhất để đưa ra lời đề nghị giúp đỡ ngay khi vừa nghe người kia nói thiếu tiền. Am going to lend thường gợi ý định đã có trước; am lending thường nói về sự sắp xếp đã định. Lend ở hiện tại đơn không phù hợp với lời đề nghị tức thời này. Dấu khoanh C trong bản scan không phải đáp án tốt nhất.",
+    "translation": "‘Tôi không có đủ tiền trả tiền vé.’ – ‘Không sao. Tôi sẽ cho bạn mượn một ít.’ Đáp án A: will lend = sẽ cho mượn.",
+    "kind": "answer"
+  },
+  "sample-reading-03": {
+    "answer": "D",
+    "explanation": "Trật tự tính từ thông thường đặt đặc điểm tình trạng dirty trước tuổi old, rồi đến chất liệu cotton, sát danh từ T-shirts: dirty old cotton T-shirts. Các phương án khác sắp xếp những tính từ này kém tự nhiên.",
+    "translation": "Bố tôi luôn vứt những chiếc áo phông cotton cũ bẩn của tôi đi mà không hỏi tôi trước. Đáp án D: dirty old cotton = bẩn, cũ, bằng cotton.",
+    "kind": "answer"
+  },
+  "sample-reading-04": {
+    "answer": "D",
+    "explanation": "Get a bad grade nghĩa là bị điểm kém, phù hợp với lời động viên đừng lo và lần sau sẽ làm tốt hơn. Đi học, đi tham quan cùng trường hay vượt qua kỳ thi không hợp với ngữ cảnh an ủi này.",
+    "translation": "Đừng lo nếu bạn bị điểm kém — lần sau bạn sẽ làm tốt hơn. Đáp án D: get a bad grade = bị điểm kém.",
+    "kind": "answer"
+  },
+  "sample-reading-05": {
+    "answer": "A",
+    "explanation": "Being defeated là dạng bị động sau mind, nghĩa là bị đánh bại. Điều này hợp với vế nói đội kia xứng đáng chiến thắng. Scored thường nói về việc ghi điểm; failed không diễn đạt tự nhiên việc bị một đội đánh bại; won không dùng theo cách này để nói một người bị đánh bại.",
+    "translation": "Tôi không ngại bị đánh bại nếu tôi cảm thấy đội kia xứng đáng chiến thắng. Đáp án A: defeated = bị đánh bại.",
+    "kind": "answer"
+  },
+  "sample-reading-06": {
+    "answer": "A",
+    "explanation": "Changing room là phòng thay đồ hoặc phòng thử đồ, nơi khách hàng thử quần áo trong cửa hàng. Café là quán cà phê, market là chợ và department store là cửa hàng bách hóa, không phải khu vực thử đồ được hỏi.",
+    "translation": "Khách hàng được yêu cầu thử quần áo trong phòng thử đồ của cửa hàng. Đáp án A: changing room = phòng thử đồ.",
+    "kind": "answer"
+  },
+  "sample-reading-07": {
+    "answer": "D",
+    "explanation": "On the coast nghĩa là ở ven biển, nên việc đến bãi biển dễ dàng là hợp lý nhất. In the city, in the countryside và in the mountains không tự chúng cho biết nhà ở gần biển.",
+    "translation": "Nhà nghỉ của Jenna ở ven biển, vì vậy rất dễ đi đến bãi biển. Đáp án D: on the coast = ở ven biển.",
+    "kind": "answer"
+  },
+  "sample-reading-08": {
+    "answer": "C",
+    "explanation": "Make up one's mind là thành ngữ nghĩa là quyết định. Sau can't dùng động từ nguyên mẫu make: can't make up my mind. Have, do và go không tạo thành thành ngữ này.",
+    "translation": "Tôi vẫn không thể quyết định mua chiếc áo phông nào — xanh dương hay xanh lá? Đáp án C: make, trong make up my mind = quyết định.",
+    "kind": "answer"
+  },
+  "sample-reading-09": {
+    "answer": "B",
+    "explanation": "Go down nghĩa là giảm: số người xem truyền hình giảm, phù hợp nhất với ngữ cảnh mọi người dành nhiều thời gian hơn trên mạng. Go up là tăng, trái với quan hệ ý nghĩa thông thường của câu; go on và go for không có nghĩa giảm. Việc dành thời gian trên mạng nhiều hơn không tự nó chứng minh về mặt thống kê số người xem giảm, nhưng B là lựa chọn hợp lý nhất theo ngữ cảnh đề. Dấu khoanh C trong bản scan không phù hợp.",
+    "translation": "Số người xem truyền hình đang giảm vì mọi người dành nhiều thời gian hơn trên mạng. Đáp án B: down, trong go down = giảm.",
+    "kind": "answer"
+  },
+  "sample-reading-10": {
+    "answer": "B",
+    "explanation": "Collect your luggage là lấy hành lý, việc hành khách thường làm sau chuyến bay, nhất là với hành lý ký gửi. Boarding card là thẻ lên máy bay; station là nhà ga; security là an ninh, không phù hợp với lời nhắc lấy đồ trong ngữ cảnh này.",
+    "translation": "Đừng quên lấy hành lý khi bạn xuống máy bay. Đáp án B: luggage = hành lý.",
+    "kind": "answer"
+  },
+  "sample-reading-11": {
+    "answer": "C",
+    "explanation": "Katie viết ‘See you in queue at ticket office’, tức sẽ gặp Emily ở hàng chờ tại quầy vé; theo ngữ cảnh thông thường, cuộc gặp này diễn ra trước khi họ lên tàu. Tin nhắn không nói Katie mua vé hộ Emily, cũng không so sánh giá vé của hai người. Cụm in queue at ticket office trong nguồn thiếu mạo từ theo cách viết thông thường: in the queue at the ticket office.",
+    "translation": "Tin nhắn: ‘Emily, nếu ngày mai bạn mang thẻ sinh viên, vé tàu của bạn sẽ rẻ hơn. Mình đã tìm thấy thẻ của mình. Hẹn gặp bạn trong hàng chờ ở quầy vé. Katie.’ Đáp án C: Katie sẽ gặp Emily trước khi họ lên tàu.",
+    "kind": "answer"
+  },
+  "sample-reading-12": {
+    "answer": "C",
+    "explanation": "Biển báo ghi các tủ khóa ở khu vực này chỉ dành cho đội khách, nên thành viên đội chủ nhà không được dùng chúng. A sai vì không phải mọi người tham gia đều được dùng; B sai vì biển báo không nói gì về việc miễn phí. Dấu khoanh A trong bản scan không đúng với nội dung biển báo.",
+    "translation": "Biển báo: ‘Các tủ khóa ở khu vực này chỉ dành cho đội khách sử dụng.’ Đáp án C: Thành viên đội chủ nhà không được dùng những tủ khóa này.",
+    "kind": "answer"
+  },
+  "sample-reading-13": {
+    "answer": "Không có phương án hoàn toàn đúng; A gần nhất",
+    "explanation": "A là phương án gần đúng nhất, nhưng diễn đạt quá mạnh: tin nhắn chỉ nói nếu James không nhận được phản hồi trước sáu giờ, anh ấy sẽ đi cùng người khác; nó không chứng minh Paola không thể đến buổi hòa nhạc bằng cách khác. A còn nói ‘phones ... by six’, trong khi tin nhắn yêu cầu gọi ‘before six’, tức trước sáu giờ. Vì vậy đây là câu hỏi có phương án chưa chính xác về logic và thời hạn, không có lựa chọn hoàn toàn tương đương; B và C cũng không đúng nội dung.",
+    "translation": "Tin nhắn: ‘Paola, tối nay bạn có muốn đi hòa nhạc với James không? Hãy gọi cho anh ấy trước sáu giờ để cho anh ấy biết. Nếu đến lúc đó anh ấy không nhận được phản hồi từ bạn, anh ấy sẽ đi với người khác. Tim.’ Đáp án A: Paola sẽ không thể đi hòa nhạc trừ khi cô ấy gọi cho James muộn nhất là sáu giờ; đây chỉ là cách diễn đạt gần đúng và nói quá so với tin nhắn.",
+    "kind": "answer"
+  },
+  "sample-reading-14": {
+    "answer": "C",
+    "explanation": "Biển báo nói sau 5 giờ chiều chỉ nhân viên được sử dụng cửa này; vì thế C là cách hiểu phù hợp trong buổi tối. Biển không yêu cầu nhờ nhân viên mở khóa và cũng không yêu cầu nhân viên rời tòa nhà trước 5 giờ. Quy định về người được dùng cửa trước hoặc đúng 5 giờ không được biển nêu rõ.",
+    "translation": "Biển báo: ‘Lối ra. Sau 5 giờ chiều, chỉ nhân viên được sử dụng cửa này.’ Đáp án C: Bạn có thể dùng cửa này vào buổi tối nếu bạn làm việc ở đây.",
+    "kind": "answer"
+  },
+  "sample-reading-15": {
+    "answer": "B",
+    "explanation": "Sarah đã viết thư nhưng không tìm được địa chỉ Sam. Cô hỏi Chris có địa chỉ không; nếu không thì gọi hỏi mẹ, rồi nhờ Chris gửi thư. Vì vậy Chris cần gửi thư sau khi biết địa chỉ. Tin nhắn yêu cầu hỏi mẹ chứ không gọi Sam, và nhờ Chris gửi thư chứ không bảo mẹ viết địa chỉ và gửi.",
+    "translation": "Tin nhắn: ‘Chris, em đã viết lá thư này cho Sam nhưng không tìm được địa chỉ của anh ấy. Anh có địa chỉ đó không? Nếu không, anh có thể gọi hỏi mẹ không? Sau đó làm ơn gửi thư nhé. Sarah.’ Đáp án B: Chris nên gửi thư sau khi đã tìm được địa chỉ.",
+    "kind": "answer"
+  },
+  "sample-reading-16": {
+    "answer": "B là phương án gần nhất, nhưng không hoàn toàn chắc chắn",
+    "explanation": "Once in a blue moon nghĩa là rất hiếm khi. B là lựa chọn gần nhất vì Tom hiếm khi nhớ đổ rác; tuy nhiên, hiếm khi nhớ không chứng minh chắc chắn cậu ấy hiếm khi thực sự đổ rác, vì có thể cậu làm khi được nhắc. A nói mỗi cuối tuần, C nói mỗi ngày, còn D chỉ nói đôi khi nên không thể hiện rõ mức độ rất hiếm. Còn có lỗi in thừa 'it' trong C.",
+    "translation": "Câu hỏi: Ví dụ nào phù hợp với việc làm một điều gì đó rất hiếm khi? B: Tom hiếm khi nhớ đổ rác. Tom rất hiếm khi đổ rác.",
+    "kind": "answer"
+  },
+  "sample-reading-17": {
+    "answer": "D",
+    "explanation": "Trong câu 'As the moon travels around the earth, it appears to change shape', 'it' chỉ the moon: Mặt Trăng có vẻ thay đổi hình dạng khi chuyển động quanh Trái Đất. Earth là đối tượng được Mặt Trăng quay quanh, không phải đối tượng có hình dạng biểu kiến thay đổi trong câu.",
+    "translation": "Câu hỏi: Từ 'it' in đậm chỉ đối tượng nào? D: Mặt Trăng. Câu trong bài: Khi Mặt Trăng chuyển động quanh Trái Đất, nó dường như thay đổi hình dạng.",
+    "kind": "answer"
+  },
+  "sample-reading-18": {
+    "answer": "A",
+    "explanation": "Theo định nghĩa trong bài, khi có hai lần trăng tròn trong cùng một tháng dương lịch, lần trăng tròn thứ hai được gọi là blue moon. Đây là định nghĩa theo tháng; còn có một định nghĩa blue moon theo mùa. Bài đọc sai khi nói Mặt Trăng không bao giờ trông có màu xanh: bụi hoặc khói trong khí quyển đôi khi có thể khiến nó có sắc xanh. Bài cũng diễn đạt sai khi quy blue moon cho hình dạng thay vì cách xác định thời điểm trăng tròn.",
+    "translation": "Câu hỏi: Hiện tượng blue moon xảy ra khi nào trong tự nhiên? A: Khi có hai lần trăng tròn trong một tháng.",
+    "kind": "answer"
+  },
+  "sample-reading-19": {
+    "answer": "C",
+    "explanation": "Entire nghĩa là toàn bộ, đồng nghĩa với whole. Trong ngữ cảnh, nhìn thấy toàn bộ phần Mặt Trăng hướng về phía Trái Đất được chiếu sáng tương ứng với trăng tròn. Some là một phần, half là một nửa; every nghĩa là mỗi, không thay thế tự nhiên cho entire trước danh từ số ít trong câu này.",
+    "translation": "Câu hỏi: Từ 'entire' in đậm có nghĩa là gì? C: Toàn bộ. Câu trong bài: Khi ta nhìn thấy toàn bộ Mặt Trăng, đó được gọi là trăng tròn.",
+    "kind": "answer"
+  },
+  "sample-reading-20": {
+    "answer": "D",
+    "explanation": "Theo số liệu bài cho, 15 lần trong 20 năm tương ứng trung bình 15/20 = 0,75 lần mỗi năm, tức trung bình ít hơn một lần mỗi năm. Điều này không có nghĩa mỗi năm đều có blue moon hay khoảng cách giữa các lần bằng nhau. B là trung bình một lần mỗi hai năm, tức 10 lần trong 20 năm, không khớp.",
+    "translation": "Câu hỏi: Theo phát biểu 'Trong 20 năm tới sẽ chỉ có 15 lần blue moon', hiện tượng này trung bình xảy ra với tần suất nào? D: Ít hơn một lần mỗi năm.",
+    "kind": "answer"
+  },
+  "sample-reading-21": {
+    "answer": "C",
+    "explanation": "Cụm more than a language nghĩa là hơn cả một ngôn ngữ; dấu hiệu là than ngay sau chỗ trống. That trong mệnh đề tường thuật có thể được lược bỏ; bản in có dấu phẩy không cần thiết sau tên David Tame.",
+    "translation": "David Tame viết rằng âm nhạc không chỉ là một ngôn ngữ mà còn là ngôn ngữ của mọi ngôn ngữ. C: more = hơn, trong cụm more than = hơn cả.",
+    "kind": "answer"
+  },
+  "sample-reading-22": {
+    "answer": "C",
+    "explanation": "Powerfully là trạng từ bổ nghĩa cho các động từ moves và changes; 'more powerfully' nghĩa là mạnh mẽ hơn. Power là danh từ, powerful và powerless là tính từ nên không phù hợp ở vị trí này. Tuy vậy, mệnh đề in 'There is none of other arts that more ...' không chuẩn; ý có thể diễn đạt lại là 'None of the other arts moves and changes consciousness more powerfully.'",
+    "translation": "Ý câu theo cách diễn đạt đã chỉnh: Không có loại hình nghệ thuật nào khác lay động và thay đổi ý thức mạnh mẽ hơn. C: powerfully = một cách mạnh mẽ.",
+    "kind": "answer"
+  },
+  "sample-reading-23": {
+    "answer": "A",
+    "explanation": "That là đại từ quan hệ thay cho 'a very powerful tool' và làm chủ ngữ của 'can have': một công cụ có thể đem lại tác động tích cực. When chỉ thời gian, where chỉ nơi chốn, còn whose chỉ sở hữu và cần danh từ theo sau.",
+    "translation": "Có thể nói âm nhạc là một công cụ rất mạnh mẽ, có thể đem lại những tác động tích cực. A: that = mà, cái mà.",
+    "kind": "answer"
+  },
+  "sample-reading-24": {
+    "answer": "B",
+    "explanation": "Âm nhạc được sử dụng trong bối cảnh phù hợp, nên cần mệnh đề bị động 'when it is used in the right context'. A là chủ động và thiếu đối tượng phù hợp; C 'used to' diễn tả thói quen trong quá khứ nhưng thiếu động từ nguyên mẫu; D 'is used to' cần danh từ hoặc V-ing theo sau, không phù hợp với 'in the right context'.",
+    "translation": "Âm nhạc có thể đem lại tác động tích cực, thậm chí có thể cứu sống về mặt tinh thần và thể chất, khi nó được sử dụng trong bối cảnh phù hợp. B: it is used = nó được sử dụng.",
+    "kind": "answer"
+  },
+  "sample-reading-25": {
+    "answer": "B",
+    "explanation": "Cụm từ thông dụng là 'have an effect on somebody/something': có tác động đối với ai hoặc điều gì. Vì vậy dùng on trước people, animals and plants; các giới từ còn lại không phù hợp với cấu trúc này.",
+    "translation": "Âm nhạc có tác động rõ rệt đến con người, động vật và thực vật. B: on = đối với, trong cụm have an effect on.",
+    "kind": "answer"
+  },
+  "sample-reading-26": {
+    "answer": "D/C",
+    "explanation": "D 'In fact' là lựa chọn tự nhiên để nhấn mạnh và cụ thể hóa nhận định ngay trước đó: âm nhạc có tác động rõ rệt; thực tế, nó có thể ảnh hưởng mạnh đến cơ thể, trí óc và cảm xúc. C 'So' cũng có thể chấp nhận nếu hiểu câu sau là kết luận từ câu trước, dù quan hệ nhân quả hơi gượng vì câu sau chủ yếu diễn đạt lại và thu hẹp đối tượng. A 'So that' thường mở đầu mệnh đề mục đích và không tạo câu độc lập phù hợp ở đây; B 'So as to' phải đi với động từ nguyên mẫu. Do đó đề không đảm bảo đáp án duy nhất.",
+    "translation": "Âm nhạc có tác động rõ rệt đến con người, động vật và thực vật. D: Trên thực tế, nó có thể ảnh hưởng mạnh mẽ đến cơ thể, trí óc và cảm xúc của chúng ta. C: Vì vậy, nó có thể ảnh hưởng mạnh mẽ đến cơ thể, trí óc và cảm xúc của chúng ta.",
+    "kind": "answer"
+  },
+  "sample-reading-27": {
+    "answer": "D",
+    "explanation": "Cụm 'have a powerful influence on' nghĩa là có ảnh hưởng mạnh đến, phù hợp với ngữ cảnh nói về tác động của âm nhạc. Interest, entertainment và delight không kết hợp với 'a powerful ... on' để diễn đạt ý này một cách tự nhiên.",
+    "translation": "Âm nhạc có thể có ảnh hưởng mạnh mẽ đến cơ thể, trí óc và cảm xúc của chúng ta. D: influence = ảnh hưởng.",
+    "kind": "answer"
+  },
+  "sample-reading-28": {
+    "answer": "A",
+    "explanation": "Sau giới từ with cần một danh từ; 'cry out with joy' nghĩa là reo lên vì vui sướng. Joy là danh từ; joyful và joyless là tính từ, còn joyfully là trạng từ, nên không phù hợp ngay sau with.",
+    "translation": "Âm nhạc với giai điệu và hòa âm mạnh mẽ, được trình diễn đầy cảm xúc, có thể khiến chúng ta khóc hoặc reo lên vì vui sướng. A: joy = niềm vui.",
+    "kind": "answer"
+  },
+  "sample-reading-29": {
+    "answer": "C",
+    "explanation": "Cụm 'be aware of' nghĩa là nhận thức được hoặc biết rõ về. Các nhà sản xuất phim nhận thức được sức mạnh của âm nhạc, phù hợp với lời giải thích tiếp theo. Famous thường đi với for khi nói nổi tiếng vì điều gì; strong of không phù hợp; absorbed thường đi với in.",
+    "translation": "Mọi nhà sản xuất phim Hollywood đều nhận thức được sức mạnh của âm nhạc. C: aware = nhận thức được, trong cụm aware of.",
+    "kind": "answer"
+  },
+  "sample-reading-30": {
+    "answer": "B",
+    "explanation": "Such đi trước a + tính từ + danh từ số ít: such a key role nghĩa là một vai trò quan trọng đến thế. Các phương án khác không đúng trong cấu trúc này.",
+    "translation": "Mọi nhà sản xuất phim Hollywood đều nhận thức được sức mạnh của âm nhạc, và đó là lý do âm nhạc đóng một vai trò quan trọng đến thế trong điện ảnh. B: such = đến thế, trong cụm such a key role.",
+    "kind": "answer"
+  },
+  "sample-writing-01": {
+    "answer": "She has worked for a foreign company since she graduated from university.",
+    "explanation": "Dùng thì hiện tại hoàn thành 'has worked' với 'since' để diễn tả công việc bắt đầu khi cô ấy tốt nghiệp và vẫn tiếp diễn đến hiện tại. Sau 'since', mệnh đề chỉ mốc thời gian dùng quá khứ đơn: 'she graduated from university'. Cũng có thể dùng 'has been working' để nhấn mạnh tính liên tục. Cách viết lại này giả định cô ấy vẫn làm việc ở đó; câu gốc chỉ nói thời điểm bắt đầu nên không khẳng định rõ điều này.",
+    "translation": "Cô ấy đã làm việc cho một công ty nước ngoài kể từ khi tốt nghiệp đại học.",
+    "kind": "sample"
+  },
+  "sample-writing-02": {
+    "answer": "This is the laptop which my brother has just bought.",
+    "explanation": "Dùng đại từ quan hệ 'which' thay cho 'the laptop' để nối hai câu. Trong mệnh đề quan hệ, 'which' là tân ngữ của 'bought', nên không lặp lại 'it'. Có thể dùng 'that' thay cho 'which'; giữ hiện tại hoàn thành 'has just bought' để diễn tả việc vừa mới mua.",
+    "translation": "Đây là chiếc máy tính xách tay mà anh/em trai tôi vừa mua.",
+    "kind": "sample"
+  },
+  "sample-writing-03": {
+    "answer": "If people didn't throw rubbish in the streets, the streets would look cleaner.",
+    "explanation": "Đề yêu cầu câu điều kiện loại hai: 'If + quá khứ đơn, ... would + động từ nguyên mẫu', diễn tả tình huống giả định trái với thực tế hiện tại. 'Didn't throw' đối lập với việc người ta vứt rác. Tuy nhiên, câu in trong đề kết thúc bằng 'the streets don't look like' và thiếu phần bổ ngữ sau 'like', nên không xác định được chính xác ý cần giữ. 'Would look cleaner' là một cách hoàn chỉnh hợp lý theo ngữ cảnh, nhưng không thể khẳng định tương đương hoàn toàn với câu gốc chưa hoàn chỉnh.",
+    "translation": "Nếu mọi người không vứt rác trên đường, đường phố sẽ trông sạch hơn.",
+    "kind": "sample"
+  },
+  "sample-writing-04": {
+    "answer": "The boys said that they had won the football match because the whole team had played really well.",
+    "explanation": "Khi chuyển lời nói trực tiếp sang gián tiếp sau động từ tường thuật quá khứ 'said', 'we' đổi thành 'they' để chỉ các cậu bé. Hai động từ quá khứ đơn 'won' và 'played' có thể lùi thành quá khứ hoàn thành 'had won' và 'had played'. Mệnh đề 'because' vẫn giữ nguyên quan hệ nguyên nhân; trong một số ngữ cảnh, 'played' cũng có thể được giữ ở quá khứ đơn nếu trình tự thời gian đã rõ.",
+    "translation": "Các cậu bé nói rằng họ đã thắng trận bóng đá vì cả đội đã chơi rất tốt.",
+    "kind": "sample"
+  },
+  "sample-writing-05": {
+    "answer": "Despite the fact that their house is small, they keep it neat and tidy.",
+    "explanation": "'Although' đứng trước một mệnh đề; 'despite' đứng trước danh từ, cụm danh từ hoặc danh động từ. Để giữ mệnh đề 'their house is small', dùng 'despite the fact that + mệnh đề'. Không dùng 'despite of'. Cũng có thể viết 'Despite the small size of their house, they keep it neat and tidy'.",
+    "translation": "Mặc dù ngôi nhà của họ nhỏ, họ vẫn giữ cho nó gọn gàng và ngăn nắp.",
+    "kind": "sample"
+  },
+  "sample-writing-06": {
+    "answer": "Dear Sam,\n\nIt sounds like you had a lovely evening with your family. I prefer eating at home because I can cook with my family and choose fresh ingredients. It is also cheaper and more relaxing than eating out. However, my favourite place to eat is a small restaurant near my house. It serves delicious noodles and the staff are always friendly. I usually go there with my friends at weekends. We enjoy sharing dishes and talking together. What did you eat at the restaurant last night?\n\nBest wishes,\nLinh",
+    "explanation": "Đây là một bài thư mẫu gồm 90 từ nếu tính cả lời chào và chữ ký; phần nội dung chính gồm 85 từ, đều nằm trong giới hạn 80–100 từ. Thư đáp lại trải nghiệm của bạn, nêu rõ người viết thích ăn ở nhà hơn và giải thích lý do, đồng thời mô tả địa điểm ăn yêu thích, món ăn và người đi cùng. Việc thích ăn ở nhà nói chung không mâu thuẫn với việc có một nhà hàng yêu thích. Câu hỏi cuối giúp duy trì cuộc trò chuyện. Có nhiều cách trả lời hợp lệ khác.",
+    "translation": "Sam thân mến,\n\nNghe có vẻ bạn đã có một buổi tối thật vui bên gia đình. Mình thích ăn ở nhà hơn vì có thể nấu ăn cùng gia đình và chọn nguyên liệu tươi. Ăn ở nhà cũng rẻ hơn và thoải mái hơn ăn ngoài. Tuy nhiên, địa điểm ăn uống yêu thích của mình là một nhà hàng nhỏ gần nhà. Nhà hàng phục vụ món mì ngon và nhân viên luôn thân thiện. Mình thường đến đó với bạn bè vào cuối tuần. Chúng mình thích chia sẻ các món ăn và trò chuyện cùng nhau. Tối qua bạn đã ăn gì ở nhà hàng?\n\nThân mến,\nLinh",
+    "kind": "sample"
+  },
+  "grammar-001": {
+    "answer": "A",
+    "explanation": "Quá khứ tiếp diễn diễn tả mặt trời đang chiếu sáng khi hành động thức dậy xảy ra.",
+    "translation": "Mặt trời đang chiếu sáng khi tôi thức dậy sáng nay.",
+    "kind": "answer"
+  },
+  "grammar-002": {
+    "answer": "B",
+    "explanation": "Các con đang ngủ thì người cha mở cửa: quá khứ tiếp diễn kết hợp quá khứ đơn.",
+    "translation": "Tất cả bọn trẻ đang ngủ khi cha chúng mở cửa trước.",
+    "kind": "answer"
+  },
+  "grammar-003": {
+    "answer": "A",
+    "explanation": "Bữa ăn đang diễn ra khi cuộc gọi đến: was eating và called.",
+    "translation": "Tôi đang ăn tối khi bạn gọi cho tôi.",
+    "kind": "answer"
+  },
+  "grammar-004": {
+    "answer": "B",
+    "explanation": "Việc nấu ăn đang diễn ra khi điện thoại reo.",
+    "translation": "Tôi đang nấu bữa tối thì điện thoại reo.",
+    "kind": "answer"
+  },
+  "grammar-005": {
+    "answer": "C",
+    "explanation": "While giới thiệu hành động đang diễn ra; knocked là sự việc xen vào.",
+    "translation": "Trong khi tôi đang làm bài tập, mẹ tôi gõ cửa.",
+    "kind": "answer"
+  },
+  "grammar-006": {
+    "answer": "B",
+    "explanation": "Ông ấy đang lái xe khi đâm vào cây: was driving/hit.",
+    "translation": "Ông Thompson đang lái xe rất nhanh khi đâm vào một cái cây.",
+    "kind": "answer"
+  },
+  "grammar-007": {
+    "answer": "B",
+    "explanation": "Việc vắt sữa đang diễn ra khi người lạ bước vào.",
+    "translation": "Jack đang vắt sữa bò thì một người lạ bước vào chuồng.",
+    "kind": "answer"
+  },
+  "grammar-008": {
+    "answer": "C",
+    "explanation": "Saw là động từ chỉ nhận thức ở quá khứ đơn; was rushing diễn tả hành động đang diễn ra.",
+    "translation": "Susan nhìn thấy tên trộm khi hắn đang lao vào xe.",
+    "kind": "answer"
+  },
+  "grammar-009": {
+    "answer": "B",
+    "explanation": "Điện thoại reo xen vào lúc tôi đang thử giày.",
+    "translation": "Khi điện thoại di động reo, tôi đang thử một đôi giày trong cửa hàng.",
+    "kind": "answer"
+  },
+  "grammar-010": {
+    "answer": "A",
+    "explanation": "Đang tìm chìa khóa thì tìm thấy bức ảnh: was looking/found.",
+    "translation": "Trong khi tìm chìa khóa, tôi tìm thấy bức ảnh cũ này.",
+    "kind": "answer"
+  },
+  "grammar-011": {
+    "answer": "C",
+    "explanation": "Will diễn tả lời đề nghị giúp được quyết định ngay lúc nói.",
+    "translation": "‘Ngày mai chúng tôi chuyển nhà.’ – ‘Thật sao? Tôi sẽ giúp bạn chuyển đồ đạc.’",
+    "kind": "answer"
+  },
+  "grammar-012": {
+    "answer": "A",
+    "explanation": "Be going to diễn tả kế hoạch đã định trước, có bằng chứng là vé đã đặt.",
+    "translation": "Jenny và bố mẹ dự định đến Florida vào kỳ nghỉ tới; họ đã đặt vé rồi.",
+    "kind": "answer"
+  },
+  "grammar-013": {
+    "answer": "unavailable",
+    "explanation": "Đề in sẵn lend sau chỗ trống nhưng cả bốn lựa chọn đều chứa lend, nên không có đáp án hoàn chỉnh đúng ngữ pháp. Ý định có lẽ là D (will lend) nếu bỏ lend in sẵn, vì đây là lời đề nghị tức thời; cần rà soát.",
+    "translation": "‘Ôi không! Trời đang mưa mà tôi phải đi đến cửa hàng.’ – ‘Không sao. Tôi sẽ cho bạn mượn ô.’",
+    "kind": "answer"
+  },
+  "grammar-014": {
+    "answer": "C",
+    "explanation": "Is going to have phù hợp với kế hoạch đã chuẩn bị trước; chủ ngữ class ở số ít.",
+    "translation": "Lớp chúng tôi dự định đi dã ngoại ở chùa Hương vào Chủ nhật này. Chúng tôi đã lên kế hoạch cho mọi thứ.",
+    "kind": "answer"
+  },
+  "grammar-015": {
+    "answer": "A",
+    "explanation": "Will lend diễn tả quyết định cho mượn tiền ngay khi nghe người kia nói.",
+    "translation": "‘Tôi không có đủ tiền trả vé.’ – ‘Không sao. Tôi sẽ cho bạn mượn một ít.’",
+    "kind": "answer"
+  },
+  "grammar-016": {
+    "answer": "D",
+    "explanation": "Be going to phù hợp với dự đoán dựa trên dấu hiệu hiện tại; will cũng có thể diễn đạt dự đoán, nhưng kém đặc trưng hơn trong bài này.",
+    "translation": "Nhìn những con chó dữ kia! Chúng đang chạy cuồng loạn. Chúng sắp tấn công những con mèo bên tường.",
+    "kind": "answer"
+  },
+  "grammar-017": {
+    "answer": "D",
+    "explanation": "Hiện tại tiếp diễn diễn tả cuộc hẹn đã sắp xếp; be going to cũng có thể chỉ kế hoạch, nhưng ARRANGEMENT hướng tới D.",
+    "translation": "Tôi sẽ chơi bóng đá với Sam lúc 1 giờ chiều mai. Lịch hẹn đã sắp xếp.",
+    "kind": "answer"
+  },
+  "grammar-018": {
+    "answer": "B",
+    "explanation": "Be going to diễn tả dự định, phù hợp gợi ý INTENTION.",
+    "translation": "Bố tôi dự định đưa tôi và các bạn đến nhà hàng yêu thích của tôi nhân dịp sinh nhật.",
+    "kind": "answer"
+  },
+  "grammar-019": {
+    "answer": "unavailable",
+    "explanation": "Sau expect George cần to come, nhưng không lựa chọn nào có dạng này. Nếu viết lại thành We don't expect that George will come thì C phù hợp; không thể chèn C vào nguyên câu in. Cần rà soát.",
+    "translation": "Chúng tôi không nghĩ George sẽ đến bữa tiệc. Dự đoán.",
+    "kind": "answer"
+  },
+  "grammar-020": {
+    "answer": "A",
+    "explanation": "Will love phù hợp với lời khẳng định hoặc lời hứa về cảm nhận trong tương lai.",
+    "translation": "Tôi hứa bạn sẽ thích nhà hàng này.",
+    "kind": "answer"
+  },
+  "grammar-021": {
+    "answer": "C",
+    "explanation": "Thứ tự thông thường là kích thước, hình dạng, màu sắc: big square brown.",
+    "translation": "Jack trốn trong chiếc hộp lớn hình vuông màu nâu.",
+    "kind": "answer"
+  },
+  "grammar-022": {
+    "answer": "C thường được dự kiến; B và D cũng có thể dùng",
+    "explanation": "Thứ tự thông thường là đánh giá, kích thước, chất liệu: expensive big diamond. B và D bị in trùng nhau; big expensive diamond cũng có thể dùng với trọng tâm khác, nên đề không đảm bảo đáp án duy nhất.",
+    "translation": "Cô ấy đang đeo một chiếc nhẫn kim cương lớn, đắt tiền.",
+    "kind": "answer"
+  },
+  "grammar-023": {
+    "answer": "C",
+    "explanation": "Tính từ đánh giá đứng trước tuổi/mới cũ và nguồn gốc: wonderful new Italian.",
+    "translation": "Đây là một bộ phim Ý mới tuyệt vời.",
+    "kind": "answer"
+  },
+  "grammar-024": {
+    "answer": "A",
+    "explanation": "Thứ tự là đánh giá, vóc dáng rồi quốc tịch: beautiful slim Brazilian.",
+    "translation": "Cô ấy là một siêu mẫu người Brazil xinh đẹp, mảnh mai.",
+    "kind": "answer"
+  },
+  "grammar-025": {
+    "answer": "B",
+    "explanation": "Handsome chỉ vẻ ngoài, American chỉ quốc tịch, còn film bổ nghĩa cho actor.",
+    "translation": "Tom Cruise là một diễn viên điện ảnh người Mỹ rất đẹp trai.",
+    "kind": "answer"
+  },
+  "grammar-026": {
+    "answer": "A",
+    "explanation": "Thứ tự là kích thước, màu sắc, chất liệu: large blue metal. Đề in mental ở D, giữ nguyên lỗi.",
+    "translation": "Nó ở trong chiếc hộp kim loại lớn màu xanh.",
+    "kind": "answer"
+  },
+  "grammar-027": {
+    "answer": "B",
+    "explanation": "New chỉ tuổi, steel chỉ chất liệu và carving chỉ công dụng của dao.",
+    "translation": "John đã mua một con dao thái bằng thép mới.",
+    "kind": "answer"
+  },
+  "grammar-028": {
+    "answer": "B",
+    "explanation": "Beautiful là đánh giá, blue là màu sắc, sailing chỉ loại hoặc công dụng của thuyền.",
+    "translation": "Gia đình anh ấy đã mua một chiếc thuyền buồm màu xanh đẹp.",
+    "kind": "answer"
+  },
+  "grammar-029": {
+    "answer": "A",
+    "explanation": "Dirty chỉ tình trạng, old chỉ tuổi và cotton chỉ chất liệu.",
+    "translation": "Anh ấy đang mặc một chiếc áo sơ mi vải bông cũ bẩn.",
+    "kind": "answer"
+  },
+  "grammar-030": {
+    "answer": "B",
+    "explanation": "Thứ tự thông thường là kích thước, màu sắc, chất liệu: big brown wooden.",
+    "translation": "Anh ấy ngồi sau một chiếc bàn gỗ lớn màu nâu.",
+    "kind": "answer"
+  },
+  "grammar-031": {
+    "answer": "D",
+    "explanation": "Attend a class nghĩa là tham dự một buổi học. Bản in ghi nhãn D cho cả perform và attend; ở đây perform được mã hóa C theo vị trí, attend là D.",
+    "translation": "Ở đại học, bạn có thể bỏ một số buổi học; bạn không phải tham dự mọi buổi.",
+    "kind": "answer"
+  },
+  "grammar-032": {
+    "answer": "Không xác định duy nhất",
+    "explanation": "Ý định có lẽ là A, nhưng đề đã in on stage sau chỗ trống trong khi A cũng có on stage, gây lặp. D in work hark. C có thể tạo câu đúng ngữ pháp nếu hiểu là lần đầu mặc đồng phục trên sân khấu; do đó không thể khẳng định một đáp án duy nhất.",
+    "translation": "Bạn có thể thấy hồi hộp nếu lần đầu tiên biểu diễn trên sân khấu (ý dự kiến của đề).",
+    "kind": "answer"
+  },
+  "grammar-033": {
+    "answer": "B hoặc C",
+    "explanation": "Cả arrives late for school và gets late for school đều có thể diễn đạt việc đến trường muộn; đề không có đủ cơ sở để khẳng định chỉ một đáp án đúng. Arrives là cách diễn đạt thường gặp.",
+    "translation": "Cô ấy không bao giờ đến trường muộn. Cô ấy luôn đúng giờ.",
+    "kind": "answer"
+  },
+  "grammar-034": {
+    "answer": "A hoặc B",
+    "explanation": "Be fond of đi với V-ing. Going on school trips phù hợp với ý thường gặp, nhưng passing the exams cũng đúng ngữ pháp và có thể hợp nghĩa; đề không đảm bảo chỉ có một đáp án.",
+    "translation": "Học sinh thích đi tham quan cùng trường hằng năm.",
+    "kind": "answer"
+  },
+  "grammar-035": {
+    "answer": "A",
+    "explanation": "Ăn cơm mang theo ở nơi làm việc đối lập với ăn ở nhà hàng hoặc căng tin. Bản in thiếu mạo từ: cách tự nhiên là eat a packed lunch.",
+    "translation": "Một số người thích ăn cơm mang theo tại nơi làm việc hơn là ăn trưa ở nhà hàng hoặc căng tin.",
+    "kind": "answer"
+  },
+  "grammar-036": {
+    "answer": "B",
+    "explanation": "Học chăm chỉ thường dẫn đến điểm tốt. Bản in thiếu mạo từ hoặc số nhiều: get a good grade hoặc get good grades; cần rà soát.",
+    "translation": "James học rất chăm nên cậu ấy thường đạt điểm tốt trong các kỳ thi.",
+    "kind": "answer"
+  },
+  "grammar-037": {
+    "answer": "A",
+    "explanation": "Go to a club là đến câu lạc bộ; attend không đi với to trong cấu trúc này.",
+    "translation": "Con trai tôi đến một câu lạc bộ tiếng Anh sau giờ học vào mỗi thứ Ba.",
+    "kind": "answer"
+  },
+  "grammar-038": {
+    "answer": "C",
+    "explanation": "Wearing school uniform là cụm danh động từ làm chủ ngữ, nghĩa là việc mặc đồng phục.",
+    "translation": "Tôi nghĩ rằng việc mặc đồng phục học sinh làm mất đi cá tính của trẻ em.",
+    "kind": "answer"
+  },
+  "grammar-039": {
+    "answer": "A hoặc C",
+    "explanation": "Perform on stage nghĩa là biểu diễn trên sân khấu; goes on stage cũng đúng ngữ pháp và hợp ngữ cảnh học trường kịch, nên câu không có đáp án duy nhất.",
+    "translation": "Anh trai tôi học ở trường kịch nên anh ấy thường biểu diễn trên sân khấu.",
+    "kind": "answer"
+  },
+  "grammar-040": {
+    "answer": "C",
+    "explanation": "Chuyến tham quan của trường là lý do tự nhiên nhất khiến bọn trẻ hào hứng; ngữ cảnh không loại trừ tuyệt đối các lựa chọn khác.",
+    "translation": "Bọn trẻ rất hào hứng vì ngày mai chúng sẽ đi tham quan cùng trường.",
+    "kind": "answer"
+  },
+  "grammar-041": {
+    "answer": "A (phù hợp nhất theo ý đề)",
+    "explanation": "Ambition là tham vọng hoặc chí tiến thủ và là lựa chọn gần nhất trong bốn phương án. Tuy nhiên, không quan tâm thắng thua ở một trận không chứng minh chắc chắn một người thiếu tham vọng; đề cần thêm ngữ cảnh.",
+    "translation": "Mark không có chút tham vọng nào. Anh ấy không quan tâm mình thắng hay thua.",
+    "kind": "answer"
+  },
+  "grammar-042": {
+    "answer": "unavailable",
+    "explanation": "Cả hide your disappointment và show your disappointment đều đúng ngữ pháp; ý kiến về việc nên giấu hay thể hiện nỗi thất vọng phụ thuộc ngữ cảnh. Không đủ căn cứ chọn duy nhất B hoặc D; cần rà soát.",
+    "translation": "Điều quan trọng là giấu/thể hiện nỗi thất vọng khi bạn thua một trận đấu.",
+    "kind": "answer"
+  },
+  "grammar-043": {
+    "answer": "C",
+    "explanation": "Achieve one's dreams nghĩa là đạt được ước mơ; achieve nhận tân ngữ trực tiếp.",
+    "translation": "Rất ít người đủ may mắn để đạt được tất cả ước mơ của mình.",
+    "kind": "answer"
+  },
+  "grammar-044": {
+    "answer": "B",
+    "explanation": "Win a championship nghĩa là giành chức vô địch. Đề in beat trùng ở A và D.",
+    "translation": "Lần cuối chúng tôi giành chức vô địch là năm 2001.",
+    "kind": "answer"
+  },
+  "grammar-045": {
+    "answer": "A",
+    "explanation": "Being defeated là bị đánh bại, phù hợp với việc đội kia xứng đáng chiến thắng.",
+    "translation": "Tôi không ngại bị đánh bại nếu tôi thấy đội kia xứng đáng thắng.",
+    "kind": "answer"
+  },
+  "grammar-046": {
+    "answer": "A",
+    "explanation": "Show someone respect nghĩa là thể hiện sự tôn trọng với ai đó.",
+    "translation": "Một số cầu thủ bóng đá thô lỗ và không thể hiện chút tôn trọng nào với đội đối phương.",
+    "kind": "answer"
+  },
+  "grammar-047": {
+    "answer": "A",
+    "explanation": "Achieve success là đạt được thành công; huy chương vàng là bằng chứng của thành công.",
+    "translation": "Cuối cùng anh ấy đã đạt được thành công. Anh ấy giành huy chương vàng tại Thế vận hội.",
+    "kind": "answer"
+  },
+  "grammar-048": {
+    "answer": "D",
+    "explanation": "Succeed in + V-ing nghĩa là thành công trong việc làm gì.",
+    "translation": "Anh ấy đã thành công trong việc theo đuổi sự nghiệp thể thao.",
+    "kind": "answer"
+  },
+  "grammar-049": {
+    "answer": "A",
+    "explanation": "Beat the world record nghĩa là phá kỷ lục thế giới.",
+    "translation": "Đây là nỗ lực mới nhất của anh ấy nhằm phá kỷ lục thế giới.",
+    "kind": "answer"
+  },
+  "grammar-050": {
+    "answer": "A",
+    "explanation": "Sau be highly cần tính từ; competitive nghĩa là có tính cạnh tranh cao.",
+    "translation": "Ngày nay bạn phải có tính cạnh tranh cao để thi đấu thể thao tốt.",
+    "kind": "answer"
+  },
+  "grammar-051": {
+    "answer": "A",
+    "explanation": "Fashionable nghĩa là hợp thời trang; the most fashionable chỉ quần áo hợp mốt nhất trong khả năng mua bằng tiền tiêu vặt. Smart hoặc casual cũng có thể diễn đạt một sở thích trong ngữ cảnh khác nên câu không hoàn toàn loại trừ được mọi phương án. Nhãn trước casual trong ảnh trông như B, trùng với smart; ở đây mã hóa C theo vị trí.",
+    "translation": "Thanh thiếu niên thường cố mua quần áo hợp thời trang nhất mà các em có thể mua bằng tiền tiêu vặt.",
+    "kind": "answer"
+  },
+  "grammar-052": {
+    "answer": "D",
+    "explanation": "Leather là da, chất liệu thường dùng làm giày chất lượng tốt; cotton, silk và wool là các loại vải hoặc sợi.",
+    "translation": "Giày chất lượng tốt thường được làm bằng da.",
+    "kind": "answer"
+  },
+  "grammar-053": {
+    "answer": "D",
+    "explanation": "Trainers là giày thể thao, phù hợp để chạy bộ hơn dép xăng đan, bốt hay giày cao gót.",
+    "translation": "Giày thể thao là loại giày tốt nhất để mang khi đi chạy bộ.",
+    "kind": "answer"
+  },
+  "grammar-054": {
+    "answer": "B",
+    "explanation": "Plain chỉ loại trơn, không có họa tiết, đối lập với cà vạt có chấm, sọc hoặc hoa; silk và wool chỉ chất liệu chứ không loại trừ họa tiết.",
+    "translation": "Bố của Mark chọn một chiếc cà vạt trơn cho cuộc họp thay vì chiếc có chấm bi, sọc hay hoa.",
+    "kind": "answer"
+  },
+  "grammar-055": {
+    "answer": "A",
+    "explanation": "Gloves là găng tay, dùng để giữ ấm bàn tay; socks, hats và belts lần lượt là tất, mũ và thắt lưng.",
+    "translation": "Nên đeo găng tay để giữ ấm tay nếu bạn đạp xe vào mùa đông.",
+    "kind": "answer"
+  },
+  "grammar-056": {
+    "answer": "B",
+    "explanation": "A suit là bộ com-lê, phù hợp với mục đích trông lịch sự khi đi làm; jeans và shorts cũng không kết hợp với mạo từ a như trong câu.",
+    "translation": "Nhiều người đàn ông phải mặc com-lê đi làm để trông lịch sự.",
+    "kind": "answer"
+  },
+  "grammar-057": {
+    "answer": "C",
+    "explanation": "Jewellery là đồ trang sức nói chung, bao gồm cả bracelet và necklace; rings và earrings không phải vòng tay hay dây chuyền.",
+    "translation": "Sarah thích đồ trang sức nên cô ấy mua một chiếc vòng tay để hợp với chiếc dây chuyền mình có.",
+    "kind": "answer"
+  },
+  "grammar-058": {
+    "answer": "D",
+    "explanation": "Silver là bạc, kim loại quý thường được dùng làm nhẫn và được đặt song song với gold là vàng.",
+    "translation": "Ở cửa hàng trang sức, bạn có thể mua những chiếc nhẫn đắt tiền làm bằng vàng hoặc bạc.",
+    "kind": "answer"
+  },
+  "grammar-059": {
+    "answer": "C",
+    "explanation": "Casual clothes là quần áo thường ngày, thoải mái; áo phông và quần jeans là ví dụ phù hợp, trái với formal.",
+    "translation": "Sarah nói rằng chúng tôi chỉ cần mặc đồ thường ngày đến bữa tiệc của cô ấy, như áo phông và quần jeans.",
+    "kind": "answer"
+  },
+  "grammar-060": {
+    "answer": "C",
+    "explanation": "Correct size là kích cỡ đúng; chọn đúng kích cỡ giúp quần áo vừa vặn, như mệnh đề sau giải thích.",
+    "translation": "Khi mua quần áo, điều quan trọng là chọn đúng kích cỡ để chúng vừa vặn.",
+    "kind": "answer"
+  },
+  "grammar-061": {
+    "answer": "B",
+    "explanation": "Lively nghĩa là sôi động, phù hợp với nơi có nhiều hoạt động. Crowded chỉ đông đúc và không nhất thiết có nhiều việc để làm.",
+    "translation": "Phần lớn thanh thiếu niên thích sống ở nơi sôi động, có nhiều hoạt động để làm.",
+    "kind": "answer"
+  },
+  "grammar-062": {
+    "answer": "D",
+    "explanation": "Sociable nghĩa là hòa đồng, thích giao tiếp; việc họ thích gặp gỡ hàng xóm trực tiếp gợi ý đặc điểm này.",
+    "translation": "Những người trên con phố này rất hòa đồng: họ thích gặp gỡ hàng xóm.",
+    "kind": "answer"
+  },
+  "grammar-063": {
+    "answer": "A",
+    "explanation": "Peaceful nghĩa là yên bình, phù hợp với cảnh ngồi trong công viên nghe chim hót; lively và crowded diễn tả điều khác.",
+    "translation": "Thỉnh thoảng ngồi trong công viên nghe chim hót thật dễ chịu — thật yên bình.",
+    "kind": "answer"
+  },
+  "grammar-064": {
+    "answer": "B",
+    "explanation": "Elderly nghĩa là cao tuổi; cả ông lẫn bà của Jack đều đã ngoài 80 tuổi.",
+    "translation": "Ông bà của Jack hiện đều đã ngoài 80 tuổi — họ khá cao tuổi rồi.",
+    "kind": "answer"
+  },
+  "grammar-065": {
+    "answer": "B",
+    "explanation": "Convenient nghĩa là thuận tiện; trạm xe buýt gần nhà khiến việc đi xe buýt vào thị trấn thuận tiện.",
+    "translation": "Trạm xe buýt ở ngay gần nhà chúng tôi, vì vậy xe buýt là một cách khá thuận tiện để vào thị trấn.",
+    "kind": "answer"
+  },
+  "grammar-066": {
+    "answer": "B",
+    "explanation": "Peaceful nghĩa là yên bình, là nét thường được gắn với cuộc sống ở nông thôn. Exciting cũng đúng ngữ pháp và có thể đúng theo cảm nhận riêng, nhưng không phải ý thông thường của bài.",
+    "translation": "Sống ở nông thôn rất yên bình và có lợi cho sức khỏe.",
+    "kind": "answer"
+  },
+  "grammar-067": {
+    "answer": "A",
+    "explanation": "Huge nghĩa là rất lớn; bảo tàng quá lớn nên không thể xem hết trong một ngày. Cấu trúc là so + tính từ + that.",
+    "translation": "Bảo tàng trong thị trấn lớn đến mức không thể xem hết mọi thứ trong một ngày.",
+    "kind": "answer"
+  },
+  "grammar-068": {
+    "answer": "D",
+    "explanation": "On the coast nghĩa là ở ven biển, giải thích trực tiếp vì sao dễ đến bãi biển.",
+    "translation": "Ngôi nhà nghỉ dưỡng của Jenna ở ven biển nên rất dễ đi đến bãi biển.",
+    "kind": "answer"
+  },
+  "grammar-069": {
+    "answer": "B",
+    "explanation": "An apartment là căn hộ, phù hợp với vị trí ở tầng bốn của một tòa nhà cao tầng. A home cũng có thể đúng về ngữ pháp và nghĩa vì căn hộ là một nơi ở, nhưng kém cụ thể hơn.",
+    "translation": "Karen sống trong một căn hộ ở tầng bốn của một tòa nhà rất cao.",
+    "kind": "answer"
+  },
+  "grammar-070": {
+    "answer": "A",
+    "explanation": "City là thành phố, một nơi rất rộng lớn có nhiều người sinh sống và làm việc; village là làng, còn countryside và forest không phù hợp định nghĩa này.",
+    "translation": "Thành phố là một nơi rất rộng lớn, nơi nhiều người sinh sống và làm việc.",
+    "kind": "answer"
+  },
+  "grammar-071": {
+    "answer": "B",
+    "explanation": "Traffic lights là đèn giao thông; người lái xe phải dừng khi đèn chuyển đỏ. Danh từ số nhiều lights cũng phù hợp với turn.",
+    "translation": "Người lái xe phải dừng lại khi đèn giao thông chuyển sang màu đỏ.",
+    "kind": "answer"
+  },
+  "grammar-072": {
+    "answer": "C",
+    "explanation": "Platform là sân ga, nơi hành khách đứng chờ tàu đến. Phương án B trong ảnh và OCR có vẻ in thiếu chữ r thành habour; giữ nguyên bản chép, không tự sửa thành harbour.",
+    "translation": "Hành khách phải chờ trên sân ga cho đến khi tàu của họ đến.",
+    "kind": "answer"
+  },
+  "grammar-073": {
+    "answer": "C",
+    "explanation": "Pilot là phi công, người điều khiển máy bay; flight attendant là tiếp viên hàng không và security guard là nhân viên bảo vệ.",
+    "translation": "Phi công là người lái máy bay khi bạn đi nghỉ.",
+    "kind": "answer"
+  },
+  "grammar-074": {
+    "answer": "A",
+    "explanation": "Crowded nghĩa là đông đúc; xe buýt đông đến mức không còn chỗ cho thêm hành khách, theo cấu trúc so ... that.",
+    "translation": "Xe buýt đông đến mức không còn chỗ cho thêm hành khách nào.",
+    "kind": "answer"
+  },
+  "grammar-075": {
+    "answer": "C",
+    "explanation": "Motorway là đường cao tốc, nơi xe thường được phép chạy nhanh hơn các đường khác. Phương án D trong ảnh và OCR có vẻ in habour, thiếu chữ r; giữ nguyên bản chép.",
+    "translation": "Các phương tiện có thể chạy trên đường cao tốc nhanh hơn trên những con đường khác.",
+    "kind": "answer"
+  },
+  "grammar-076": {
+    "answer": "D",
+    "explanation": "Check kết hợp với in đã in sẵn thành check in, nghĩa là làm thủ tục trước chuyến bay; không điền cả cụm check in vào chỗ trống.",
+    "translation": "Khi đến sân bay để đáp chuyến bay, trước tiên bạn phải làm thủ tục.",
+    "kind": "answer"
+  },
+  "grammar-077": {
+    "answer": "B",
+    "explanation": "Luggage là hành lý, thứ hành khách lấy sau khi xuống máy bay; collect your luggage là cụm tự nhiên trong ngữ cảnh sân bay.",
+    "translation": "Đừng quên lấy hành lý khi bạn xuống máy bay.",
+    "kind": "answer"
+  },
+  "grammar-078": {
+    "answer": "B",
+    "explanation": "Big waves là những con sóng lớn, có thể khiến việc đi thuyền khó chịu; các phương án còn lại thuộc ngữ cảnh giao thông đường bộ.",
+    "translation": "Đi thuyền có thể khó chịu nếu có sóng lớn.",
+    "kind": "answer"
+  },
+  "grammar-079": {
+    "answer": "D",
+    "explanation": "Harbour (bản in viết habour) là bến cảng, nơi có thể thuê thuyền.",
+    "translation": "Bạn có thể thuê một chiếc thuyền nếu đi xuống bến cảng.",
+    "kind": "answer"
+  },
+  "grammar-080": {
+    "answer": "A (ý dự kiến)",
+    "explanation": "Traffic jam là ùn tắc; bản in dùng a trước traffic jams số nhiều nên câu không hoàn toàn đúng ngữ pháp.",
+    "translation": "Khi mọi người rời sở làm vào buổi tối, thường xảy ra ùn tắc trong thành phố.",
+    "kind": "answer"
+  },
+  "grammar-081": {
+    "answer": "D",
+    "explanation": "Believe in your ability nghĩa là tin vào khả năng của bản thân.",
+    "translation": "Bạn phải tin vào khả năng đưa ra quyết định đúng của mình.",
+    "kind": "answer"
+  },
+  "grammar-082": {
+    "answer": "A",
+    "explanation": "Hand in homework là nộp bài tập.",
+    "translation": "Chúng ta sẽ gặp rắc rối nếu không nộp bài tập đúng giờ.",
+    "kind": "answer"
+  },
+  "grammar-083": {
+    "answer": "C",
+    "explanation": "Join in the games nghĩa là tham gia các trò chơi.",
+    "translation": "Ở bữa tiệc, chúng tôi đã tham gia tất cả các trò chơi.",
+    "kind": "answer"
+  },
+  "grammar-084": {
+    "answer": "C",
+    "explanation": "Stay in nghĩa là ở nhà thay vì ra ngoài.",
+    "translation": "Vào thứ Sáu, cả gia đình thường ở nhà.",
+    "kind": "answer"
+  },
+  "grammar-085": {
+    "answer": "B",
+    "explanation": "Get in nghĩa là vào được bên trong; người nói không vào nhà được vì quên chìa khóa.",
+    "translation": "Tôi quên chìa khóa nên khi về nhà tôi không vào được.",
+    "kind": "answer"
+  },
+  "grammar-086": {
+    "answer": "C",
+    "explanation": "Go back to a place là quay lại một nơi.",
+    "translation": "Tôi nghĩ mỗi năm quay lại cùng một nơi nghỉ dưỡng cũng thú vị.",
+    "kind": "answer"
+  },
+  "grammar-087": {
+    "answer": "A",
+    "explanation": "Go on with nghĩa là tiếp tục.",
+    "translation": "Giáo viên của cô ấy ngạc nhiên khi cô quyết định không tiếp tục học hát.",
+    "kind": "answer"
+  },
+  "grammar-088": {
+    "answer": "D",
+    "explanation": "Go for có thể nghĩa là chọn hoặc thích một thứ.",
+    "translation": "Chị/em gái tôi luôn chọn bánh sô-cô-la. Món tôi thích nhất là vị chanh.",
+    "kind": "answer"
+  },
+  "grammar-089": {
+    "answer": "B",
+    "explanation": "Go up dùng cho giá cả tăng lên.",
+    "translation": "Giá mọi thứ đang tăng mỗi ngày.",
+    "kind": "answer"
+  },
+  "grammar-090": {
+    "answer": "C",
+    "explanation": "Go back to bed nghĩa là quay lại giường ngủ.",
+    "translation": "Sáng nay tôi thức dậy rồi quay lại giường vì thấy không khỏe.",
+    "kind": "answer"
+  },
+  "grammar-091": {
+    "answer": "A hoặc C",
+    "explanation": "Have lunch là ăn trưa; make some lunch cũng đúng nếu người nói cần chuẩn bị bữa trưa. Không có đủ ngữ cảnh xác định duy nhất.",
+    "translation": "Tôi cần ăn hoặc chuẩn bị chút bữa trưa trước khi vào thị trấn. Tôi đói!",
+    "kind": "answer"
+  },
+  "grammar-092": {
+    "answer": "D",
+    "explanation": "Went home là quá khứ của go home.",
+    "translation": "Khi phim kết thúc đã muộn, nên tất cả chúng tôi về nhà.",
+    "kind": "answer"
+  },
+  "grammar-093": {
+    "answer": "B (câu gốc mâu thuẫn)",
+    "explanation": "Did well là cụm đúng ngữ pháp, nhưng làm bài rất tốt không phù hợp với việc giáo viên không hài lòng; nguồn có thể thiếu not.",
+    "translation": "Simon đã làm bài rất tốt hôm qua, vì vậy giáo viên không hài lòng — quan hệ này mâu thuẫn trong đề gốc.",
+    "kind": "answer"
+  },
+  "grammar-094": {
+    "answer": "C",
+    "explanation": "Make a phone call là thực hiện cuộc gọi.",
+    "translation": "Điện thoại của Sophie bị hỏng nên cô ấy không thể gọi điện.",
+    "kind": "answer"
+  },
+  "grammar-095": {
+    "answer": "C",
+    "explanation": "Make up my mind nghĩa là quyết định.",
+    "translation": "Tôi vẫn chưa quyết định được nên mua áo xanh hay xanh lá.",
+    "kind": "answer"
+  },
+  "grammar-096": {
+    "answer": "D",
+    "explanation": "Go straight to bed nghĩa là đi ngủ ngay.",
+    "translation": "Tôi mệt; tôi nghĩ sẽ đi ngủ ngay khi về đến nhà.",
+    "kind": "answer"
+  },
+  "grammar-097": {
+    "answer": "A",
+    "explanation": "Sau a real cần danh từ số ít surprise.",
+    "translation": "Kết thúc bộ phim thực sự là một bất ngờ.",
+    "kind": "answer"
+  },
+  "grammar-098": {
+    "answer": "A",
+    "explanation": "Interesting mô tả tính chất của bộ phim; interested mô tả cảm giác của người.",
+    "translation": "Mẹ tôi hoàn toàn không thấy phim khoa học viễn tưởng thú vị.",
+    "kind": "answer"
+  },
+  "grammar-099": {
+    "answer": "C",
+    "explanation": "Surprised mô tả cảm xúc của người nghe trước tin tức.",
+    "translation": "Tôi ngạc nhiên bởi tin tức trên đài.",
+    "kind": "answer"
+  },
+  "grammar-100": {
+    "answer": "B",
+    "explanation": "Relaxing mô tả tác dụng hoặc tính chất thư giãn của âm nhạc.",
+    "translation": "Tôi không thấy nhạc cổ điển thư giãn.",
+    "kind": "answer"
+  },
+  "grammar-111": {
+    "answer": "C",
+    "explanation": "Sau form of cần danh từ entertainment.",
+    "translation": "Điện ảnh là hình thức giải trí tuyệt vời nhất.",
+    "kind": "answer"
+  },
+  "grammar-112": {
+    "answer": "B",
+    "explanation": "A lot of cần danh từ; organization là sự tổ chức.",
+    "translation": "Tổ chức một buổi hòa nhạc đòi hỏi rất nhiều công việc tổ chức.",
+    "kind": "answer"
+  },
+  "grammar-113": {
+    "answer": "D",
+    "explanation": "Sau a huge cần danh từ disappointment, nghĩa là một nỗi thất vọng lớn.",
+    "translation": "Thật vô cùng thất vọng khi tôi không nhận được vai trong vở kịch.",
+    "kind": "answer"
+  },
+  "grammar-114": {
+    "answer": "A",
+    "explanation": "Sau to dùng động từ nguyên mẫu challenge.",
+    "translation": "Điều quan trọng là thử thách bản thân làm những điều bạn thấy đáng sợ.",
+    "kind": "answer"
+  },
+  "grammar-115": {
+    "answer": "C",
+    "explanation": "Sau a big cần danh từ số ít worry.",
+    "translation": "Biểu diễn trong một ban nhạc có thể là một nỗi lo lớn.",
+    "kind": "answer"
+  },
+  "grammar-116": {
+    "answer": "B",
+    "explanation": "Exciting mô tả trải nghiệm; excited mô tả cảm xúc của người.",
+    "translation": "Trò chơi không thú vị như tôi mong đợi.",
+    "kind": "answer"
+  },
+  "grammar-117": {
+    "answer": "B",
+    "explanation": "Cấu trúc find + tân ngữ + tính từ diễn tả nhận xét về tân ngữ; enjoyable là tính từ bổ nghĩa cho horror films. Enjoy là động từ, còn enjoyment là danh từ. Ảnh và OCR chỉ có ba lựa chọn A–C, không thấy phương án D.",
+    "translation": "Mẹ tôi thấy phim kinh dị thú vị, nhưng bố tôi ghét chúng.",
+    "kind": "answer"
+  },
+  "grammar-118": {
+    "answer": "C",
+    "explanation": "Sau feel cần tính từ chỉ trạng thái của người xem: relaxed nghĩa là cảm thấy thư giãn. Relaxing thường miêu tả thứ gây cảm giác thư giãn; relax là động từ và relaxation là danh từ.",
+    "translation": "Nhiều người trẻ không cảm thấy thư giãn khi xem phim cùng bố mẹ.",
+    "kind": "answer"
+  },
+  "grammar-119": {
+    "answer": "A",
+    "explanation": "Sau be more cần tính từ; organized mô tả người có tính ngăn nắp, biết sắp xếp. Organization là danh từ, còn organizing không phù hợp để miêu tả đặc điểm của người trong câu này. Ảnh chỉ có ba lựa chọn A–C; OCR bỏ sót cả dòng lựa chọn, không có căn cứ để thêm D.",
+    "translation": "Giáo viên nói rằng tôi cần ngăn nắp hơn.",
+    "kind": "answer"
+  },
+  "grammar-120": {
+    "answer": "C",
+    "explanation": "Sau động từ khuyết thiếu shouldn't dùng động từ nguyên mẫu không có to, nên chọn worry; worried, worries và worrying không đúng dạng ở vị trí này.",
+    "translation": "Bạn không nên lo lắng quá nhiều. Mọi chuyện sẽ ổn thôi.",
+    "kind": "answer"
+  },
+  "notice-7-1-1": {
+    "answer": "B",
+    "explanation": "‘Expect delays’ cảnh báo hành trình có thể lâu hơn trong thời gian sửa đường; ngày 1/9 là ngày bắt đầu, không phải mở lại. Thông báo không nói lưu lượng tăng.",
+    "translation": "Đường bắt đầu sửa từ ngày 1 tháng 9 trong bốn tuần; dự kiến bị chậm trễ. A: Đoạn đường mở lại ngày 1/9. B: Chuyến đi trên đường này có thể lâu hơn trong tháng 9. C: Dự kiến lượng xe tăng trong tháng 9.",
+    "kind": "answer"
+  },
+  "notice-7-1-2": {
+    "answer": "A",
+    "explanation": "Nhân viên tư vấn tại khách sạn giúp đặt tour và vé, tức khách có thể sắp xếp hoạt động qua khách sạn; không nói nhân viên đi cùng hoặc tour khởi hành hằng ngày.",
+    "translation": "Chào mừng đến Hotel Maroc. Khách thân mến, nhân viên tư vấn nghỉ dưỡng có mặt tại phòng chờ hằng ngày từ 8–10 giờ sáng để đặt tour có hướng dẫn, vé bảo tàng/vườn và hoạt động lạc đà (nguồn in ‘camel rider’). Chúc quý khách có kỳ nghỉ vui vẻ. A: Khách có thể sắp xếp hoạt động qua khách sạn. B: Nhân viên đi cùng khách trong tour. C: Tour tham quan khởi hành từ khách sạn mỗi ngày.",
+    "kind": "answer"
+  },
+  "notice-7-1-3": {
+    "answer": "C",
+    "explanation": "Vé đặt trong vòng bảy ngày trước buổi diễn được giữ để khách đến lấy, không gửi qua bưu điện. Không có yêu cầu khách phải báo nhân viên.",
+    "translation": "Mẫu đặt vé trực tuyến: tên, địa chỉ, số vé. Vé đặt trong vòng bảy ngày trước buổi biểu diễn được giữ lại để nhận. A: Vé được gửi trong bảy ngày sau đặt. B: Khi đặt phải báo nhân viên giữ vé. C: Vé đặt tối đa một tuần trước buổi diễn không được gửi qua bưu điện.",
+    "kind": "answer"
+  },
+  "notice-7-1-4": {
+    "answer": "A",
+    "explanation": "‘Needing a lift’ là cần người chở; Paul đề nghị những người đó gọi mình. Anh đã kiểm tra mọi người đều chơi được.",
+    "translation": "Gửi tất cả cầu thủ, từ Paul: Đội hình như tuần trước; tôi đã kiểm tra mọi người đều có thể chơi. Ai cần đi nhờ đến Fyfield có thể gọi tôi. A: Ai gặp khó khăn đi đến trận đấu nên liên hệ Paul. B: Ai muốn chơi phải nói chuyện với Paul. C: Ai không chơi được phải gọi Paul.",
+    "kind": "answer"
+  },
+  "notice-7-1-5": {
+    "answer": "C",
+    "explanation": "Dịch vụ được cải thiện và ngân hàng sẽ mở đến 14 giờ thứ Bảy từ tháng sau, hàm ý thời gian mở cửa dài hơn; không nói mở cả cuối tuần hay giờ ngày thường.",
+    "translation": "Cải thiện dịch vụ: Từ tháng sau ngân hàng mở đến 14 giờ vào thứ Bảy. A: Ngân hàng mở suốt cuối tuần sau tháng tới. B: Ngày thường đóng lúc 14 giờ. C: Thời gian mở cửa trong tương lai dài hơn.",
+    "kind": "answer"
+  },
+  "notice-7-2-1": {
+    "answer": "A",
+    "explanation": "Daniel mang trang phục để chụp ảnh và mong thấy mình trong ảnh đội. Không có trận đấu hoặc việc cậu là người chụp ảnh.",
+    "translation": "Mẹ ơi, đội quần vợt gặp nhau tối nay nên con mang đồ quần vợt để chụp ảnh; con nóng lòng thấy mình trong ảnh. Daniel. A: Daniel được chụp ảnh cùng đội tối nay. B: Daniel cần trang phục để thi đấu. C: Daniel chụp ảnh những người còn lại.",
+    "kind": "answer"
+  },
+  "notice-7-2-2": {
+    "answer": "C",
+    "explanation": "Nhà hàng vẫn mở ở tầng dưới trong khi khu vực đang có biển được cải tạo; chỉ một phần hoạt động. Không nói toàn bộ đóng cửa hoặc việc cải tạo đã xong.",
+    "translation": "Nhà hàng Casali: Chúng tôi mở cửa tầng dưới trong khi khu vực này được cải tạo. A: Hãy xuống thử nhà hàng vừa cải tạo xong. B: Nhà hàng mở lại khi cải tạo xong. C: Hiện khách chỉ có thể ăn tại một phần nhà hàng.",
+    "kind": "answer"
+  },
+  "notice-7-2-3": {
+    "answer": "B",
+    "explanation": "Joe đã có vé, Emma còn vé vì bạn trai bận và Ann-Marie có thể gọi nhận vé; vì vậy cô có thể đi cùng buổi hòa nhạc với Joe.",
+    "translation": "Ann-Marie, Emma gọi. Cô ấy có vé miễn phí cho buổi diễn tối nay vì bạn trai bận. Tôi đã có vé; nếu bạn muốn đi, gọi cô ấy trước 19 giờ. Joe. A: Joe và Emma cần quyết định có lấy vé thừa không. B: Nếu rảnh, Ann-Marie có thể đi cùng buổi diễn với Joe. C: Ann-Marie gọi cho Emma để cho vé.",
+    "kind": "answer"
+  },
+  "notice-7-2-4": {
+    "answer": "C",
+    "explanation": "Thông báo nói phòng bất ngờ trống nên giá chỉ £250 đã gồm hóa đơn nhiên liệu. A và B nói phải trả thêm hóa đơn, trái nguồn.",
+    "translation": "Cho thuê phòng: bất ngờ có phòng trống nên chỉ £250 mỗi tháng, đã gồm tiền nhiên liệu. Gọi Erik số 663159. A: Người thuê phải trả thêm tiền gas và điện. B: Giá giảm còn £250 cộng hóa đơn. C: Phòng giá rẻ vì không dự kiến sẽ trống.",
+    "kind": "answer"
+  },
+  "notice-7-2-5": {
+    "answer": "A",
+    "explanation": "Maria xin lỗi vì viết thư chậm và giải thích mình rất bận. Câu sau nói nhớ lớp học, không đánh giá mức tiến bộ hay cảm ơn.",
+    "translation": "Từ Maria Gomez gửi Sarah Smith: Xin thứ lỗi vì viết thư chậm, tôi bận quá! Tôi nhớ lớp tiếng Anh của cô khi đã trở về Tây Ban Nha, nhưng ít nhất tôi hiểu mọi thứ ở đây. A: Giải thích vì sao trước đó chưa liên lạc. B: Nói tiếng Anh tiến bộ bao nhiêu. C: Cảm ơn về lớp tiếng Anh ở Tây Ban Nha.",
+    "kind": "answer"
+  },
+  "notice-7-3-1": {
+    "answer": "C",
+    "explanation": "‘Collection’ là nhận vé và ‘booked in advance’ là đã đặt trước. Quầy chỉ dành cho nhận vé, không nói bán hay nhận đặt vé.",
+    "translation": "Quầy này chỉ dành để nhận vé nhà hát đã đặt trước. A: Mua vé ở đây để vào ngay. B: Đặt vé trước tại quầy nhận. C: Nhận tại đây vé nhà hát đã đặt.",
+    "kind": "answer"
+  },
+  "notice-7-3-2": {
+    "answer": "B",
+    "explanation": "Jill bảo Bob gọi nha sĩ trước 17 giờ nếu giờ thứ Hai phù hợp. Không phải đặt lịch cho Jill hay báo lại cho Jill.",
+    "translation": "Bob, tôi đã cố đặt lịch nha sĩ cho bạn vào thứ Sáu nhưng họ chỉ có 10 giờ thứ Hai. Nếu được, hãy gọi họ trước 17 giờ hôm nay. Jill. Bob cần: A: đặt lịch cho Jill; B: gọi nha sĩ về cuộc hẹn; C: báo Jill khi nào mình có thể đi.",
+    "kind": "answer"
+  },
+  "notice-7-3-3": {
+    "answer": "A",
+    "explanation": "Điều kiện tháo giày là giày bẩn; biển không yêu cầu lau giày hay tháo mọi đôi giày.",
+    "translation": "Nếu giày bẩn, vui lòng tháo trước khi vào phòng thay đồ. A: Có thể mang giày trong phòng trừ khi giày bẩn. B: Lau giày ở cửa trước khi vào. C: Mọi đôi giày phải tháo và để ở cửa.",
+    "kind": "answer"
+  },
+  "notice-7-3-4": {
+    "answer": "C",
+    "explanation": "Anita nhắc Tony về cuộc hẹn đón Maria tại ga và báo giờ dự kiến. Người đến muộn là Maria, không phải Anita.",
+    "translation": "Tin nhắn cho Tony: Maria xin lỗi vì tối nay sẽ đến muộn; tàu lại trễ! Đừng quên bạn gặp cô ấy tại ga. Cô ấy sẽ đến khoảng 19 giờ 15. Anita. Anita đang: A: giải thích chính mình đến muộn; B: xin lỗi vì lỡ cuộc gặp; C: nhắc ai đó về một cuộc hẹn.",
+    "kind": "answer"
+  },
+  "notice-7-3-5": {
+    "answer": "C",
+    "explanation": "‘Lack of interest’ cho thấy không đủ người quan tâm chuyến đi; không có vấn đề phương tiện hay yêu cầu nêu sở thích.",
+    "translation": "Câu lạc bộ sinh viên quốc tế: Chuyến đi bằng xe khách thứ Bảy tới bị hủy do thiếu người quan tâm. A: Hãy cho biết sở thích để tránh hủy chuyến khác. B: Chuyến bị hủy do vấn đề vận chuyển. C: Chuyến bị hủy vì số người quá ít.",
+    "kind": "answer"
+  },
+  "notice-7-4-1": {
+    "answer": "C",
+    "explanation": "Người có thể đến ký tên bên dưới; chỉ những người muốn giúp tổ chức mới gọi Sophie.",
+    "translation": "Tiệc cuối kỳ, 15/12 từ 19–22 giờ. Hãy ký bên dưới nếu có thể đến! Chúng tôi cũng cần người giúp tổ chức: gọi Sophie 678853. A: Muốn đến phải gọi Sophie. B: Ai giúp tổ chức phải ký. C: Ai có thể dự nên ghi tên trên thông báo.",
+    "kind": "answer"
+  },
+  "notice-7-4-2": {
+    "answer": "C",
+    "explanation": "Email cung cấp ngày, địa điểm, nội dung và đối tượng tham dự triển lãm; không mời trưng bày hay nêu cách đặt chỗ.",
+    "translation": "Thư mới từ Hintonexhibitions@TCK.co.uk, chủ đề Guitar Show: Triển lãm guitar trở lại Trung tâm triển lãm Hinton ngày 6/3. Nhiều guitar mới được trưng bày; trường học và công chúng đều có thể tham dự. Mục đích: A: mời trưng bày hàng; B: giải thích đặt chỗ; C: cung cấp thông tin sự kiện.",
+    "kind": "answer"
+  },
+  "notice-7-4-3": {
+    "answer": "A",
+    "explanation": "Aziz bị ốm và nhờ Abdul ghé lấy bài tập đến hạn nộp hôm nay trên đường đến trường, tức mang bài đi nộp giúp.",
+    "translation": "Chào Abdul, tôi không đến trường vì không khỏe. Trên đường đến trường hãy ghé lấy bài tập của tôi; hôm nay là hạn nộp. Cảm ơn, Aziz. Aziz muốn Abdul: A: mang bài tập đến trường giúp; B: gọi trường báo ốm; C: lấy bài tập mới phát hôm nay.",
+    "kind": "answer"
+  },
+  "notice-7-4-4": {
+    "answer": "A",
+    "explanation": "Nhãn hướng dẫn chuyển súp còn thừa khỏi hộp vào tủ lạnh sau khi mở, tức cách bảo quản.",
+    "translation": "Súp: Sau khi mở, lấy phần súp chưa dùng khỏi hộp và cho vào tủ lạnh. Nhãn hướng dẫn: A: cách bảo quản; B: cách sử dụng; C: cách mở sản phẩm.",
+    "kind": "answer"
+  },
+  "notice-7-4-5": {
+    "answer": "B",
+    "explanation": "Làm buổi tối hoặc cuối tuần và được đào tạo đầy đủ cho thấy có cơ hội bán thời gian không cần kinh nghiệm trước. Bữa ăn miễn phí chứ không chỉ giảm giá.",
+    "translation": "Tuyển phụ bếp: làm tối hoặc cuối tuần, ăn miễn phí, được đào tạo đầy đủ; nộp đơn bên trong. A: Chỉ người đã được đào tạo mới nên nộp. B: Có việc bán thời gian cho người chưa có kinh nghiệm làm bếp. C: Nhân viên bán thời gian được ăn giá rẻ.",
+    "kind": "answer"
+  },
+  "notice-8-1-1": {
+    "answer": "C",
+    "explanation": "Công ty giữ chỗ đến 21 giờ tối nay và yêu cầu £100 để hoàn tất; C diễn đạt khoản cần thanh toán trong tối nay. Nguồn không gọi rõ khoản này là tiền đặt cọc.",
+    "translation": "Tropical Travel gửi Sally Jones: Đây là thông tin bạn yêu cầu. Chúng tôi giữ đặt chỗ kỳ nghỉ đến 21 giờ tối nay, nhưng cần £100 để hoàn tất. Sally phải: A: gửi thông tin đã yêu cầu; B: liên hệ xin thêm thông tin; C: trả tiền đặt cọc tối nay.",
+    "kind": "answer"
+  },
+  "notice-8-1-2": {
+    "answer": "A",
+    "explanation": "Sau 17 giờ 30 Peter có thể mang chìa dự phòng để lấy xe và nhận chìa còn lại sau, nên không nhất thiết đến trước giờ văn phòng đóng.",
+    "translation": "Peter, gara gọi: xe đã sẵn sàng để nhận. Chìa khóa ở văn phòng đến 17 giờ 30; nếu không hãy mang chìa dự phòng và lấy chìa kia lúc khác. A: Dù gara đóng Peter vẫn có thể lấy xe. B: Phải đến trước 17 giờ 30. C: Không thể lấy xe trước khi nhận chìa ở gara.",
+    "kind": "answer"
+  },
+  "notice-8-1-3": {
+    "answer": "B",
+    "explanation": "Nhân viên có thể yêu cầu xem vé bất cứ lúc nào, nghĩa là có thể kiểm tra vé khi đi xe; thông báo không nói về mất vé hoặc cấp vé.",
+    "translation": "Hãy giữ vé xe buýt. Nhân viên vận tải có thể yêu cầu xem vé bất cứ lúc nào. A: Mất vé phải báo nhân viên. B: Có thể có kiểm tra vé trong chuyến đi. C: Người không có vé có thể xin nhân viên một vé.",
+    "kind": "answer"
+  },
+  "notice-8-1-4": {
+    "answer": "B",
+    "explanation": "Jen đã báo Paula về muộn nhưng Lewis nói không sao, nên anh chấp nhận cuộc gọi muộn. B là cách diễn đạt khái quát nhất; nguồn không xác nhận mọi giờ đều phù hợp.",
+    "translation": "Paula, bạn gọi Lewis ở nhà được không? Tôi đã báo bạn về muộn nhưng anh ấy nói không sao. Tôi ra ngoài. Mai gặp. Jen. A: Lewis không biết Paula vắng đến ngày mai. B: Lewis không bận tâm Paula gọi về nhà lúc nào. C: Lewis sẽ không gọi Paula đến tối muộn.",
+    "kind": "answer"
+  },
+  "notice-8-1-5": {
+    "answer": "A",
+    "explanation": "Chỉ có tham quan có hướng dẫn, do đó khách phải theo tour thay vì đi một mình; vé vào miễn phí, không nêu phí hướng dẫn viên riêng.",
+    "translation": "Bảo tàng Hunter đóng cửa, mở lại ngày 15/9; vào cửa miễn phí, chỉ tham quan có hướng dẫn, đặt sớm. Từ 15/9 khách: A: phải tham gia một nhóm; B: được tự đi một mình; C: phải trả tiền hướng dẫn viên.",
+    "kind": "answer"
+  },
+  "notice-8-2-1": {
+    "answer": "B",
+    "explanation": "Liz nhờ Ted mua rau trên đường về vì cô chưa kịp mua để nấu súp; rau là nguyên liệu.",
+    "translation": "Ted, tối nay trên đường đi làm về mua giúp ít rau được không? Tôi hứa nấu súp cho Kate nhưng chưa có thời gian mua sắm. Cảm ơn! Liz. A: Liz định đi mua sắm với Kate. B: Liz cần Ted mua nguyên liệu giúp. C: Liz muốn lời khuyên nấu súp rau.",
+    "kind": "answer"
+  },
+  "notice-8-2-2": {
+    "answer": "B",
+    "explanation": "Dàn nhạc còn chỗ và Dan muốn Martin đưa những người muốn tham gia tới buổi tập, nhằm tăng số thành viên; dàn nhạc đã tồn tại.",
+    "translation": "Gửi Martin, từ Dan: Dàn nhạc còn chỗ, nếu bạn biết ai muốn tham gia, sao không đưa họ tới buổi tập? Dan đang: A: thuyết phục Martin gia nhập; B: tăng số người trong dàn nhạc; C: tìm người giúp thành lập dàn nhạc.",
+    "kind": "answer"
+  },
+  "notice-8-2-3": {
+    "answer": "C",
+    "explanation": "Chỉ dẫn bảo bỏ thuốc còn lại sau một tháng; một hoặc hai viên mỗi ngày không đồng nghĩa uống hai lần mỗi ngày hoặc phải dùng hết.",
+    "translation": "Hướng dẫn dùng thuốc: Uống một hoặc hai viên mỗi ngày, với nước. Bỏ thuốc còn lại sau một tháng. A: Uống hai lần mỗi ngày trong một tháng. B: Phải dùng hết thuốc trong một tháng. C: Bỏ phần thuốc còn lại sau một tháng.",
+    "kind": "answer"
+  },
+  "notice-8-2-4": {
+    "answer": "C",
+    "explanation": "Mỗi vé phim mua tại quầy được kèm pizza miễn phí từ quán café. Không nói nhận pizza tại quầy vé hay mua pizza được xem phim miễn phí.",
+    "translation": "Miễn phí pizza từ quán café của chúng tôi với mỗi vé xem phim mua tại quầy vé! Người xem phim có thể: A: nhận pizza miễn phí tại quầy vé; B: xem phim miễn phí nếu mua pizza; C: được pizza miễn phí khi trả tiền xem phim.",
+    "kind": "answer"
+  },
+  "notice-8-2-5": {
+    "answer": "A",
+    "explanation": "Anna quay lại văn phòng lấy túi của mình và bảo Sarah chờ, nên sẽ đến quán muộn. Cô không quên đường hay lấy túi của Sarah.",
+    "translation": "Sarah, tôi để quên túi xách ở văn phòng nên đang đi bộ quay lại lấy. Đợi tôi ở quán nhé, tôi sẽ không lâu đâu! Anna. A: Anna sẽ đến quán muộn. B: Anna quên đường đến quán. C: Anna đang lấy túi của Sarah ở quán.",
+    "kind": "answer"
+  },
+  "notice-8-3-1": {
+    "answer": "C",
+    "explanation": "Lớp tối thứ Ba đã đầy, còn lớp thứ Năm và giáo viên sẽ gọi lại; Karen cần quyết định có đổi ngày không. Không phải học hai buổi hoặc đổi giờ sớm hơn.",
+    "translation": "Karen, giáo viên tiếng Pháp gọi: lớp tối thứ Ba bạn muốn học kỳ tới đã đầy, nhưng thứ Năm còn chỗ nếu bạn học thay được. Thầy sẽ gọi lại. Jan. A: Karen có thể học hai tối mỗi tuần. B: Lớp tối kỳ này bắt đầu sớm hơn. C: Karen cần quyết định đổi tối học hay không.",
+    "kind": "answer"
+  },
+  "notice-8-3-2": {
+    "answer": "C",
+    "explanation": "Nguồn nói toàn bộ rau do nông dân địa phương cung cấp, giúp giữ giá thấp cho khách. Không khẳng định nông dân rẻ nhất hay giá thấp nhất thị trường.",
+    "translation": "Nông dân địa phương cung cấp toàn bộ rau của siêu thị này, giúp giữ giá thấp cho khách hàng! A: Chúng tôi mua rau từ nông dân có giá rẻ nhất. B: Chúng tôi cam kết không đâu có thực phẩm tươi rẻ hơn. C: Chúng tôi mua rau địa phương để khách tiết kiệm tiền.",
+    "kind": "answer"
+  },
+  "notice-8-3-3": {
+    "answer": "B",
+    "explanation": "David đã tiếp tục đi và dự kiến đến nhà Jack sau 30 phút. Anh không còn nói đang sửa xe, cũng không nhờ Jack đến đón.",
+    "translation": "Jack, xe tôi hỏng trên đường cao tốc nên tôi sẽ đến đón bạn muộn. Giờ tôi đã đi tiếp, gặp bạn tại nhà sau 30 phút. David. A: David đang sửa xe trên cao tốc. B: David cách nhà Jack khoảng nửa giờ. C: David mong Jack lái xe đến đón.",
+    "kind": "answer"
+  },
+  "notice-8-3-4": {
+    "answer": "A",
+    "explanation": "Denise đã mượn áo của Maria lần trước và Maria muốn cô mang trả để dùng khi đi trượt ván tuyết. Câu cuối nguồn in thiếu tự nhiên (‘soon and cold!’).",
+    "translation": "Gửi Denise, từ Maria: Chiếc áo len bạn mượn để trượt tuyết lần trước, bạn mang qua nhà tôi được không? Tôi sắp đi trượt ván tuyết với Mark và lạnh! A: Maria cần Denise trả món đồ đã cho mượn. B: Maria mời Denise đi cùng. C: Maria muốn mượn đồ của Denise.",
+    "kind": "answer"
+  },
+  "notice-8-3-5": {
+    "answer": "C",
+    "explanation": "Bãi chỉ dành cho khách thăm bệnh viện, giới hạn hai giờ; nhân viên theo biển đến bãi riêng. Vì vậy đây là chỗ đỗ thời gian ngắn.",
+    "translation": "Bãi đỗ xe: chỉ dành cho khách thăm bệnh viện, thời gian tối đa hai giờ. Đi theo biển đến bãi nhân viên. A: Chỉ khách thăm được đỗ quá hai giờ. B: Nhân viên được đỗ ở đây. C: Bãi này dành cho người đến thăm bệnh viện trong thời gian ngắn.",
+    "kind": "answer"
+  },
+  "notice-8-4-1": {
+    "answer": "C",
+    "explanation": "Julie hỏi John đã ăn ở nhà hàng chưa và nơi đó có phù hợp tổ chức sinh nhật mẹ không, tức xin ý kiến về địa điểm.",
+    "translation": "John, em thấy quảng cáo nhà hàng Pháp mới ở trung tâm. Anh ăn ở đó chưa? Nó có phù hợp cho sinh nhật mẹ thứ Bảy không? Julie. A: Julie hỏi nhà hàng mới có món Pháp không. B: Julie mời John dự tiệc. C: Julie xin ý kiến John về địa điểm tổ chức lễ gia đình.",
+    "kind": "answer"
+  },
+  "notice-8-4-2": {
+    "answer": "C",
+    "explanation": "Chỉ một số mặt hàng đang giảm giá được giảm thêm; xem nhãn để biết chi tiết. Không nói tất cả được giảm thêm hoặc chỉ hàng có nhãn mới giảm.",
+    "translation": "Olympia Sportswear: Giảm thêm đối với một số mặt hàng giảm giá. Xem chi tiết trên nhãn. A: Khách được giảm giá mọi mặt hàng trong đợt sale. B: Chỉ hàng có nhãn mới được giảm. C: Một số hàng có giá đặc biệt.",
+    "kind": "answer"
+  },
+  "notice-8-4-3": {
+    "answer": "A",
+    "explanation": "Sonia phải báo số vé và hỏi Bill đã quyết định đi cùng chưa, nhằm biết có cần vé cho anh không; cô không nhờ anh mua vé.",
+    "translation": "Gửi Bill, từ Sonia: Chào, tôi phải báo nhà hát cần bao nhiêu vé. Bạn đã quyết định có đi cùng chúng tôi không? Hy vọng là có! Sonia viết để: A: biết Bill có muốn vé xem kịch không; B: báo Bill số vé cần; C: nhắc Bill mua vé.",
+    "kind": "answer"
+  },
+  "notice-8-4-4": {
+    "answer": "B",
+    "explanation": "Không có nơi thay đồ nên hai người phải đến trong trang phục sẵn sàng chạy. Giờ nhận số không phải giờ đón Jo và không giao riêng việc nhận số cho Matt.",
+    "translation": "Matt, cuộc đua Chủ nhật bắt đầu lúc 10 giờ. Ta có thể lấy số tại nơi đăng ký trước một giờ. Không có chỗ thay đồ nên phải đến trong trạng thái sẵn sàng chạy. Jo. A: Jo muốn Matt đón cô trước giờ đua một tiếng. B: Jo nhắc Matt mặc đồ chạy trước khi rời nhà. C: Jo muốn Matt lấy số trước khi cô đến.",
+    "kind": "answer"
+  },
+  "notice-8-4-5": {
+    "answer": "B",
+    "explanation": "Mẩu bán sofa ghi ‘Buyer must collect’, nên người mua phải tự đến lấy; không nói Andre muốn mua hoặc sẽ thu xếp vận chuyển. Số điện thoại quá mờ để xác nhận.",
+    "translation": "Sofa thoải mái, £20, quá lớn so với căn hộ mới của tôi. Người mua phải tự đến lấy. Gọi Andre: số không đọc chắc chắn. A: Andre muốn mua sofa lớn cho căn hộ. B: Andre bán sofa với điều kiện người mua mang đi. C: Người mua gọi Andre để thu xếp vận chuyển sofa.",
+    "kind": "answer"
+  },
+  "notice-plus-2-2-1": {
+    "answer": "C",
+    "explanation": "Josh có thể mua vé và Samir được nhắn cho anh biết trong hôm nay nếu muốn đi; không phải hỏi Josh có muốn đi hay báo tình trạng vé.",
+    "translation": "Samir, Josh gọi nói vẫn còn vé hòa nhạc Helix, bạn chưa quá muộn! Anh ấy có thể lấy cho bạn một vé. Nếu quan tâm hãy báo anh ấy hôm nay. Samir phải: A: hỏi Josh có muốn đi không; B: báo Josh còn vé không; C: liên hệ Josh nếu muốn đi.",
+    "kind": "answer"
+  },
+  "notice-plus-2-2-2": {
+    "answer": "B",
+    "explanation": "Trước khi xuống tàu hành khách phải kiểm tra đã mang đủ hành lý; không có quy định về cửa tàu hay chỗ để vali. ‘YOO’ là lỗi in trong nguồn.",
+    "translation": "Trước khi rời tàu, bạn phải kiểm tra đã mang đủ hành lý. A: Không được để hành lý gần cửa tàu. B: Hành khách nên nhớ mang theo mọi túi hành lý. C: Có thể để vali lớn giữa các ghế.",
+    "kind": "answer"
+  },
+  "notice-plus-2-2-3": {
+    "answer": "A",
+    "explanation": "Andrea đề nghị gặp ở thị trấn vào thứ Sáu hoặc thứ Bảy thay cho chơi tennis; ‘Why don’t we...?’ đưa ra đề xuất, không phải xin lỗi hay giới thiệu một món đồ.",
+    "translation": "Gửi Gina, từ Andrea: Tiếc là đầu gối bạn đau đến mức không thể chơi tennis với tôi. Thay vào đó ta gặp nhau ở thị trấn thứ Sáu hoặc thứ Bảy nhé? Ngày nào tốt hơn? Mục đích: A: đề xuất một việc; B: xin lỗi; C: giới thiệu/khuyên dùng thứ gì đó.",
+    "kind": "answer"
+  },
+  "notice-plus-2-2-4": {
+    "answer": null,
+    "explanation": "Nguồn in các phương án B và C bị ghép/cụt: B kết thúc ‘with petrol are able to pay’, còn C kết thúc ‘without checking you’. Ý của thông báo là kiểm tra đủ tiền trước khi đổ xăng, nhưng không thể xác nhận một phương án nguyên vẹn tương đương; không suy đoán phần thiếu.",
+    "translation": "Hãy chắc chắn bạn mang đủ tiền trước khi đổ xăng cho xe. A: Kiểm tra đã chọn đúng loại xăng trước khi đổ. B: Bạn có thể trả tiền mặt hoặc thẻ sau khi đổ xăng [phần cuối in lỗi: ‘are able to pay’]. C: Không nên đổ xăng nếu không kiểm tra bạn [câu bị cụt]. Không thể khẳng định đáp án từ các câu in lỗi.",
+    "kind": "answer"
+  },
+  "notice-plus-2-2-5": {
+    "answer": "B",
+    "explanation": "Lena đề nghị Jake mang những đĩa CD mới; cô nói có nhiều thức ăn và chính cô sẽ đón Jake, không phải ngược lại.",
+    "translation": "Jake, tối nay bạn đến tiệc của Sonia chứ? Đừng lo đồ ăn, ở đó sẽ có nhiều. Sao không mang CD mới của bạn? Gọi tôi, tôi sẽ đón bạn. Lena. A: Lena muốn Jake chở cô. B: Lena nghĩ Jake nên mang nhạc đến tiệc. C: Lena muốn Jake mang đồ ăn.",
+    "kind": "answer"
+  },
+  "notice-plus-2-3-1": {
+    "answer": "C",
+    "explanation": "Được mượn sách hai ngày khi có sự cho phép của giáo viên, nên phải xin phép trước; không giới hạn quyền mượn chỉ cho giáo viên.",
+    "translation": "Những cuốn sách này có thể được mượn trong hai ngày với sự cho phép của giáo viên. A: Chỉ giáo viên được mượn quá hai ngày. B: Đưa sách cho giáo viên khi trả sau hai ngày. C: Cần hỏi giáo viên trước khi mang sách đi mượn hai ngày.",
+    "kind": "answer"
+  },
+  "notice-plus-2-3-2": {
+    "answer": "A",
+    "explanation": "Neil không thể chơi trừ khi James cho mượn vợt, vì vợt của anh hỏng và không sửa được. Trận chưa bị hủy vô điều kiện. Nguồn in thiếu ‘be’ trong ‘can’t repaired’.",
+    "translation": "James, Neil gọi. Anh ấy không thể chơi tennis với bạn ngày mai trừ khi bạn cho mượn vợt, vì vợt của anh ấy hỏng và không sửa được. A: Neil xin mượn vợt của James cho trận ngày mai. B: Neil đã hủy trận ngày mai. C: Neil sẽ chơi khi vợt hỏng được sửa.",
+    "kind": "answer"
+  },
+  "notice-plus-2-3-3": {
+    "answer": "C",
+    "explanation": "Cầu đóng để sửa từ trưa Chủ nhật trong hai tuần, nên không thể sử dụng sau trưa Chủ nhật. A nói ‘in two weeks’ time’ là sau hai tuần, không phải bắt đầu trưa Chủ nhật; nét khoanh không đáng tin.",
+    "translation": "Cầu này sẽ đóng để sửa từ trưa Chủ nhật trong hai tuần. A: Cầu sẽ được sửa sau hai tuần, bắt đầu trưa Chủ nhật. B: Việc sửa hoàn tất trưa Chủ nhật. C: Không thể sử dụng cầu sau trưa Chủ nhật.",
+    "kind": "answer"
+  },
+  "notice-plus-2-3-4": {
+    "answer": "B",
+    "explanation": "Anna nói mũ có thể ở trong xe hoặc căn hộ của Emma, nên không chắc vị trí. Cô không nói chắc đã bỏ lại trên xe hay Emma đã mượn.",
+    "translation": "Gửi Emma, từ Anna: Bạn tìm mũ giúp mình được không? Mình đã có nó trong xe bạn nên có thể nó ở đó; nếu không, có thể ở đâu đó trong căn hộ bạn. Thân, Anna. A: Anna nhớ để mũ lại trên xe Emma. B: Anna không chắc chính xác mũ ở đâu. C: Anna muốn Emma trả chiếc mũ đã mượn.",
+    "kind": "answer"
+  },
+  "notice-plus-2-3-5": {
+    "answer": "B",
+    "explanation": "Muốn đi Edinburgh phải trả $20 tiền cọc vào thứ Năm. B là lựa chọn gần nhất, nhưng ‘on Thursday’ không hoàn toàn đồng nghĩa ‘by Thursday’; nguồn không cho biết tổng giá hay ngày khởi hành.",
+    "translation": "Nếu muốn đi Edinburgh, hãy trả $20 tiền đặt cọc vào thứ Năm. A: Cần mang ít nhất $20 đến Edinburgh vào thứ Năm. B: Nếu không trả $20 trước hoặc vào thứ Năm, bạn không thể đi Edinburgh. C: Tổng giá chuyến đi là $20, trả trước hoặc vào thứ Năm.",
+    "kind": "answer"
+  },
+  "transform-p27-present-perfect-1": {
+    "answer": "My uncle hasn't painted his house since last year.",
+    "explanation": "Last + quá khứ đơn nêu lần cuối; viết lại bằng hiện tại hoàn thành phủ định và since + mốc thời gian.",
+    "translation": "Chú tôi đã không sơn nhà kể từ năm ngoái.",
+    "kind": "sample"
+  },
+  "transform-p27-present-perfect-2": {
+    "answer": "They haven't visited me for five years.",
+    "explanation": "Dùng hiện tại hoàn thành phủ định với for + khoảng thời gian năm năm.",
+    "translation": "Họ đã không đến thăm tôi trong năm năm.",
+    "kind": "sample"
+  },
+  "transform-p27-present-perfect-3": {
+    "answer": "Mary hasn't taken any pictures since she was on holiday last year.",
+    "explanation": "Chuyển last took thành has not taken; since theo sau mệnh đề chỉ mốc trong quá khứ.",
+    "translation": "Mary đã không chụp bức ảnh nào kể từ kỳ nghỉ năm ngoái.",
+    "kind": "sample"
+  },
+  "transform-p27-present-perfect-4": {
+    "answer": "My children haven't eaten ice cream since last summer.",
+    "explanation": "Dùng have not eaten và since + mốc last summer.",
+    "translation": "Các con tôi đã không ăn kem kể từ mùa hè năm ngoái.",
+    "kind": "sample"
+  },
+  "transform-p27-present-perfect-5": {
+    "answer": "My sister hasn't bought any clothes for nine months.",
+    "explanation": "The last time ... nine months ago chuyển sang hiện tại hoàn thành phủ định với for nine months.",
+    "translation": "Chị/em gái tôi đã không mua quần áo trong chín tháng.",
+    "kind": "sample"
+  },
+  "transform-p27-present-perfect-6": {
+    "answer": "He hasn't written to his parents for six months.",
+    "explanation": "Dùng has not written với for + khoảng thời gian; phải bỏ từ last trong gợi ý in sẵn vì không thể giữ nguyên và tạo câu hiện tại hoàn thành này.",
+    "translation": "Anh ấy đã không viết thư cho bố mẹ trong sáu tháng.",
+    "kind": "sample"
+  },
+  "transform-p27-present-perfect-7": {
+    "answer": "They haven't had a holiday abroad since 2019.",
+    "explanation": "Dùng have not had với since + năm là mốc thời gian.",
+    "translation": "Họ đã không đi nghỉ ở nước ngoài kể từ năm 2019.",
+    "kind": "sample"
+  },
+  "transform-p27-present-perfect-8": {
+    "answer": "Janet has played the piano since she was in grade 5.",
+    "explanation": "Dùng has played + since + mệnh đề quá khứ nếu giả định Janet vẫn chơi; cũng có thể dùng has been playing để nhấn mạnh sự liên tục.",
+    "translation": "Janet đã chơi piano kể từ khi cô ấy học lớp năm.",
+    "kind": "sample"
+  },
+  "transform-p27-present-perfect-9": {
+    "answer": "These workers have worked in that factory since 2001.",
+    "explanation": "Dùng have worked + since 2001, với giả định công việc vẫn tiếp diễn; have been working cũng có thể dùng.",
+    "translation": "Những công nhân này đã làm việc trong nhà máy đó từ năm 2001.",
+    "kind": "sample"
+  },
+  "transform-p27-present-perfect-10": {
+    "answer": "My friends have studied English for 15 years.",
+    "explanation": "Dùng have studied + for + khoảng thời gian nếu việc học vẫn tiếp diễn; have been studying cũng phù hợp.",
+    "translation": "Bạn bè tôi đã học tiếng Anh được mười lăm năm.",
+    "kind": "sample"
+  },
+  "transform-p27-comparison-1": {
+    "answer": "Bill is the smartest student in the class.",
+    "explanation": "No student ... as smart as Bill tương đương so sánh nhất the smartest, trong cách hiểu Bill là người thông minh nhất lớp.",
+    "translation": "Bill là học sinh thông minh nhất lớp.",
+    "kind": "sample"
+  },
+  "transform-p27-comparison-2": {
+    "answer": "The city is not as peaceful as the countryside.",
+    "explanation": "A is more peaceful than B tương đương B is not as peaceful as A. Gợi ý Yesterday morning làm đổi thời gian nên không thể giữ nguyên mà vẫn bảo toàn nghĩa.",
+    "translation": "Thành phố không yên bình bằng vùng quê.",
+    "kind": "sample"
+  },
+  "transform-p27-comparison-3": {
+    "answer": "The seats at the back are cheaper than the seats at the front.",
+    "explanation": "Đảo hai vế so sánh và dùng tính từ trái nghĩa cheaper than.",
+    "translation": "Những ghế phía sau rẻ hơn những ghế phía trước.",
+    "kind": "sample"
+  },
+  "transform-p27-comparison-4": {
+    "answer": "Liverpool is the most exciting city in Britain.",
+    "explanation": "No city ... as exciting as Liverpool có thể viết lại bằng so sánh nhất the most exciting.",
+    "translation": "Liverpool là thành phố sôi động nhất nước Anh.",
+    "kind": "sample"
+  },
+  "transform-p27-comparison-5": {
+    "answer": "Writing Japanese is not as easy as speaking Japanese.",
+    "explanation": "A is easier than B tương đương B is not as easy as A.",
+    "translation": "Viết tiếng Nhật không dễ bằng nói tiếng Nhật.",
+    "kind": "sample"
+  },
+  "transform-p27-comparison-6": {
+    "answer": "Travelling by train is not as comfortable as travelling by plane.",
+    "explanation": "Đổi more comfortable than thành not as comfortable as, đảo thứ tự hai phương thức.",
+    "translation": "Đi tàu hỏa không thoải mái bằng đi máy bay.",
+    "kind": "sample"
+  },
+  "transform-p27-comparison-7": {
+    "answer": "The city is noisier than the countryside.",
+    "explanation": "Not as noisy as ở một vế có thể chuyển thành noisier than ở vế đảo lại.",
+    "translation": "Thành phố ồn ào hơn vùng quê.",
+    "kind": "sample"
+  },
+  "transform-p27-comparison-8": {
+    "answer": "Many people say that Venice is the most romantic city in the world.",
+    "explanation": "Giữ nguyên Many people say that; chuyển no city ... as romantic as thành the most romantic city.",
+    "translation": "Nhiều người nói rằng Venice là thành phố lãng mạn nhất thế giới.",
+    "kind": "sample"
+  },
+  "transform-p28-comparison-9": {
+    "answer": "Antarctica is the coldest place on the Earth.",
+    "explanation": "No place is as cold as Antarctica có thể được viết lại bằng so sánh nhất: Antarctica is the coldest place.",
+    "translation": "Nam Cực là nơi lạnh nhất trên Trái Đất.",
+    "kind": "sample"
+  },
+  "transform-p28-comparison-10": {
+    "answer": "Hyde Park in London is smaller than Central Park in New York.",
+    "explanation": "Đảo đối tượng so sánh và đổi bigger thành smaller.",
+    "translation": "Công viên Hyde ở London nhỏ hơn Công viên Central ở New York.",
+    "kind": "sample"
+  },
+  "transform-p28-relative-1": {
+    "answer": "He worked for a woman who used to be an artist.",
+    "explanation": "Dùng who thay cho she để bổ nghĩa cho a woman.",
+    "translation": "Anh ấy từng làm việc cho một người phụ nữ trước đây là nghệ sĩ.",
+    "kind": "sample"
+  },
+  "transform-p28-relative-2": {
+    "answer": "They called a doctor who lived nearby.",
+    "explanation": "Dùng who thay cho he để bổ nghĩa cho a doctor.",
+    "translation": "Họ đã gọi một bác sĩ sống gần đó.",
+    "kind": "sample"
+  },
+  "transform-p28-relative-3": {
+    "answer": "I wrote an email to my sister, who lives in Italy.",
+    "explanation": "Dùng who cho người; dấu phẩy cho biết thông tin về người chị hoặc em gái là bổ sung. Nếu cần phân biệt giữa nhiều chị em, có thể bỏ dấu phẩy.",
+    "translation": "Tôi đã viết email cho chị hoặc em gái tôi, người sống ở Ý.",
+    "kind": "sample"
+  },
+  "transform-p28-relative-4": {
+    "answer": "The police officer has just arrested a man who robbed the bank.",
+    "explanation": "Dùng who thay cho he để bổ nghĩa cho a man.",
+    "translation": "Viên cảnh sát vừa bắt một người đàn ông đã cướp ngân hàng.",
+    "kind": "sample"
+  },
+  "transform-p28-relative-5": {
+    "answer": "We broke a car which belonged to my uncle.",
+    "explanation": "Dùng which thay cho it để bổ nghĩa cho a car.",
+    "translation": "Chúng tôi đã làm hỏng một chiếc xe thuộc về chú hoặc bác tôi.",
+    "kind": "sample"
+  },
+  "transform-p28-relative-6": {
+    "answer": "Nam loves books which have happy endings.",
+    "explanation": "Dùng which thay cho they để bổ nghĩa cho books.",
+    "translation": "Nam thích những cuốn sách có kết thúc có hậu.",
+    "kind": "sample"
+  },
+  "transform-p28-relative-7": {
+    "answer": "I first learned English from a book which I’ve just reread.",
+    "explanation": "Dùng which thay cho it làm tân ngữ của reread; không lặp lại it.",
+    "translation": "Tôi bắt đầu học tiếng Anh từ một cuốn sách mà tôi vừa đọc lại.",
+    "kind": "sample"
+  },
+  "transform-p28-relative-8": {
+    "answer": "She opened the cupboard where she kept her best glasses.",
+    "explanation": "Dùng where thay cho in there để chỉ nơi cất những chiếc cốc hoặc ly.",
+    "translation": "Cô ấy mở chiếc tủ nơi cô cất những chiếc ly đẹp nhất của mình.",
+    "kind": "sample"
+  },
+  "transform-p28-relative-9": {
+    "answer": "This is a very old house where General Giap lived.",
+    "explanation": "Dùng where thay cho here để chỉ ngôi nhà là nơi Đại tướng Giáp từng sống.",
+    "translation": "Đây là một ngôi nhà rất cổ, nơi Đại tướng Giáp từng sống.",
+    "kind": "sample"
+  },
+  "transform-p28-relative-10": {
+    "answer": "There's a great new bookshop in town where you can buy all the latest magazines.",
+    "explanation": "Dùng where thay cho there để chỉ địa điểm mua tạp chí.",
+    "translation": "Trong thị trấn có một hiệu sách mới tuyệt vời, nơi bạn có thể mua tất cả các tạp chí mới nhất.",
+    "kind": "sample"
+  },
+  "transform-p28-first-1": {
+    "answer": "If he doesn’t pass his exam, I’ll be very disappointed.",
+    "explanation": "Unless he passes tương đương if he doesn’t pass.",
+    "translation": "Nếu anh ấy không đỗ kỳ thi, tôi sẽ rất thất vọng.",
+    "kind": "sample"
+  },
+  "transform-p28-first-2": {
+    "answer": "Unless she has a ticket, they won’t let her into the concert.",
+    "explanation": "Đổi if she doesn’t have thành unless she has.",
+    "translation": "Nếu cô ấy không có vé, họ sẽ không cho cô vào buổi hòa nhạc.",
+    "kind": "sample"
+  },
+  "transform-p28-first-3": {
+    "answer": "Unless she waters these plants, they will die.",
+    "explanation": "Unless she waters tương đương if she doesn’t water.",
+    "translation": "Nếu cô ấy không tưới những cây này, chúng sẽ chết.",
+    "kind": "sample"
+  },
+  "transform-p28-first-4": {
+    "answer": "Unless I have a quiet room, I won’t be able to do any work.",
+    "explanation": "Unless I have tương đương if I don’t have.",
+    "translation": "Nếu không có một căn phòng yên tĩnh, tôi sẽ không thể làm việc gì.",
+    "kind": "sample"
+  },
+  "transform-p28-first-5": {
+    "answer": "Unless you stop smoking, you will be seriously ill.",
+    "explanation": "Unless you stop tương đương if you don’t stop.",
+    "translation": "Nếu bạn không ngừng hút thuốc, bạn sẽ bị bệnh nặng.",
+    "kind": "sample"
+  },
+  "transform-p28-first-6": {
+    "answer": "If you don’t accept her suggestion, she won’t agree to that.",
+    "explanation": "Unless you accept tương đương if you don’t accept.",
+    "translation": "Nếu bạn không chấp nhận đề xuất của cô ấy, cô ấy sẽ không đồng ý với điều đó.",
+    "kind": "sample"
+  },
+  "transform-p28-first-7": {
+    "answer": "Unless she pays up, we’re going to be in real trouble.",
+    "explanation": "Unless she pays up tương đương if she doesn’t pay up.",
+    "translation": "Nếu cô ấy không trả tiền, chúng ta sẽ gặp rắc rối thực sự.",
+    "kind": "sample"
+  },
+  "transform-p28-first-8": {
+    "answer": "Unless it rains this August, there will be water shortages.",
+    "explanation": "Unless it rains tương đương if it doesn’t rain.",
+    "translation": "Nếu tháng Tám này không có mưa, sẽ xảy ra tình trạng thiếu nước.",
+    "kind": "sample"
+  },
+  "transform-p28-first-9": {
+    "answer": "If it doesn’t stop raining, we will not have a picnic.",
+    "explanation": "Unless it stops raining tương đương if it doesn’t stop raining.",
+    "translation": "Nếu trời không ngừng mưa, chúng ta sẽ không đi dã ngoại.",
+    "kind": "sample"
+  },
+  "transform-p28-first-10": {
+    "answer": "If you don’t start now, you will not get there in time.",
+    "explanation": "Unless you start tương đương if you do not start. Bản gốc in reach there không tự nhiên; dùng get there hoặc reach your destination.",
+    "translation": "Nếu bạn không khởi hành ngay bây giờ, bạn sẽ không đến đó kịp giờ.",
+    "kind": "sample"
+  },
+  "transform-p28-second-1": {
+    "answer": "If I had a car, I could take you to the airport.",
+    "explanation": "Điều kiện loại hai diễn tả tình huống trái với hiện tại: if + quá khứ đơn, could + động từ nguyên mẫu.",
+    "translation": "Nếu tôi có xe, tôi có thể đưa bạn ra sân bay.",
+    "kind": "sample"
+  },
+  "transform-p28-second-2": {
+    "answer": "If I didn’t have a headache, I could go swimming.",
+    "explanation": "Đảo sự thật hiện tại thành điều kiện giả định phủ định với didn’t have.",
+    "translation": "Nếu tôi không bị đau đầu, tôi có thể đi bơi.",
+    "kind": "sample"
+  },
+  "transform-p28-second-3": {
+    "answer": "If we had some money, we would take a holiday this year.",
+    "explanation": "Dùng had trong mệnh đề if và would take trong mệnh đề chính để nói điều trái với hiện tại.",
+    "translation": "Nếu chúng tôi có tiền, chúng tôi sẽ đi nghỉ trong năm nay.",
+    "kind": "sample"
+  },
+  "transform-p28-second-4": {
+    "answer": "If we lived in a big house, we could invite friends to stay.",
+    "explanation": "Dùng lived và could invite để giả định trái với tình huống hiện tại.",
+    "translation": "Nếu chúng tôi sống trong một ngôi nhà lớn, chúng tôi có thể mời bạn bè đến ở lại.",
+    "kind": "sample"
+  },
+  "transform-p28-second-5": {
+    "answer": "If Kevin studied a lot, he would get good grades.",
+    "explanation": "Câu điều kiện loại hai giả định Kevin học nhiều, trái với thực tế he does not study much; would get diễn tả kết quả giả định.",
+    "translation": "Nếu Kevin học nhiều, cậu ấy sẽ đạt điểm tốt.",
+    "kind": "sample"
+  },
+  "transform-p29-iv-6": {
+    "answer": "If Francis didn’t work so hard, he would have time to spend with his family.",
+    "explanation": "Câu điều kiện loại 2 diễn tả giả định trái với hiện tại. Hướng dẫn của nhóm không xuất hiện trong ảnh; đây là cách viết mẫu theo quan hệ giữa hai vế.",
+    "translation": "Nếu Francis không làm việc vất vả như vậy, anh ấy sẽ có thời gian dành cho gia đình.",
+    "kind": "sample"
+  },
+  "transform-p29-iv-7": {
+    "answer": "If Andrea paid attention in class, she would understand the homework.",
+    "explanation": "Dùng câu điều kiện loại 2 để giả định trái với thực tế hiện tại; hướng dẫn của nhóm không xuất hiện trong ảnh.",
+    "translation": "Nếu Andrea chú ý trong lớp, cô ấy sẽ hiểu bài tập về nhà.",
+    "kind": "sample"
+  },
+  "transform-p29-iv-8": {
+    "answer": "If Johnny picked up his toys, his mom wouldn’t often get angry with him.",
+    "explanation": "Dùng câu điều kiện loại 2 để giả định Johnny thu dọn đồ chơi; hướng dẫn của nhóm không xuất hiện trong ảnh.",
+    "translation": "Nếu Johnny thu dọn đồ chơi, mẹ cậu ấy sẽ không thường xuyên giận cậu ấy.",
+    "kind": "sample"
+  },
+  "transform-p29-iv-9": {
+    "answer": "If Ben didn’t drive so fast, he wouldn’t get so many speeding tickets.",
+    "explanation": "Dùng câu điều kiện loại 2 để giả định Ben không lái xe quá nhanh; hướng dẫn của nhóm không xuất hiện trong ảnh.",
+    "translation": "Nếu Ben không lái xe nhanh như vậy, anh ấy sẽ không nhận nhiều giấy phạt chạy quá tốc độ đến thế.",
+    "kind": "sample"
+  },
+  "transform-p29-iv-10": {
+    "answer": "If Andrew didn’t smoke, he wouldn’t cough so much.",
+    "explanation": "Dùng câu điều kiện loại 2 để giả định Andrew không hút thuốc; hướng dẫn của nhóm không xuất hiện trong ảnh.",
+    "translation": "Nếu Andrew không hút thuốc, anh ấy sẽ không ho nhiều như vậy.",
+    "kind": "sample"
+  },
+  "transform-p29-v-1": {
+    "answer": "Jane told her father that she wanted to study medicine.",
+    "explanation": "Đổi lời nói trực tiếp sang gián tiếp: told đi với người nghe, I thành she và want lùi thành wanted.",
+    "translation": "Jane nói với bố rằng cô ấy muốn học ngành y.",
+    "kind": "sample"
+  },
+  "transform-p29-v-2": {
+    "answer": "Alex said that they had studied music for five years.",
+    "explanation": "Lùi studied thành had studied. Đề không xác định giới tính của Alex nên dùng they số ít; he hoặc she cũng được nếu có ngữ cảnh.",
+    "translation": "Alex nói rằng mình đã học nhạc trong năm năm.",
+    "kind": "sample"
+  },
+  "transform-p29-v-3": {
+    "answer": "She said that she had been to Shanghai.",
+    "explanation": "Đổi I thành she và lùi hiện tại hoàn thành have been thành had been.",
+    "translation": "Cô ấy nói rằng cô ấy đã từng đến Thượng Hải.",
+    "kind": "sample"
+  },
+  "transform-p29-v-4": {
+    "answer": "John said that they could help me.",
+    "explanation": "Đổi we thành they và can thành could. Cách đổi you thành me giả định người thuật lại chính là người được John nói với; đại từ có thể khác theo ngữ cảnh.",
+    "translation": "John nói rằng họ có thể giúp tôi.",
+    "kind": "sample"
+  },
+  "transform-p29-v-5": {
+    "answer": "He told me that he had seen my friend at the cinema the day before.",
+    "explanation": "Đổi said to me thành told me, lùi saw thành had seen, đổi your thành my và yesterday thành the day before.",
+    "translation": "Anh ấy nói với tôi rằng anh ấy đã gặp bạn tôi ở rạp chiếu phim vào ngày hôm trước.",
+    "kind": "sample"
+  },
+  "transform-p29-v-6": {
+    "answer": "Mr West said that he was very tired.",
+    "explanation": "Đổi I thành he và lùi am thành was.",
+    "translation": "Ông West nói rằng ông ấy rất mệt.",
+    "kind": "sample"
+  },
+  "transform-p29-v-7": {
+    "answer": "He said that he was flying to Rome the next day.",
+    "explanation": "Đổi am flying thành was flying và tomorrow thành the next day khi thuật lại từ thời điểm sau đó.",
+    "translation": "Anh ấy nói rằng ngày hôm sau anh ấy sẽ bay đến Rome.",
+    "kind": "sample"
+  },
+  "transform-p29-v-8": {
+    "answer": "George said that they had lived in that village all their life.",
+    "explanation": "Lùi have lived thành had lived và đổi this thành that. Đề không xác định giới tính của George nên dùng they số ít; đại từ và từ chỉ định có thể thay đổi theo ngữ cảnh.",
+    "translation": "George nói rằng mình đã sống ở ngôi làng đó cả đời.",
+    "kind": "sample"
+  },
+  "transform-p29-v-9": {
+    "answer": "Peter told me that he couldn’t go out with me because he was not feeling well.",
+    "explanation": "Đổi said to me thành told me, can’t thành couldn’t, you thành me và am not feeling thành was not feeling.",
+    "translation": "Peter nói với tôi rằng anh ấy không thể đi chơi với tôi vì anh ấy cảm thấy không khỏe.",
+    "kind": "sample"
+  },
+  "transform-p29-v-10": {
+    "answer": "Helen told me that she hoped I had enjoyed myself.",
+    "explanation": "Đổi ngôi và lùi hope thành hoped, have enjoyed thành had enjoyed. Tùy thời điểm thuật lại, có thể giữ thì nếu điều được nói vẫn còn liên quan.",
+    "translation": "Helen nói với tôi rằng cô ấy hy vọng tôi đã có khoảng thời gian vui vẻ.",
+    "kind": "sample"
+  },
+  "transform-p29-vi-1": {
+    "answer": "Why did you have to go to school last Saturday?",
+    "explanation": "Dùng did + chủ ngữ + have to để hỏi về sự cần thiết trong quá khứ.",
+    "translation": "Tại sao bạn phải đến trường vào thứ Bảy tuần trước?",
+    "kind": "sample"
+  },
+  "transform-p29-vi-2": {
+    "answer": "You shouldn’t spend too much time playing games.",
+    "explanation": "Shouldn’t diễn đạt lời khuyên không nên làm điều gì.",
+    "translation": "Bạn không nên dành quá nhiều thời gian chơi trò chơi.",
+    "kind": "sample"
+  },
+  "transform-p29-vi-3": {
+    "answer": "The children have to wear a uniform.",
+    "explanation": "Have to diễn đạt sự cần thiết hoặc nghĩa vụ.",
+    "translation": "Bọn trẻ phải mặc đồng phục.",
+    "kind": "sample"
+  },
+  "transform-p29-vi-4": {
+    "answer": "You should say sorry to your parents.",
+    "explanation": "Should diễn đạt lời khuyên nên làm điều gì.",
+    "translation": "Bạn nên xin lỗi bố mẹ.",
+    "kind": "sample"
+  },
+  "transform-p29-vi-5": {
+    "answer": "You shouldn’t drink so much coffee.",
+    "explanation": "Shouldn’t diễn đạt lời khuyên không nên uống quá nhiều cà phê.",
+    "translation": "Bạn không nên uống nhiều cà phê như vậy.",
+    "kind": "sample"
+  },
+  "transform-p29-vi-6": {
+    "answer": "He doesn’t have to apologize. He was absolutely right.",
+    "explanation": "Doesn’t have to nghĩa là không cần thiết, không phải là bị cấm; giữ câu thứ hai để bảo toàn thông tin.",
+    "translation": "Anh ấy không cần xin lỗi. Anh ấy hoàn toàn đúng.",
+    "kind": "sample"
+  },
+  "transform-p29-vi-7": {
+    "answer": "We have to give him our answer today or we’ll lose out on the contract.",
+    "explanation": "Have to diễn đạt sự cần thiết; giữ nguyên hệ quả nếu không trả lời hôm nay.",
+    "translation": "Chúng ta phải đưa cho anh ấy câu trả lời hôm nay nếu không sẽ mất hợp đồng.",
+    "kind": "sample"
+  },
+  "transform-p29-vi-8": {
+    "answer": "You should go and lie down.",
+    "explanation": "Should diễn đạt lời khuyên.",
+    "translation": "Bạn nên đi nằm nghỉ.",
+    "kind": "sample"
+  },
+  "transform-p29-vi-9": {
+    "answer": "You don’t have to learn all the new words.",
+    "explanation": "Don’t have to diễn đạt việc không cần thiết, không có nghĩa là không được phép.",
+    "translation": "Bạn không cần học tất cả các từ mới.",
+    "kind": "sample"
+  },
+  "transform-p29-vi-10": {
+    "answer": "Do you have to attend every English lesson?",
+    "explanation": "Dùng Do you have to để hỏi về sự cần thiết ở hiện tại.",
+    "translation": "Bạn có phải tham dự mọi buổi học tiếng Anh không?",
+    "kind": "sample"
+  },
+  "transform-p30-vi-11": {
+    "answer": "Harry should take a holiday.",
+    "explanation": "Should diễn đạt lời khuyên rằng Harry nên đi nghỉ. Gợi ý “You” trong đề không giữ đúng chủ thể nên phải bỏ để bảo toàn nghĩa.",
+    "translation": "Harry nên đi nghỉ.",
+    "kind": "sample"
+  },
+  "transform-p30-vi-12": {
+    "answer": "You shouldn't leave a child unsupervised.",
+    "explanation": "Shouldn't diễn đạt lời khuyên không nên làm điều gì.",
+    "translation": "Bạn không nên để một đứa trẻ không có người giám sát.",
+    "kind": "sample"
+  },
+  "transform-p30-vi-13": {
+    "answer": "You have to register in advance to take the course.",
+    "explanation": "Have to diễn đạt sự cần thiết hoặc yêu cầu phải làm gì.",
+    "translation": "Bạn phải đăng ký trước để tham gia khóa học.",
+    "kind": "sample"
+  },
+  "transform-p30-vi-14": {
+    "answer": "You don't have to read all those books.",
+    "explanation": "Don't have to diễn đạt sự không cần thiết, không phải sự cấm đoán.",
+    "translation": "Bạn không cần đọc tất cả những cuốn sách đó.",
+    "kind": "sample"
+  },
+  "transform-p30-vi-15": {
+    "answer": "I think she should spend more time with you.",
+    "explanation": "Should diễn đạt lời khuyên cho cô ấy. Gợi ý “You” trong đề làm đổi trọng tâm nên phải bỏ để giữ nghĩa câu gốc.",
+    "translation": "Tôi nghĩ cô ấy nên dành nhiều thời gian hơn cho bạn.",
+    "kind": "sample"
+  },
+  "transform-p30-vii-1": {
+    "answer": "In spite of her beauty, everybody hates her.",
+    "explanation": "In spite of đi với cụm danh từ her beauty, thay cho mệnh đề although she is beautiful.",
+    "translation": "Mặc dù xinh đẹp, cô ấy vẫn bị mọi người ghét.",
+    "kind": "sample"
+  },
+  "transform-p30-vii-2": {
+    "answer": "In spite of the fact that they are neighbors, Jane rarely sees Alan.",
+    "explanation": "In spite of the fact that đi trước mệnh đề they are neighbors, giữ rõ cả Jane và Alan đều là hàng xóm.",
+    "translation": "Mặc dù họ là hàng xóm, Jane hiếm khi gặp Alan.",
+    "kind": "sample"
+  },
+  "transform-p30-vii-3": {
+    "answer": "Although Kate worked very hard, she did not do well in the exam.",
+    "explanation": "Although đi với một mệnh đề đầy đủ; working chuyển thành Kate worked.",
+    "translation": "Mặc dù Kate học rất chăm chỉ, cô ấy đã không làm tốt bài thi.",
+    "kind": "sample"
+  },
+  "transform-p30-vii-4": {
+    "answer": "In spite of being very hungry, I couldn't eat.",
+    "explanation": "Đổi mệnh đề although I was very hungry thành in spite of + V-ing khi cùng chủ ngữ.",
+    "translation": "Mặc dù rất đói, tôi không thể ăn được.",
+    "kind": "sample"
+  },
+  "transform-p30-vii-5": {
+    "answer": "Although it was difficult, they managed to solve the math problem.",
+    "explanation": "Although cần mệnh đề; dùng it was difficult để diễn đạt khó khăn trong việc giải bài toán.",
+    "translation": "Mặc dù khó, họ đã xoay xở giải được bài toán.",
+    "kind": "sample"
+  },
+  "transform-p30-vii-6": {
+    "answer": "Although she loved her boyfriend very much, she decided to go abroad for a year.",
+    "explanation": "Chuyển in spite of loving thành mệnh đề although she loved, giữ nguyên quan hệ tương phản.",
+    "translation": "Mặc dù rất yêu bạn trai, cô ấy quyết định ra nước ngoài một năm.",
+    "kind": "sample"
+  },
+  "transform-p30-vii-7": {
+    "answer": "In spite of the cold, Marie didn't put on her coat.",
+    "explanation": "In spite of đi với cụm danh từ the cold, tương ứng với although it was cold.",
+    "translation": "Mặc dù trời lạnh, Marie đã không mặc áo khoác.",
+    "kind": "sample"
+  },
+  "transform-p30-vii-8": {
+    "answer": "Although Clare was ill, she did the work.",
+    "explanation": "Chuyển in spite of being ill thành mệnh đề đầy đủ although Clare was ill.",
+    "translation": "Mặc dù bị ốm, Clare đã làm công việc đó.",
+    "kind": "sample"
+  },
+  "transform-p30-vii-9": {
+    "answer": "In spite of the bad weather, we enjoyed our trip.",
+    "explanation": "Dùng cụm danh từ the bad weather sau in spite of thay cho mệnh đề although the weather was bad.",
+    "translation": "Mặc dù thời tiết xấu, chúng tôi vẫn tận hưởng chuyến đi.",
+    "kind": "sample"
+  },
+  "transform-p30-vii-10": {
+    "answer": "Although there was noise, the children slept well.",
+    "explanation": "Đổi cụm danh từ the noise thành mệnh đề there was noise sau although.",
+    "translation": "Mặc dù có tiếng ồn, bọn trẻ vẫn ngủ ngon.",
+    "kind": "sample"
+  },
+  "speaking-1-1-1": {
+    "answer": "My name is Linh.",
+    "explanation": "Giới thiệu tên bằng “My name is”; thay tên ví dụ bằng tên của bạn.",
+    "translation": "Tên tôi là Linh.",
+    "kind": "sample"
+  },
+  "speaking-1-1-2": {
+    "answer": "I was born on 15 May 2002.",
+    "explanation": "Dùng “I was born on” và thay ngày sinh ví dụ bằng ngày sinh của bạn.",
+    "translation": "Tôi sinh ngày 15 tháng 5 năm 2002.",
+    "kind": "sample"
+  },
+  "speaking-1-1-3": {
+    "answer": "I was born in Da Nang.",
+    "explanation": "Dùng “I was born in” với nơi sinh thực tế của bạn.",
+    "translation": "Tôi sinh ra ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-1-1-4": {
+    "answer": "I live with my family in Da Nang.",
+    "explanation": "Đây là ví dụ về nơi ở; hãy thay bằng hoàn cảnh của bạn.",
+    "translation": "Tôi sống cùng gia đình ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-1-1-5": {
+    "answer": "I am a second-year student, and I study business.",
+    "explanation": "Đây là ví dụ về năm học và ngành học; hãy thay theo thực tế.",
+    "translation": "Tôi là sinh viên năm hai và học ngành kinh doanh.",
+    "kind": "sample"
+  },
+  "speaking-1-1-6": {
+    "answer": "I enjoy reading and playing badminton in my free time.",
+    "explanation": "Đây là ví dụ về sở thích; sau “enjoy” dùng động từ thêm -ing.",
+    "translation": "Tôi thích đọc sách và chơi cầu lông khi rảnh.",
+    "kind": "sample"
+  },
+  "speaking-1-1-7": {
+    "answer": "I plan to improve my English and find a good job.",
+    "explanation": "Đây là ví dụ về dự định; “plan to” đi với động từ nguyên mẫu.",
+    "translation": "Tôi dự định cải thiện tiếng Anh và tìm một công việc tốt.",
+    "kind": "sample"
+  },
+  "speaking-1-2-1": {
+    "answer": "I would like to talk about walking. I walk for about thirty minutes four times a week, usually in a park near my home. I often go with a friend, so we can chat as we exercise. I like walking because it is simple, free and good for my health. It also helps me relax after a busy day.",
+    "explanation": "Đây là bài mẫu, không phải thông tin của bạn. Thay chi tiết bằng trải nghiệm thật và mở rộng từng ý để luyện nói 3–4 phút.",
+    "translation": "Tôi muốn nói về việc đi bộ. Tôi đi bộ khoảng 30 phút bốn lần một tuần, thường ở công viên gần nhà. Tôi thường đi cùng một người bạn để vừa tập vừa trò chuyện. Tôi thích đi bộ vì nó đơn giản, miễn phí và tốt cho sức khỏe. Nó cũng giúp tôi thư giãn sau một ngày bận rộn.",
+    "kind": "sample"
+  },
+  "speaking-1-3-1": {
+    "answer": "Some unhealthy habits are staying up late, smoking and eating too much fast food.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Một số thói quen không lành mạnh là thức khuya, hút thuốc và ăn quá nhiều đồ ăn nhanh.",
+    "kind": "sample"
+  },
+  "speaking-1-3-2": {
+    "answer": "Fruit, vegetables, fish and whole grains are examples of healthy food.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Trái cây, rau, cá và ngũ cốc nguyên hạt là những ví dụ về thực phẩm lành mạnh.",
+    "kind": "sample"
+  },
+  "speaking-1-3-3": {
+    "answer": "I would like to go to bed earlier because getting enough sleep helps me feel more energetic.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Tôi muốn đi ngủ sớm hơn vì ngủ đủ giúp tôi cảm thấy tràn đầy năng lượng hơn.",
+    "kind": "sample"
+  },
+  "speaking-1-3-4": {
+    "answer": "Yes, there are several parks and sports centres where people can exercise.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Có, có một số công viên và trung tâm thể thao nơi mọi người có thể tập luyện.",
+    "kind": "sample"
+  },
+  "speaking-1-3-5": {
+    "answer": "Many people go walking, play badminton or eat more vegetables to stay healthy.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Nhiều người đi bộ, chơi cầu lông hoặc ăn nhiều rau hơn để giữ sức khỏe.",
+    "kind": "sample"
+  },
+  "speaking-2-1-1": {
+    "answer": "My name is Linh.",
+    "explanation": "Giới thiệu tên bằng “My name is”; thay tên ví dụ bằng tên của bạn.",
+    "translation": "Tên tôi là Linh.",
+    "kind": "sample"
+  },
+  "speaking-2-1-2": {
+    "answer": "I was born on 15 May 2002.",
+    "explanation": "Dùng “I was born on” và thay ngày sinh ví dụ bằng ngày sinh của bạn.",
+    "translation": "Tôi sinh ngày 15 tháng 5 năm 2002.",
+    "kind": "sample"
+  },
+  "speaking-2-1-3": {
+    "answer": "I was born in Da Nang.",
+    "explanation": "Dùng “I was born in” với nơi sinh thực tế của bạn.",
+    "translation": "Tôi sinh ra ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-2-1-4": {
+    "answer": "I live with my family in Da Nang.",
+    "explanation": "Đây là ví dụ về nơi ở; hãy thay bằng hoàn cảnh của bạn.",
+    "translation": "Tôi sống cùng gia đình ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-2-1-5": {
+    "answer": "I am a second-year student, and I study business.",
+    "explanation": "Đây là ví dụ về năm học và ngành học; hãy thay theo thực tế.",
+    "translation": "Tôi là sinh viên năm hai và học ngành kinh doanh.",
+    "kind": "sample"
+  },
+  "speaking-2-1-6": {
+    "answer": "I enjoy reading and playing badminton in my free time.",
+    "explanation": "Đây là ví dụ về sở thích; sau “enjoy” dùng động từ thêm -ing.",
+    "translation": "Tôi thích đọc sách và chơi cầu lông khi rảnh.",
+    "kind": "sample"
+  },
+  "speaking-2-1-7": {
+    "answer": "I plan to improve my English and find a good job.",
+    "explanation": "Đây là ví dụ về dự định; “plan to” đi với động từ nguyên mẫu.",
+    "translation": "Tôi dự định cải thiện tiếng Anh và tìm một công việc tốt.",
+    "kind": "sample"
+  },
+  "speaking-2-2-1": {
+    "answer": "I enjoy a cooking programme on a local TV channel. I started watching it about a year ago. I usually watch it with my sister on Sunday evenings. The cooks make simple dishes and explain each step clearly. I like the programme because it gives me ideas for family meals, and I can learn useful cooking skills.",
+    "explanation": "Đây là bài mẫu, không phải thông tin của bạn. Thay chi tiết bằng trải nghiệm thật và mở rộng từng ý để luyện nói 3–4 phút.",
+    "translation": "Tôi thích một chương trình nấu ăn trên một kênh truyền hình địa phương. Tôi bắt đầu xem cách đây khoảng một năm. Tôi thường xem cùng chị gái vào tối Chủ nhật. Các đầu bếp làm những món đơn giản và giải thích rõ từng bước. Tôi thích chương trình vì nó cho tôi ý tưởng cho bữa cơm gia đình và giúp tôi học kỹ năng nấu ăn hữu ích.",
+    "kind": "sample"
+  },
+  "speaking-2-3-1": {
+    "answer": "People watch TV to relax, enjoy stories and learn about the world.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Mọi người xem TV để thư giãn, thưởng thức các câu chuyện và tìm hiểu thế giới.",
+    "kind": "sample"
+  },
+  "speaking-2-3-2": {
+    "answer": "They can learn about history, different cultures and current events.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Họ có thể tìm hiểu lịch sử, các nền văn hóa khác nhau và những sự kiện thời sự.",
+    "kind": "sample"
+  },
+  "speaking-2-3-3": {
+    "answer": "TV can provide useful information and entertainment for the whole family.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "TV có thể cung cấp thông tin hữu ích và giải trí cho cả gia đình.",
+    "kind": "sample"
+  },
+  "speaking-2-3-4": {
+    "answer": "Watching too much TV can waste time and leave people with less time for exercise.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Xem TV quá nhiều có thể lãng phí thời gian và khiến mọi người có ít thời gian tập thể dục hơn.",
+    "kind": "sample"
+  },
+  "speaking-2-3-5": {
+    "answer": "No, I think people will still watch TV, but more of them may watch programmes online.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Không, tôi nghĩ mọi người vẫn sẽ xem TV, nhưng nhiều người hơn có thể xem chương trình trực tuyến.",
+    "kind": "sample"
+  },
+  "speaking-3-1-1": {
+    "answer": "My name is Linh.",
+    "explanation": "Giới thiệu tên bằng “My name is”; thay tên ví dụ bằng tên của bạn.",
+    "translation": "Tên tôi là Linh.",
+    "kind": "sample"
+  },
+  "speaking-3-1-2": {
+    "answer": "I was born on 15 May 2002.",
+    "explanation": "Dùng “I was born on” và thay ngày sinh ví dụ bằng ngày sinh của bạn.",
+    "translation": "Tôi sinh ngày 15 tháng 5 năm 2002.",
+    "kind": "sample"
+  },
+  "speaking-3-1-3": {
+    "answer": "I was born in Da Nang.",
+    "explanation": "Dùng “I was born in” với nơi sinh thực tế của bạn.",
+    "translation": "Tôi sinh ra ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-3-1-4": {
+    "answer": "I live with my family in Da Nang.",
+    "explanation": "Đây là ví dụ về nơi ở; hãy thay bằng hoàn cảnh của bạn.",
+    "translation": "Tôi sống cùng gia đình ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-3-1-5": {
+    "answer": "I am a second-year student, and I study business.",
+    "explanation": "Đây là ví dụ về năm học và ngành học; hãy thay theo thực tế.",
+    "translation": "Tôi là sinh viên năm hai và học ngành kinh doanh.",
+    "kind": "sample"
+  },
+  "speaking-3-1-6": {
+    "answer": "I enjoy reading and playing badminton in my free time.",
+    "explanation": "Đây là ví dụ về sở thích; sau “enjoy” dùng động từ thêm -ing.",
+    "translation": "Tôi thích đọc sách và chơi cầu lông khi rảnh.",
+    "kind": "sample"
+  },
+  "speaking-3-1-7": {
+    "answer": "I plan to improve my English and find a good job.",
+    "explanation": "Đây là ví dụ về dự định; “plan to” đi với động từ nguyên mẫu.",
+    "translation": "Tôi dự định cải thiện tiếng Anh và tìm một công việc tốt.",
+    "kind": "sample"
+  },
+  "speaking-3-2-1": {
+    "answer": "One film I found very interesting was Finding Nemo. It is an animated adventure film. I watched it at home with my family last year. It is about a fish that travels a long way to find his son. I felt excited and sometimes worried while watching it. I liked the message about family and courage most.",
+    "explanation": "Đây là bài mẫu, không phải thông tin của bạn. Thay chi tiết bằng trải nghiệm thật và mở rộng từng ý để luyện nói 3–4 phút.",
+    "translation": "Một bộ phim tôi thấy rất thú vị là Finding Nemo. Đó là phim hoạt hình phiêu lưu. Tôi xem phim ở nhà cùng gia đình năm ngoái. Phim kể về một chú cá đi rất xa để tìm con trai. Tôi cảm thấy hào hứng và đôi lúc lo lắng khi xem. Tôi thích nhất thông điệp về gia đình và lòng dũng cảm.",
+    "kind": "sample"
+  },
+  "speaking-3-3-1": {
+    "answer": "Popular kinds include action films, comedies, animated films and romantic films.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Các thể loại phổ biến gồm phim hành động, hài, hoạt hình và tình cảm.",
+    "kind": "sample"
+  },
+  "speaking-3-3-2": {
+    "answer": "I think many young people enjoy action films and comedies because they are entertaining.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Tôi nghĩ nhiều bạn trẻ thích phim hành động và hài vì chúng có tính giải trí.",
+    "kind": "sample"
+  },
+  "speaking-3-3-3": {
+    "answer": "I prefer the cinema because the big screen and sound make the film more exciting.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Tôi thích rạp chiếu phim hơn vì màn hình lớn và âm thanh làm bộ phim hấp dẫn hơn.",
+    "kind": "sample"
+  },
+  "speaking-3-3-4": {
+    "answer": "I prefer watching films with friends because we can discuss them afterwards.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Tôi thích xem phim cùng bạn bè vì sau đó chúng tôi có thể thảo luận về phim.",
+    "kind": "sample"
+  },
+  "speaking-3-3-5": {
+    "answer": "Films help people relax and experience interesting stories from different places.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Phim giúp mọi người thư giãn và trải nghiệm những câu chuyện thú vị từ nhiều nơi khác nhau.",
+    "kind": "sample"
+  },
+  "speaking-4-1-1": {
+    "answer": "My name is Linh.",
+    "explanation": "Giới thiệu tên bằng “My name is”; thay tên ví dụ bằng tên của bạn.",
+    "translation": "Tên tôi là Linh.",
+    "kind": "sample"
+  },
+  "speaking-4-1-2": {
+    "answer": "I was born on 15 May 2002.",
+    "explanation": "Dùng “I was born on” và thay ngày sinh ví dụ bằng ngày sinh của bạn.",
+    "translation": "Tôi sinh ngày 15 tháng 5 năm 2002.",
+    "kind": "sample"
+  },
+  "speaking-4-1-3": {
+    "answer": "I was born in Da Nang.",
+    "explanation": "Dùng “I was born in” với nơi sinh thực tế của bạn.",
+    "translation": "Tôi sinh ra ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-4-1-4": {
+    "answer": "I live with my family in Da Nang.",
+    "explanation": "Đây là ví dụ về nơi ở; hãy thay bằng hoàn cảnh của bạn.",
+    "translation": "Tôi sống cùng gia đình ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-4-1-5": {
+    "answer": "I am a second-year student, and I study business.",
+    "explanation": "Đây là ví dụ về năm học và ngành học; hãy thay theo thực tế.",
+    "translation": "Tôi là sinh viên năm hai và học ngành kinh doanh.",
+    "kind": "sample"
+  },
+  "speaking-4-1-6": {
+    "answer": "I enjoy reading and playing badminton in my free time.",
+    "explanation": "Đây là ví dụ về sở thích; sau “enjoy” dùng động từ thêm -ing.",
+    "translation": "Tôi thích đọc sách và chơi cầu lông khi rảnh.",
+    "kind": "sample"
+  },
+  "speaking-4-1-7": {
+    "answer": "I plan to improve my English and find a good job.",
+    "explanation": "Đây là ví dụ về dự định; “plan to” đi với động từ nguyên mẫu.",
+    "translation": "Tôi dự định cải thiện tiếng Anh và tìm một công việc tốt.",
+    "kind": "sample"
+  },
+  "speaking-4-2-1": {
+    "answer": "An important piece of technology for me is my laptop. I bought it at a computer shop two years ago. It is light and has a large screen. I use it to study English, write documents and talk to my friends online. What I like best is that I can take it with me and study almost anywhere.",
+    "explanation": "Đây là bài mẫu, không phải thông tin của bạn. Thay chi tiết bằng trải nghiệm thật và mở rộng từng ý để luyện nói 3–4 phút.",
+    "translation": "Một thiết bị công nghệ quan trọng với tôi là máy tính xách tay. Tôi mua nó ở cửa hàng máy tính hai năm trước. Nó nhẹ và có màn hình lớn. Tôi dùng nó để học tiếng Anh, viết tài liệu và trò chuyện trực tuyến với bạn bè. Điều tôi thích nhất là có thể mang nó theo và học gần như ở bất cứ đâu.",
+    "kind": "sample"
+  },
+  "speaking-4-3-1": {
+    "answer": "People often use their phones to call others, send messages and look for information.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Mọi người thường dùng điện thoại để gọi điện, gửi tin nhắn và tìm thông tin.",
+    "kind": "sample"
+  },
+  "speaking-4-3-2": {
+    "answer": "Smartphones can distract people, and spending too much time on them may disturb sleep.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Điện thoại thông minh có thể khiến mọi người mất tập trung, và dùng quá nhiều có thể ảnh hưởng giấc ngủ.",
+    "kind": "sample"
+  },
+  "speaking-4-3-3": {
+    "answer": "Some great inventions are the telephone, the computer and the printing press.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Một số phát minh vĩ đại là điện thoại, máy tính và máy in.",
+    "kind": "sample"
+  },
+  "speaking-4-3-4": {
+    "answer": "I think the computer is one of the greatest inventions because it helps us work and learn.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Tôi nghĩ máy tính là một trong những phát minh vĩ đại nhất vì nó giúp chúng ta làm việc và học tập.",
+    "kind": "sample"
+  },
+  "speaking-4-3-5": {
+    "answer": "I would like to see a cheap machine that can make dirty water safe to drink.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Tôi muốn thấy một chiếc máy giá rẻ có thể biến nước bẩn thành nước uống an toàn.",
+    "kind": "sample"
+  },
+  "speaking-5-1-1": {
+    "answer": "My name is Linh.",
+    "explanation": "Giới thiệu tên bằng “My name is”; thay tên ví dụ bằng tên của bạn.",
+    "translation": "Tên tôi là Linh.",
+    "kind": "sample"
+  },
+  "speaking-5-1-2": {
+    "answer": "I was born on 15 May 2002.",
+    "explanation": "Dùng “I was born on” và thay ngày sinh ví dụ bằng ngày sinh của bạn.",
+    "translation": "Tôi sinh ngày 15 tháng 5 năm 2002.",
+    "kind": "sample"
+  },
+  "speaking-5-1-3": {
+    "answer": "I was born in Da Nang.",
+    "explanation": "Dùng “I was born in” với nơi sinh thực tế của bạn.",
+    "translation": "Tôi sinh ra ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-5-1-4": {
+    "answer": "I live with my family in Da Nang.",
+    "explanation": "Đây là ví dụ về nơi ở; hãy thay bằng hoàn cảnh của bạn.",
+    "translation": "Tôi sống cùng gia đình ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-5-1-5": {
+    "answer": "I am a second-year student, and I study business.",
+    "explanation": "Đây là ví dụ về năm học và ngành học; hãy thay theo thực tế.",
+    "translation": "Tôi là sinh viên năm hai và học ngành kinh doanh.",
+    "kind": "sample"
+  },
+  "speaking-5-1-6": {
+    "answer": "I enjoy reading and playing badminton in my free time.",
+    "explanation": "Đây là ví dụ về sở thích; sau “enjoy” dùng động từ thêm -ing.",
+    "translation": "Tôi thích đọc sách và chơi cầu lông khi rảnh.",
+    "kind": "sample"
+  },
+  "speaking-5-1-7": {
+    "answer": "I plan to improve my English and find a good job.",
+    "explanation": "Đây là ví dụ về dự định; “plan to” đi với động từ nguyên mẫu.",
+    "translation": "Tôi dự định cải thiện tiếng Anh và tìm một công việc tốt.",
+    "kind": "sample"
+  },
+  "speaking-5-2-1": {
+    "answer": "My favourite item of clothing is a blue jacket. It is comfortable and has two large pockets. I bought it at a clothes shop last winter. I wear it several times a week when the weather is cool. I like it because it keeps me warm and goes well with my other clothes.",
+    "explanation": "Đây là bài mẫu, không phải thông tin của bạn. Thay chi tiết bằng trải nghiệm thật và mở rộng từng ý để luyện nói 3–4 phút.",
+    "translation": "Món đồ yêu thích của tôi là một chiếc áo khoác màu xanh. Nó thoải mái và có hai túi lớn. Tôi mua nó ở cửa hàng quần áo vào mùa đông năm ngoái. Tôi mặc nó vài lần một tuần khi trời mát. Tôi thích nó vì nó giữ ấm và dễ phối với quần áo khác.",
+    "kind": "sample"
+  },
+  "speaking-5-3-1": {
+    "answer": "I like wearing T-shirts and jeans because they are comfortable and easy to wear.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Tôi thích mặc áo phông và quần jean vì chúng thoải mái và dễ mặc.",
+    "kind": "sample"
+  },
+  "speaking-5-3-2": {
+    "answer": "Stripes, checks and flowers are popular patterns. I like stripes best because they look simple.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Kẻ sọc, kẻ ô và hoa là những họa tiết phổ biến. Tôi thích kẻ sọc nhất vì trông đơn giản.",
+    "kind": "sample"
+  },
+  "speaking-5-3-3": {
+    "answer": "I often buy clothes at a shop near my home because I can try them on.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Tôi thường mua quần áo ở cửa hàng gần nhà vì tôi có thể mặc thử.",
+    "kind": "sample"
+  },
+  "speaking-5-3-4": {
+    "answer": "Yes, it is convenient, but I always check the size and reviews before I order.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Có, việc đó tiện lợi, nhưng tôi luôn kiểm tra kích cỡ và đánh giá trước khi đặt hàng.",
+    "kind": "sample"
+  },
+  "speaking-5-3-5": {
+    "answer": "I prefer shopping with a friend because we can give each other advice.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Tôi thích mua sắm cùng bạn vì chúng tôi có thể góp ý cho nhau.",
+    "kind": "sample"
+  },
+  "speaking-5-3-6": {
+    "answer": "Many young people like casual clothes such as jeans, T-shirts and trainers.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Nhiều bạn trẻ thích trang phục thường ngày như quần jean, áo phông và giày thể thao.",
+    "kind": "sample"
+  },
+  "speaking-6-1-1": {
+    "answer": "My name is Linh.",
+    "explanation": "Giới thiệu tên bằng “My name is”; thay tên ví dụ bằng tên của bạn.",
+    "translation": "Tên tôi là Linh.",
+    "kind": "sample"
+  },
+  "speaking-6-1-2": {
+    "answer": "I was born on 15 May 2002.",
+    "explanation": "Dùng “I was born on” và thay ngày sinh ví dụ bằng ngày sinh của bạn.",
+    "translation": "Tôi sinh ngày 15 tháng 5 năm 2002.",
+    "kind": "sample"
+  },
+  "speaking-6-1-3": {
+    "answer": "I was born in Da Nang.",
+    "explanation": "Dùng “I was born in” với nơi sinh thực tế của bạn.",
+    "translation": "Tôi sinh ra ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-6-1-4": {
+    "answer": "I live with my family in Da Nang.",
+    "explanation": "Đây là ví dụ về nơi ở; hãy thay bằng hoàn cảnh của bạn.",
+    "translation": "Tôi sống cùng gia đình ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-6-1-5": {
+    "answer": "I am a second-year student, and I study business.",
+    "explanation": "Đây là ví dụ về năm học và ngành học; hãy thay theo thực tế.",
+    "translation": "Tôi là sinh viên năm hai và học ngành kinh doanh.",
+    "kind": "sample"
+  },
+  "speaking-6-1-6": {
+    "answer": "I enjoy reading and playing badminton in my free time.",
+    "explanation": "Đây là ví dụ về sở thích; sau “enjoy” dùng động từ thêm -ing.",
+    "translation": "Tôi thích đọc sách và chơi cầu lông khi rảnh.",
+    "kind": "sample"
+  },
+  "speaking-6-1-7": {
+    "answer": "I plan to improve my English and find a good job.",
+    "explanation": "Đây là ví dụ về dự định; “plan to” đi với động từ nguyên mẫu.",
+    "translation": "Tôi dự định cải thiện tiếng Anh và tìm một công việc tốt.",
+    "kind": "sample"
+  },
+  "speaking-6-2-1": {
+    "answer": "My best friend is Mai. We have been friends for five years. She has short black hair and a friendly smile. We often study together and go for coffee at weekends. She is one of my best friends because she listens to me and helps me when I have a problem. I try to support her too.",
+    "explanation": "Đây là bài mẫu, không phải thông tin của bạn. Thay chi tiết bằng trải nghiệm thật và mở rộng từng ý để luyện nói 3–4 phút.",
+    "translation": "Bạn thân nhất của tôi là Mai. Chúng tôi đã là bạn được năm năm. Cô ấy có mái tóc đen ngắn và nụ cười thân thiện. Chúng tôi thường học cùng nhau và đi uống cà phê vào cuối tuần. Cô ấy là một trong những người bạn thân nhất của tôi vì cô ấy lắng nghe và giúp đỡ khi tôi gặp khó khăn. Tôi cũng cố gắng hỗ trợ cô ấy.",
+    "kind": "sample"
+  },
+  "speaking-6-3-1": {
+    "answer": "I have a few close friends and many other friends from school.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Tôi có một vài người bạn thân và nhiều người bạn khác ở trường.",
+    "kind": "sample"
+  },
+  "speaking-6-3-2": {
+    "answer": "Friends give us support, share happy moments and help us feel less lonely.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Bạn bè hỗ trợ chúng ta, chia sẻ những khoảnh khắc vui vẻ và giúp chúng ta bớt cô đơn.",
+    "kind": "sample"
+  },
+  "speaking-6-3-3": {
+    "answer": "I meet my old friends about once a month, usually for a meal.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Tôi gặp bạn cũ khoảng mỗi tháng một lần, thường là để ăn cùng nhau.",
+    "kind": "sample"
+  },
+  "speaking-6-3-4": {
+    "answer": "A good friend should be honest, kind and willing to listen.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Một người bạn tốt nên trung thực, tốt bụng và sẵn sàng lắng nghe.",
+    "kind": "sample"
+  },
+  "speaking-6-3-5": {
+    "answer": "I do not like friends who often lie or are unkind to other people.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Tôi không thích những người bạn thường xuyên nói dối hoặc đối xử không tốt với người khác.",
+    "kind": "sample"
+  },
+  "speaking-7-1-1": {
+    "answer": "My name is Linh.",
+    "explanation": "Giới thiệu tên bằng “My name is”; thay tên ví dụ bằng tên của bạn.",
+    "translation": "Tên tôi là Linh.",
+    "kind": "sample"
+  },
+  "speaking-7-1-2": {
+    "answer": "I was born on 15 May 2002.",
+    "explanation": "Dùng “I was born on” và thay ngày sinh ví dụ bằng ngày sinh của bạn.",
+    "translation": "Tôi sinh ngày 15 tháng 5 năm 2002.",
+    "kind": "sample"
+  },
+  "speaking-7-1-3": {
+    "answer": "I was born in Da Nang.",
+    "explanation": "Dùng “I was born in” với nơi sinh thực tế của bạn.",
+    "translation": "Tôi sinh ra ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-7-1-4": {
+    "answer": "I live with my family in Da Nang.",
+    "explanation": "Đây là ví dụ về nơi ở; hãy thay bằng hoàn cảnh của bạn.",
+    "translation": "Tôi sống cùng gia đình ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-7-1-5": {
+    "answer": "I am a second-year student, and I study business.",
+    "explanation": "Đây là ví dụ về năm học và ngành học; hãy thay theo thực tế.",
+    "translation": "Tôi là sinh viên năm hai và học ngành kinh doanh.",
+    "kind": "sample"
+  },
+  "speaking-7-1-6": {
+    "answer": "I enjoy reading and playing badminton in my free time.",
+    "explanation": "Đây là ví dụ về sở thích; sau “enjoy” dùng động từ thêm -ing.",
+    "translation": "Tôi thích đọc sách và chơi cầu lông khi rảnh.",
+    "kind": "sample"
+  },
+  "speaking-7-1-7": {
+    "answer": "I plan to improve my English and find a good job.",
+    "explanation": "Đây là ví dụ về dự định; “plan to” đi với động từ nguyên mẫu.",
+    "translation": "Tôi dự định cải thiện tiếng Anh và tìm một công việc tốt.",
+    "kind": "sample"
+  },
+  "speaking-7-2-1": {
+    "answer": "I am interested in the footballer Lionel Messi. I first learned about him by watching football on TV. He is famous for his skill and achievements in football. I enjoy watching him play because he works well with his teammates and makes the game exciting. His hard work encourages me to practise and improve my own skills.",
+    "explanation": "Đây là bài mẫu, không phải thông tin của bạn. Thay chi tiết bằng trải nghiệm thật và mở rộng từng ý để luyện nói 3–4 phút.",
+    "translation": "Tôi quan tâm đến cầu thủ bóng đá Lionel Messi. Tôi biết đến anh ấy lần đầu khi xem bóng đá trên TV. Anh ấy nổi tiếng nhờ kỹ năng và những thành tích trong bóng đá. Tôi thích xem anh ấy thi đấu vì anh phối hợp tốt với đồng đội và làm trận đấu hấp dẫn. Sự chăm chỉ của anh khuyến khích tôi luyện tập và cải thiện kỹ năng của mình.",
+    "kind": "sample"
+  },
+  "speaking-7-3-1": {
+    "answer": "Singers, actors, athletes and some businesspeople are famous in my country.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Ca sĩ, diễn viên, vận động viên và một số doanh nhân nổi tiếng ở đất nước tôi.",
+    "kind": "sample"
+  },
+  "speaking-7-3-2": {
+    "answer": "Famous people may have more opportunities, but they often have less privacy.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Người nổi tiếng có thể có nhiều cơ hội hơn, nhưng họ thường có ít sự riêng tư hơn.",
+    "kind": "sample"
+  },
+  "speaking-7-3-3": {
+    "answer": "That person may feel shocked and sad, and they may need support from family and friends.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Người đó có thể cảm thấy sốc và buồn, đồng thời cần sự hỗ trợ của gia đình và bạn bè.",
+    "kind": "sample"
+  },
+  "speaking-7-3-4": {
+    "answer": "No, I would rather live a quiet life because I value my privacy.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Không, tôi muốn sống yên tĩnh hơn vì tôi coi trọng sự riêng tư.",
+    "kind": "sample"
+  },
+  "speaking-8-1-1": {
+    "answer": "My name is Linh.",
+    "explanation": "Giới thiệu tên bằng “My name is”; thay tên ví dụ bằng tên của bạn.",
+    "translation": "Tên tôi là Linh.",
+    "kind": "sample"
+  },
+  "speaking-8-1-2": {
+    "answer": "I was born on 15 May 2002.",
+    "explanation": "Dùng “I was born on” và thay ngày sinh ví dụ bằng ngày sinh của bạn.",
+    "translation": "Tôi sinh ngày 15 tháng 5 năm 2002.",
+    "kind": "sample"
+  },
+  "speaking-8-1-3": {
+    "answer": "I was born in Da Nang.",
+    "explanation": "Dùng “I was born in” với nơi sinh thực tế của bạn.",
+    "translation": "Tôi sinh ra ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-8-1-4": {
+    "answer": "I live with my family in Da Nang.",
+    "explanation": "Đây là ví dụ về nơi ở; hãy thay bằng hoàn cảnh của bạn.",
+    "translation": "Tôi sống cùng gia đình ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-8-1-5": {
+    "answer": "I am a second-year student, and I study business.",
+    "explanation": "Đây là ví dụ về năm học và ngành học; hãy thay theo thực tế.",
+    "translation": "Tôi là sinh viên năm hai và học ngành kinh doanh.",
+    "kind": "sample"
+  },
+  "speaking-8-1-6": {
+    "answer": "I enjoy reading and playing badminton in my free time.",
+    "explanation": "Đây là ví dụ về sở thích; sau “enjoy” dùng động từ thêm -ing.",
+    "translation": "Tôi thích đọc sách và chơi cầu lông khi rảnh.",
+    "kind": "sample"
+  },
+  "speaking-8-1-7": {
+    "answer": "I plan to improve my English and find a good job.",
+    "explanation": "Đây là ví dụ về dự định; “plan to” đi với động từ nguyên mẫu.",
+    "translation": "Tôi dự định cải thiện tiếng Anh và tìm một công việc tốt.",
+    "kind": "sample"
+  },
+  "speaking-8-2-1": {
+    "answer": "I know Da Nang quite well. It is a city in central Vietnam, and the weather is often warm. The people I have met there are friendly and helpful. Visitors can enjoy the beaches, try local food and visit nearby mountains. What I like best is the sea because walking along the beach makes me feel calm.",
+    "explanation": "Đây là bài mẫu, không phải thông tin của bạn. Thay chi tiết bằng trải nghiệm thật và mở rộng từng ý để luyện nói 3–4 phút.",
+    "translation": "Tôi khá quen thuộc với Đà Nẵng. Đây là một thành phố ở miền Trung Việt Nam, nơi thời tiết thường ấm áp. Những người tôi gặp ở đó thân thiện và hay giúp đỡ. Du khách có thể tận hưởng bãi biển, thử món ăn địa phương và thăm những ngọn núi gần đó. Điều tôi thích nhất là biển vì đi dạo dọc bãi biển khiến tôi thấy bình yên.",
+    "kind": "sample"
+  },
+  "speaking-8-3-1": {
+    "answer": "I prefer the city because it is easier to find jobs and public services.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Tôi thích thành phố hơn vì dễ tìm việc làm và các dịch vụ công cộng hơn.",
+    "kind": "sample"
+  },
+  "speaking-8-3-2": {
+    "answer": "Cities can be noisy and expensive, while the countryside may have fewer jobs and services.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Thành phố có thể ồn ào và đắt đỏ, trong khi nông thôn có thể có ít việc làm và dịch vụ hơn.",
+    "kind": "sample"
+  },
+  "speaking-8-3-3": {
+    "answer": "I like the friendly people and the small parks where families can spend time together.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Tôi thích những người thân thiện và các công viên nhỏ nơi các gia đình có thể dành thời gian bên nhau.",
+    "kind": "sample"
+  },
+  "speaking-8-3-4": {
+    "answer": "I would like to live in Da Nang because it has beaches and a relaxed atmosphere.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Tôi muốn sống ở Đà Nẵng vì nơi đó có biển và không khí thư thái.",
+    "kind": "sample"
+  },
+  "speaking-9-1-1": {
+    "answer": "My name is Linh.",
+    "explanation": "Giới thiệu tên bằng “My name is”; thay tên ví dụ bằng tên của bạn.",
+    "translation": "Tên tôi là Linh.",
+    "kind": "sample"
+  },
+  "speaking-9-1-2": {
+    "answer": "I was born on 15 May 2002.",
+    "explanation": "Dùng “I was born on” và thay ngày sinh ví dụ bằng ngày sinh của bạn.",
+    "translation": "Tôi sinh ngày 15 tháng 5 năm 2002.",
+    "kind": "sample"
+  },
+  "speaking-9-1-3": {
+    "answer": "I was born in Da Nang.",
+    "explanation": "Dùng “I was born in” với nơi sinh thực tế của bạn.",
+    "translation": "Tôi sinh ra ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-9-1-4": {
+    "answer": "I live with my family in Da Nang.",
+    "explanation": "Đây là ví dụ về nơi ở; hãy thay bằng hoàn cảnh của bạn.",
+    "translation": "Tôi sống cùng gia đình ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-9-1-5": {
+    "answer": "I am a second-year student, and I study business.",
+    "explanation": "Đây là ví dụ về năm học và ngành học; hãy thay theo thực tế.",
+    "translation": "Tôi là sinh viên năm hai và học ngành kinh doanh.",
+    "kind": "sample"
+  },
+  "speaking-9-1-6": {
+    "answer": "I enjoy reading and playing badminton in my free time.",
+    "explanation": "Đây là ví dụ về sở thích; sau “enjoy” dùng động từ thêm -ing.",
+    "translation": "Tôi thích đọc sách và chơi cầu lông khi rảnh.",
+    "kind": "sample"
+  },
+  "speaking-9-1-7": {
+    "answer": "I plan to improve my English and find a good job.",
+    "explanation": "Đây là ví dụ về dự định; “plan to” đi với động từ nguyên mẫu.",
+    "translation": "Tôi dự định cải thiện tiếng Anh và tìm một công việc tốt.",
+    "kind": "sample"
+  },
+  "speaking-9-2-1": {
+    "answer": "Last summer, I went to Da Nang with my family. We travelled there by train and stayed in a small hotel near the beach. We swam, tried local food and visited a market. I remember the holiday well because we spent time together and watched a beautiful sunset. It was a relaxing trip.",
+    "explanation": "Đây là bài mẫu, không phải thông tin của bạn. Thay chi tiết bằng trải nghiệm thật và mở rộng từng ý để luyện nói 3–4 phút.",
+    "translation": "Mùa hè năm ngoái, tôi đến Đà Nẵng cùng gia đình. Chúng tôi đi tàu và ở trong một khách sạn nhỏ gần biển. Chúng tôi bơi, thử món ăn địa phương và đi chợ. Tôi nhớ kỳ nghỉ này vì chúng tôi dành thời gian bên nhau và ngắm một hoàng hôn đẹp. Đó là một chuyến đi thư giãn.",
+    "kind": "sample"
+  },
+  "speaking-9-3-1": {
+    "answer": "Yes, I do, because holidays help me relax and discover new places.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Có, vì những kỳ nghỉ giúp tôi thư giãn và khám phá những nơi mới.",
+    "kind": "sample"
+  },
+  "speaking-9-3-2": {
+    "answer": "Ha Long Bay, Hoi An and Da Lat are popular places to visit in Vietnam.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Vịnh Hạ Long, Hội An và Đà Lạt là những địa điểm tham quan phổ biến ở Việt Nam.",
+    "kind": "sample"
+  },
+  "speaking-9-3-3": {
+    "answer": "Hoi An is the most interesting place I have visited because its old streets are beautiful.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Hội An là nơi thú vị nhất tôi từng đến vì những con phố cổ rất đẹp.",
+    "kind": "sample"
+  },
+  "speaking-9-3-4": {
+    "answer": "I like travelling by train because I can enjoy the view and move around easily.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Tôi thích đi tàu vì có thể ngắm cảnh và đi lại dễ dàng.",
+    "kind": "sample"
+  },
+  "speaking-9-3-5": {
+    "answer": "I usually take clothes, my phone, some money and any medicine I need.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Tôi thường mang theo quần áo, điện thoại, một ít tiền và thuốc cần dùng.",
+    "kind": "sample"
+  },
+  "speaking-10-1-1": {
+    "answer": "My name is Linh.",
+    "explanation": "Giới thiệu tên bằng “My name is”; thay tên ví dụ bằng tên của bạn.",
+    "translation": "Tên tôi là Linh.",
+    "kind": "sample"
+  },
+  "speaking-10-1-2": {
+    "answer": "I was born on 15 May 2002.",
+    "explanation": "Dùng “I was born on” và thay ngày sinh ví dụ bằng ngày sinh của bạn.",
+    "translation": "Tôi sinh ngày 15 tháng 5 năm 2002.",
+    "kind": "sample"
+  },
+  "speaking-10-1-3": {
+    "answer": "I was born in Da Nang.",
+    "explanation": "Dùng “I was born in” với nơi sinh thực tế của bạn.",
+    "translation": "Tôi sinh ra ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-10-1-4": {
+    "answer": "I live with my family in Da Nang.",
+    "explanation": "Đây là ví dụ về nơi ở; hãy thay bằng hoàn cảnh của bạn.",
+    "translation": "Tôi sống cùng gia đình ở Đà Nẵng.",
+    "kind": "sample"
+  },
+  "speaking-10-1-5": {
+    "answer": "I am a second-year student, and I study business.",
+    "explanation": "Đây là ví dụ về năm học và ngành học; hãy thay theo thực tế.",
+    "translation": "Tôi là sinh viên năm hai và học ngành kinh doanh.",
+    "kind": "sample"
+  },
+  "speaking-10-1-6": {
+    "answer": "I enjoy reading and playing badminton in my free time.",
+    "explanation": "Đây là ví dụ về sở thích; sau “enjoy” dùng động từ thêm -ing.",
+    "translation": "Tôi thích đọc sách và chơi cầu lông khi rảnh.",
+    "kind": "sample"
+  },
+  "speaking-10-1-7": {
+    "answer": "I plan to improve my English and find a good job.",
+    "explanation": "Đây là ví dụ về dự định; “plan to” đi với động từ nguyên mẫu.",
+    "translation": "Tôi dự định cải thiện tiếng Anh và tìm một công việc tốt.",
+    "kind": "sample"
+  },
+  "speaking-10-2-1": {
+    "answer": "I like a small restaurant near my home. It serves Vietnamese food, including noodle soup and rice dishes. I go there about twice a month, usually with my family. I enjoy eating there because the food is fresh, the prices are reasonable and the staff are friendly. It is a pleasant place to have dinner together.",
+    "explanation": "Đây là bài mẫu, không phải thông tin của bạn. Thay chi tiết bằng trải nghiệm thật và mở rộng từng ý để luyện nói 3–4 phút. Đề in “Wow often”; từ này có vẻ là lỗi in thay cho “How often”.",
+    "translation": "Tôi thích một nhà hàng nhỏ gần nhà. Nhà hàng phục vụ món Việt, gồm các món nước và món cơm. Tôi đến đó khoảng hai lần một tháng, thường cùng gia đình. Tôi thích ăn ở đó vì thức ăn tươi, giá hợp lý và nhân viên thân thiện. Đây là nơi dễ chịu để cùng ăn tối.",
+    "kind": "sample"
+  },
+  "speaking-10-3-1": {
+    "answer": "I eat at a restaurant about twice a month, usually on a weekend.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Tôi ăn ở nhà hàng khoảng hai lần một tháng, thường vào cuối tuần.",
+    "kind": "sample"
+  },
+  "speaking-10-3-2": {
+    "answer": "I prefer eating at home because it is cheaper and I can enjoy time with my family.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Tôi thích ăn ở nhà hơn vì rẻ hơn và tôi có thể dành thời gian bên gia đình.",
+    "kind": "sample"
+  },
+  "speaking-10-3-3": {
+    "answer": "Noodle shops and small family restaurants are popular in my neighbourhood.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Các quán mì và nhà hàng gia đình nhỏ rất phổ biến trong khu tôi sống.",
+    "kind": "sample"
+  },
+  "speaking-10-3-4": {
+    "answer": "We can teach people simple healthy recipes and make fresh food more affordable.",
+    "explanation": "Đây là câu trả lời mẫu; hãy điều chỉnh ý kiến và chi tiết cá nhân theo thực tế.",
+    "translation": "Chúng ta có thể dạy mọi người các công thức nấu ăn lành mạnh đơn giản và làm cho thực phẩm tươi có giá phải chăng hơn.",
+    "kind": "sample"
+  }
+}

@@ -2,6 +2,8 @@ package com.learningen.data;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.learningen.Accounts;
+import com.learningen.B1ExamController;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import java.time.*;
 import java.util.*;
 import org.springframework.http.HttpStatus;
@@ -23,10 +25,12 @@ public class BackupService {
         new Section("lessonDrafts","lesson_drafts","lesson_id,answers,updated_at"),
         new Section("lessonAttempts","lesson_attempts","id,lesson_id,request_id,fingerprint,answers,score,passed,assisted,response,created_at"),
         new Section("studySessions","study_sessions","id,request_id,planned_minutes,active_seconds,status,version,created_at,updated_at"),
-        new Section("studyActivity","study_activity","session_id,activity_date,active_seconds")
+        new Section("studyActivity","study_activity","session_id,activity_date,active_seconds"),
+        new Section("b1ExamDrafts","b1_exam_drafts","responses,version,updated_at")
     );
     private final JdbcTemplate db;private final Accounts accounts;private final Clock clock;
-    public BackupService(JdbcTemplate db,Accounts accounts,Clock clock) { this.db=db;this.accounts=accounts;this.clock=clock; }
+    private final B1ExamController b1Exam; private final ObjectMapper mapper;
+    public BackupService(JdbcTemplate db,Accounts accounts,Clock clock,B1ExamController b1Exam,ObjectMapper mapper) { this.db=db;this.accounts=accounts;this.clock=clock;this.b1Exam=b1Exam;this.mapper=mapper; }
     private String owned(Section section) {
         return switch(section.table()) {
             case "messages" -> "conversation_id in (select id from conversations where owner_id=?)";
@@ -50,8 +54,14 @@ public class BackupService {
         int total=0;
         for(var section:SECTIONS) {
             JsonNode rows=data.path(section.name());
-            if(!rows.isArray() || rows.size()>10000) throw invalid("Invalid or oversized backup section: "+section.name());
+            if(section.name().equals("b1ExamDrafts") && rows.isMissingNode()) continue;
+            if(!rows.isArray() || rows.size()>(section.name().equals("b1ExamDrafts") ? 1 : 10000)) throw invalid("Invalid or oversized backup section: "+section.name());
             for(JsonNode row:rows) {
+                if(section.name().equals("b1ExamDrafts")) {
+                    if(!row.path("responses").isTextual() || !row.path("version").isIntegralNumber() || !row.path("version").canConvertToInt() || row.path("version").intValue()<1) throw invalid("Invalid B1 draft");
+                    try { b1Exam.validateResponses(mapper.reader().with(com.fasterxml.jackson.databind.DeserializationFeature.FAIL_ON_TRAILING_TOKENS).readTree(row.path("responses").textValue())); }
+                    catch(java.io.IOException e) { throw invalid("Invalid B1 draft JSON"); }
+                }
                 List<String> columns=new ArrayList<>(List.of(section.fields().split(",")));List<Object> values=new ArrayList<>();
                 for(String column:columns) values.add(value(row,column));
                 verifyRelationships(owner,section,row);
@@ -90,13 +100,13 @@ public class BackupService {
             if(column.equals("activity_date")) return LocalDate.parse(v.asText());
             if(Set.of("review_enabled","passed","assisted").contains(column)) { if(!v.isBoolean()) throw invalid("Invalid boolean");return v.booleanValue(); }
             if(Set.of("score","version","repetitions","interval_days","planned_minutes","active_seconds","input_tokens","output_tokens").contains(column)) {
-                if(!v.isIntegralNumber() || !v.canConvertToLong() || v.longValue()<0 || v.longValue()>100000000) throw invalid("Invalid backup number");
+                if(!v.isIntegralNumber() || !v.canConvertToLong() || v.longValue()<0 || v.longValue()>(column.equals("version") ? Integer.MAX_VALUE : 100000000)) throw invalid("Invalid backup number");
                 if(column.equals("score") && v.intValue()>100) throw invalid("Invalid score");
                 if(column.equals("active_seconds") && v.intValue()>28800) throw invalid("Invalid active time");
                 return v.longValue();
             }
             if(column.equals("ease") || column.equals("estimated_cost")) { if(!v.isNumber() || v.doubleValue()<0 || v.doubleValue()>1000000) throw invalid("Invalid decimal");return v.decimalValue(); }
-            if(!v.isTextual() || v.textValue().length()>100000) throw invalid("Invalid backup text");return v.textValue();
+            if(!v.isTextual() || v.textValue().length()>(column.equals("responses") ? 4000000 : 100000)) throw invalid("Invalid backup text");return v.textValue();
         } catch(java.time.DateTimeException | IllegalArgumentException e) { throw invalid("Invalid backup field: "+camel(column)); }
     }
     private String camel(String name) { StringBuilder result=new StringBuilder();boolean upper=false;for(char c:name.toLowerCase(Locale.ROOT).toCharArray()) { if(c=='_') upper=true;else { result.append(upper?Character.toUpperCase(c):c);upper=false; } }return result.toString(); }
@@ -106,6 +116,7 @@ public class BackupService {
         db.update("delete from ai_requests where owner_id=?",owner);db.update("delete from conversations where owner_id=?",owner);
         db.update("delete from learning_items where owner_id=?",owner);db.update("delete from lesson_attempts where owner_id=?",owner);
         db.update("delete from lesson_drafts where owner_id=?",owner);db.update("delete from study_sessions where owner_id=?",owner);
+        db.update("delete from b1_exam_drafts where owner_id=?",owner);
     }
     private static ResponseStatusException invalid(String message) { return new ResponseStatusException(HttpStatus.BAD_REQUEST,message); }
 }

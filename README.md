@@ -45,6 +45,28 @@ Hạn mức qua `AI_DAILY_REQUESTS`, `AI_DAILY_TOKENS`, `AI_GLOBAL_DAILY_TOKENS`
 
 Theo dõi tiền mặc định tắt vì chưa có đơn giá đã chọn. Khi có đơn giá thực, đặt `AI_COST_TRACKING_ENABLED=true`, `AI_INPUT_COST_PER_MILLION`, `AI_OUTPUT_COST_PER_MILLION` và trần `AI_DAILY_COST_LIMIT`/`AI_GLOBAL_DAILY_COST_LIMIT` cùng đơn vị tiền. Các số là ước lượng theo usage provider; không phải hóa đơn. Trần ngày không thay trần hóa đơn tại provider. Xóa dữ liệu không xóa các bộ đếm hạn mức.
 
+## Học từ ảnh đề bài
+
+Trong **Hỏi & Dịch**, tải/kéo thả/dán JPEG hoặc PNG, xem trước và phóng to để kiểm tra ảnh trước khi gửi. Có thể chỉ gửi ảnh hoặc thêm câu hỏi, số câu cần giải và đáp án đã chọn. Nhiều ảnh gửi theo thứ tự hiển thị; nên chụp đủ đề, lựa chọn và đoạn đọc, cắt bỏ thông tin riêng tư. Mặc định tối đa 3 ảnh, 5 MiB/ảnh, 12 MiB tổng và 16 triệu pixel/ảnh; giới hạn do backend trả về, không phải fixture UI.
+
+Các chế độ: **Chỉ đáp án**, **Giải chi tiết ABCD**, **Gợi ý** không hiện đáp án, **Dịch đề**, **Chép nội dung**, **Luyện thêm** với đáp án bài luyện ẩn. Phân tích chi tiết hiển thị từng câu, đáp án AI đề xuất, lý do từng lựa chọn đúng/sai, bản dịch, kiến thức và mẹo; lưu câu/kiến thức vào sổ tay để chỉnh lại và ôn. Ảnh mờ, thiếu gạch chân/đoạn đọc/audio phải được báo rõ; AI không bảo đảm đúng tuyệt đối.
+
+Backend cần cấu hình cùng `AI_BASE_URL`/`AI_API_KEY` ở trên, thêm `AI_VISION_ENABLED=true` và `AI_VISION_MODEL` là **model thực hỗ trợ image_url và JSON output** của provider. Không tự dùng model chỉ nhận chữ, không có đáp án mẫu khi provider hỏng. Model vision có thể khác `AI_MODEL`. Không cấu hình thì UI vẫn cho hỏi chữ, upload ảnh bị khóa và API ảnh trả 503. Kết quả provider sai cấu trúc/cắt ngang bị từ chối 502 thay vì hiển thị lời giải dở dang.
+
+`AI_VISION_MAX_OUTPUT_TOKENS` mặc định 6000 để giải chi tiết; nhiều câu nên chia lô hoặc chỉ định số câu. `AI_VISION_TOKENS_PER_IMAGE` mặc định 4096 là khoản dự trù token ảnh, không phải tokenizer/hóa đơn chính xác của mọi model; đặt theo provider thực tế. Hạn mức ngày chung bao gồm chữ và ảnh. Khi bật theo dõi tiền, đặt riêng `AI_VISION_INPUT_COST_PER_MILLION` và `AI_VISION_OUTPUT_COST_PER_MILLION` theo giá vision; phải dùng cùng đơn vị tiền với giới hạn ngày. Một yêu cầu 3 ảnh có thể dự trù hơn 30k token, cần điều chỉnh trần theo nhu cầu và khả năng chi trả.
+
+Ảnh được kiểm tra signature/decoder/kích thước, áp dụng chiều xoay/lật EXIF của ảnh điện thoại rồi mã hóa lại để bỏ EXIF/location; chỉ xử lý RAM, không lưu ảnh/base64 vào DB, file upload công khai hay backup. Provider vẫn nhận ảnh nên cần xem chính sách riêng tư của provider. Nếu bật lịch sử, nội dung đọc từ ảnh và lời giải được lưu, không phải ảnh gốc. Hỏi tiếp dùng nội dung đã đọc; muốn phân tích lại chi tiết thị giác cần gắn ảnh lại. Tắt lịch sử thì không lưu nội dung/kết quả vào DB.
+
+Lỗi mạng chưa rõ kết quả nên thử lại cùng request ID để tránh gọi trùng. Nếu backend báo yêu cầu đã thất bại/đã xử lý, có thể chọn **Gửi thành yêu cầu mới** mà không cần gắn ảnh lại; thao tác này có thể gọi AI và tính thêm hạn mức, không được tự động thực hiện khi retry.
+
+Test ảnh độc lập: sau `rtk mvn test` và `rtk mvn package -DskipTests`, chạy từ `frontend/`: `$env:VERIFY_IMAGE_FLOW='true'`, rồi `rtk proxy npx playwright test --config verification.playwright.config.js`. Bộ này dùng ảnh PNG sinh tại test, backend thật và HTTP vision fixture riêng (không kiểm chứng khả năng đọc/giải của provider thật); Edge phải được cài, hoặc cấu hình `VERIFY_BROWSER_CHANNEL` phù hợp. Xóa biến `VERIFY_IMAGE_FLOW` để chạy E2E cũ không provider. Không có credential thật hoặc model vision đã chọn thì chưa nghiệm thu độ chính xác OCR/ABCD.
+
+## Bộ đề B1
+
+Sau khi đăng nhập, chọn **Bộ đề B1** trên thanh điều hướng; trên màn hình nhỏ có thể vuốt thanh điều hướng ngang để thấy mục này. Đề chia thành đọc, viết, nghe, bài luyện và nói; không tính giờ hay tự nộp. Phần nghe cần audio bên ngoài và chỉ cho chọn câu trả lời, không cung cấp đáp án nghe. Lựa chọn và bài viết được tự lưu theo tài khoản, có thể tiếp tục sau khi tải lại hoặc đăng nhập lại; đợi thông báo “Đã lưu bài làm” trước khi rời trang. Nếu mất mạng hoặc cùng sửa trên hai thiết bị, hãy xử lý thông báo lỗi trước khi rời trang. Khi trang đề đang hiển thị, trình duyệt định kỳ duy trì phiên đăng nhập; hãy đăng xuất khi dùng thiết bị chung.
+
+Nội dung và ảnh được trích từ PDF scan do người dùng cung cấp. Các câu bị thiếu/che được đánh dấu; một số đề gốc có lỗi hoặc nhiều cách hiểu. Lời giải và bản dịch đã biên soạn, đối chiếu một phần nhưng chưa phải đáp án chính thức được giáo viên thẩm định; bài viết và nói là mẫu tham khảo.
+
 ## PostgreSQL và Docker Compose
 
 Ứng dụng mặc định dùng PostgreSQL. Đặt `DATABASE_URL` dạng JDBC, `DATABASE_USER`, `DATABASE_PASSWORD`; không dùng profile dev. Flyway tự chạy migration.
